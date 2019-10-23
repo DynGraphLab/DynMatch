@@ -76,7 +76,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/extern)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV)
 
 set(LIBMATCH_SOURCE_FILES
-./app/executer.cpp
 ./app/glossary.cpp
 ./app/misc.cpp
 ./lib/tools/counters.cpp
@@ -86,13 +85,11 @@ set(LIBMATCH_SOURCE_FILES
 ./lib/io/graph_io.cpp
 ./lib/data_structure/dyn_graph_access.cpp
 ./lib/data_structure/graph_access.cpp
-./lib/algorithms/parallel_rw_dyn_matching.cpp
-./lib/algorithms/baswanaguptasen_dyn_matching.cpp
-./lib/algorithms/naive_dyn_matching.cpp
+#./lib/algorithms/baswanaguptasen_dyn_matching.cpp
+#./lib/algorithms/naive_dyn_matching.cpp
 ./lib/algorithms/rw_dyn_matching.cpp
-./lib/algorithms/en_dyn_matching.cpp
 ./lib/algorithms/dyn_matching.cpp
-./lib/algorithms/neimansolomon_dyn_matching.cpp
+#./lib/algorithms/neimansolomon_dyn_matching.cpp
   extern/argtable3-3.0.3/argtable3.c)
 add_library(libmatch OBJECT ${LIBMATCH_SOURCE_FILES})
 

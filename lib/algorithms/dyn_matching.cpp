@@ -1,7 +1,9 @@
 #include "dyn_matching.h"
 
-dyn_matching::dyn_matching (dyn_graph_access* G) {
+dyn_matching::dyn_matching (dyn_graph_access* G, MatchConfig & config) {
         this->G = G;
+        this->config = config;
+
         matching.resize(G->number_of_nodes(), NOMATE);
         matching_size = 0;
 }
@@ -13,10 +15,6 @@ dyn_matching::~dyn_matching () {
         }
 }
 
-dyn_graph_access dyn_matching::getG () {
-        return *G;
-}
-
 std::vector<NodeID> dyn_matching::getM () {
         return matching;
 }
@@ -24,8 +22,6 @@ std::vector<NodeID> dyn_matching::getM () {
 NodeID dyn_matching::getMSize () {
         return matching_size/2;
 }
-
-
 
 bool dyn_matching::is_free (NodeID u) {
         return matching[u] == NOMATE;

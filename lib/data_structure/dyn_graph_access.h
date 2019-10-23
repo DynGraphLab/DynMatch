@@ -33,6 +33,7 @@
 class dyn_graph_access {
         public:
                 dyn_graph_access();
+                dyn_graph_access(NodeID n);
                 ~dyn_graph_access();
 
                 // construction of the graph

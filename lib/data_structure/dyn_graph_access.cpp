@@ -24,9 +24,15 @@ dyn_graph_access::dyn_graph_access() : m_building_graph(false) {
         node_count = 0;
 }
 
+dyn_graph_access::dyn_graph_access(NodeID n) : m_building_graph(false) {
+        edge_count = 0;
+        node_count = n;
+        start_construction(node_count, edge_count);
+        finish_construction();
+}
+
 dyn_graph_access::~dyn_graph_access() {};
 
-// construction of the graph
 void dyn_graph_access::start_construction(NodeID nodes, EdgeID edges) {
         m_building_graph = true;
         m_nodes.resize(nodes);
@@ -53,13 +59,7 @@ void dyn_graph_access::finish_construction() {
 }
 
 void dyn_graph_access::convert_from_graph_access(graph_access& H) {
-        start_construction(H.number_of_nodes());
-
-        forall_nodes(H,n)
-                new_node();
-        endfor
-
-        finish_construction();
+        dyn_graph_access(H.number_of_nodes());
 
         forall_nodes(H,n)
                 forall_out_edges(H,e,n)

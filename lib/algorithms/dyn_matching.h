@@ -27,28 +27,27 @@
 #include <unordered_map>
 
 #include "data_structure/dyn_graph_access.h"
-
-const NodeID NOMATE = std::numeric_limits<NodeID>::max();
+#include "definitions.h"
+#include "match_config.h"
 
 class dyn_matching {
         public:
-                dyn_matching (dyn_graph_access* G);
+                dyn_matching (dyn_graph_access* G, MatchConfig & config);
                 virtual ~dyn_matching ();
 
                 virtual bool new_edge(NodeID source, NodeID target) = 0;
                 virtual bool remove_edge(NodeID source, NodeID target) = 0;
 
-                dyn_graph_access getG ();
                 virtual std::vector< NodeID > getM ();
                 virtual NodeID getMSize ();
 
-                virtual void counters_next() = 0;
                 virtual void retry () { }
         protected:
                 dyn_graph_access* G;
                 
                 std::vector<NodeID> matching;
                 NodeID matching_size;
+                MatchConfig config;
                 
                 virtual bool is_free (NodeID u);
                 virtual NodeID mate (NodeID u);
