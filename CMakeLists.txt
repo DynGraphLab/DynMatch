@@ -63,15 +63,6 @@ if(64BITMODE)
   add_definitions("-DPOINTER64=1")
 endif()
 
-# optimized output
-#option(OPTIMIZED_OUTPUT "optimized output" OFF)
-#if(OPTIMIZED_OUTPUT)
-  #add_definitions("-DKAFFPAOUTPUT")
-#endif()
-
-# ParHIP
-#option(PARHIP "build ParHIP" ON)
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/app)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/extern/argtable3-3.0.3)
