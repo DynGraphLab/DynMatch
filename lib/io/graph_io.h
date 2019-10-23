@@ -40,25 +40,49 @@ class graph_io {
                 virtual ~graph_io () ;
 
                 static
-                int readGraphWeighted(graph_access & G, std::string filename);
+                        int readGraphWeighted(graph_access & G, std::string filename);
 
                 static
-                int writeGraphWeighted(graph_access & G, std::string filename);
+                        int writeGraphWeighted(graph_access & G, std::string filename);
 
                 static
-                int writeGraph(graph_access & G, std::string filename);
+                        int writeGraph(graph_access & G, std::string filename);
 
                 static
-                int readPartition(graph_access& G, std::string filename);
+                        int readPartition(graph_access& G, std::string filename);
 
                 static
-                void writePartition(graph_access& G, std::string filename);
+                        void writePartition(graph_access& G, std::string filename);
 
                 template<typename vectortype>
-                static void writeVector(std::vector<vectortype> & vec, std::string filename);
+                        static void writeVector(std::vector<vectortype> & vec, std::string filename);
 
                 template<typename vectortype>
-                static void readVector(std::vector<vectortype> & vec, std::string filename);
+                        static void readVector(std::vector<vectortype> & vec, std::string filename);
+
+                int read_sequence (std::string file, std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& edge_sequence); 
+
+                std::vector<std::string> split (const std::string& input, const char& mark) {
+                        std::vector<std::string> substrings;
+                        std::string buf = "";
+
+                        for (size_t i = 0; i < input.size(); ++i) {
+                                if (input.at(i) != mark) {
+                                        buf = buf + input.at(i);
+                                } else {
+                                        substrings.push_back(buf);
+                                        buf = "";
+                                }
+                        }
+
+                        if (buf != "") {
+                                substrings.push_back(buf);
+                        }
+
+                        return substrings;
+                }
+
+
 
 
 };

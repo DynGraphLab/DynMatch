@@ -6,7 +6,8 @@
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/max_cardinality_matching.hpp>
 
-#include "../lib/tools/timer.h"
+#include "tools/timer.h"
+#include "definitions.h"
 
 //const unsigned long NOMATE = std::numeric_limits<unsigned long>::max();
 

@@ -12,7 +12,6 @@ std::vector<std::string> ALGORITHM_NAMES = {
         "en", 
         "ei-naive", 
         "mcm", 
-        "dummy", 
         "blossomempty", 
         "blossomgreedy", 
         "blossomextragreedy", 
@@ -332,19 +331,19 @@ std::string get_output_filename (ex_config conf) {
         return output;
 }
 
-dyn_graph_access* create_graph (size_t n) {
-        dyn_graph_access * G = new dyn_graph_access();
+//dyn_graph_access* create_graph (size_t n) {
+        //dyn_graph_access * G = new dyn_graph_access();
 
-        G->start_construction(n);
+        //G->start_construction(n);
 
-        for (size_t i = 0; i < n; ++i) {
-                G->new_node();
-        }
+        //for (size_t i = 0; i < n; ++i) {
+                //G->new_node();
+        //}
 
-        G->finish_construction();
+        //G->finish_construction();
 
-        return G;
-}
+        //return G;
+//}
 
 EdgeID get_cumulated_degree(dyn_graph_access& G, std::vector<std::pair<NodeID, NodeID> > edgeset) {
         EdgeID cum_degree = 0;
@@ -434,10 +433,6 @@ dyn_matching * init_algorithm (ALGORITHM algorithm, dyn_graph_access * G, double
                 //~ std::cerr << eps << std::endl;
                 std::cout <<  eps  << std::endl;
                 return new blossom_dyn_matching(G, (eps));
-
-        } else if (algorithm == ALGORITHM::dummy) {
-                return new dummy_dyn_matching(G);
-
         } else if (algorithm == ALGORITHM::parallel_rw) {
                 std::cout <<  "usage option discarded for now. use rw, mrw or lds instead and pass thread number larger 1."  << std::endl;
                 exit(0);

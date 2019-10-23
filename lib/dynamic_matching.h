@@ -1,13 +1,11 @@
 #include "algorithms/dyn_matching.h"
-#include "algorithms/en_dyn_matching.h"
-#include "algorithms/blossom_dyn_matching.h"
+//#include "algorithms/en_dyn_matching.h"
+//#include "algorithms/blossom_dyn_matching.h"
 #include "algorithms/naive_dyn_matching.h"
 #include "algorithms/baswanaguptasen_dyn_matching.h"
 #include "algorithms/neimansolomon_dyn_matching.h"
 #include "algorithms/rw_dyn_matching.h"
-#include "algorithms/dummy_dyn_matching.h"
-#include "algorithms/parallel_rw_dyn_matching.h"
-
+//#include "algorithms/parallel_rw_dyn_matching.h"
 //#include "algorithms/extended_insertion/ext_en_dyn_matching.h"
 //#include "algorithms/extended_insertion/ext_naive_dyn_matching.h"
 

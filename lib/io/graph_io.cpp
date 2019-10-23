@@ -224,4 +224,36 @@ void graph_io::writePartition(graph_access & G, std::string filename) {
         f.close();
 }
 
+int graph_io::read_sequence (std::string file, std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& edge_sequence) {
+        std::string line;
+        std::ifstream input(file);
+        edge_sequence.resize(0);
+        int n = 0;
+        int i = 0;
+
+        if (input.is_open()) {
+                std::getline(input, line);
+                std::vector<std::string> substr = split(line, ' ');
+
+                std::string hash = substr.at(0);
+                if (hash != "#") throw std::string("META DATA SEEMS TO BE MISSING");
+
+                n = std::stoul(substr.at(1).c_str());
+
+                while (std::getline(input, line)) {
+                        i++;
+                        std::vector<std::string> substr = split(line, ' ');
+
+                        int addition = atoi(substr.at(0).c_str());
+                        NodeID u = atoi(substr.at(1).c_str());
+                        NodeID v = atoi(substr.at(2).c_str());
+
+                        edge_sequence.push_back({addition, {u, v}});
+                }
+        }
+
+        input.close();
+        return n;
+}
+
 

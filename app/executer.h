@@ -38,7 +38,6 @@ enum ALGORITHM {
         en, 
         ei_naive, 
         mcm, 
-        dummy, 
         blossomempty, 
         blossomgreedy, 
         blossomextragreedy, 

@@ -29,24 +29,19 @@
 #include <cmath>
 
 #include "dyn_matching.h"
-#include "../tools/random_functions.h"
-#include "../tools/timer.h"
-#include "../tools/misc.h"
+#include "tools/random_functions.h"
+#include "tools/timer.h"
+#include "tools/misc.h"
 
 class rw_dyn_matching : public dyn_matching {
         public:
-                rw_dyn_matching (dyn_graph_access* G, double eps, unsigned multiple_rws = 1,  bool additional_settle = false, bool low_degree_settle = false, NodeID* low_degree = nullptr);
+                rw_dyn_matching (dyn_graph_access* G, MatchConfig & config); 
 
                 virtual bool new_edge(NodeID source, NodeID target);
-
                 virtual bool remove_edge(NodeID source, NodeID target);
 
-                virtual void counters_next();
                 
         protected:
-                double comp_rw_maxlen();
-                double comp_rw_reps();
-
                 virtual void handle_insertion (NodeID source, NodeID target);
                 virtual void handle_deletion (NodeID source, NodeID target);
 
@@ -61,18 +56,8 @@ class rw_dyn_matching : public dyn_matching {
                 bool _rw_is_freecs(NodeID u); 
                 bool find_free (NodeID u, NodeID& v, NodeID t); 
 
-                double eps;
-                unsigned multiple_rws;
-                double rw_maxlen;
-                
-                // maximal degree
-                NodeID max_d;
-                
                 std::vector< NodeID > direct_new_mates;
                 std::vector< NodeID > augpath;
-                bool additional_settle;
-                bool low_degree_settle;
-                double low_degree;
 };
 
 #endif // RW_DYN_MATCHING_H
