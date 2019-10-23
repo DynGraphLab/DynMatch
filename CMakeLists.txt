@@ -42,10 +42,6 @@ CHECK_CXX_COMPILER_FLAG(-march=native COMPILER_SUPPORTS_MARCH_NATIVE)
 if(COMPILER_SUPPORTS_MARCH_NATIVE)
   add_definitions(-march=native)
 endif()
-#CHECK_CXX_COMPILER_FLAG(-fpermissive COMPILER_SUPPORTS_FPERMISSIVE)
-#if(COMPILER_SUPPORTS_FPERMISSIVE)
-  #add_definitions(-fpermissive)
-#endif()
 
 # check dependencies
 find_package(MPI REQUIRED)
@@ -114,10 +110,4 @@ add_executable(dynmatch app/dyn_matching.cpp $<TARGET_OBJECTS:libmatch> )
 target_link_libraries(dynmatch ${OpenMP_CXX_LIBRARIES})
 target_link_libraries(dynmatch ${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV/libmv.a)
 install(TARGETS dynmatch DESTINATION bin)
-
-
-#add_executable(evaluator app/evaluator.cpp $<TARGET_OBJECTS:libkaffpa> $<TARGET_OBJECTS:libmapping>)
-#target_compile_definitions(evaluator PRIVATE "-DMODE_EVALUATOR")
-#target_link_libraries(evaluator ${OpenMP_CXX_LIBRARIES})
-#install(TARGETS evaluator DESTINATION bin)
 
