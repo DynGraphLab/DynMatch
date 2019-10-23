@@ -30,6 +30,7 @@ inline void configuration::standard( MatchConfig & config ) {
         config.rw_low_degree_value         = 10;
         config.rw_repetitions_per_node     = 1;
         config.blossom_init                = BLOSSOMEXTRAGREEDY;
+        config.naive_settle_on_insertion   = false;
 }
 
 #endif /* end of include guard: CONFIGURATION_3APG5V7Z */

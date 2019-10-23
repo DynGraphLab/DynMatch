@@ -20,14 +20,8 @@
 #include "neimansolomon_dyn_matching.h"
 #include "random_functions.h"
 
-#ifdef DM_COUNTERS
-#include "counters.h"
-#endif
-
 //========================// Fv struct methods //========================//
-
 neimansolomon_dyn_matching::Fv::Fv () {
-        //
 }
 
 bool neimansolomon_dyn_matching::Fv::insert (NodeID node) {
@@ -61,18 +55,9 @@ NodeID neimansolomon_dyn_matching::Fv::get_free () { // returns false if there i
 }
 
 
-//========================// Neiman Solomon matching methods //========================//
-
-//~ neimansolomon_dyn_matching::neimansolomon_dyn_matching (dyn_graph_access* G) : dyn_matching(G), F_max() {
-neimansolomon_dyn_matching::neimansolomon_dyn_matching (dyn_graph_access* G) : dyn_matching(G), F_max(G->number_of_nodes(), G->number_of_nodes()) {
+neimansolomon_dyn_matching::neimansolomon_dyn_matching (dyn_graph_access* G, MatchConfig & config) : dyn_matching(G, config), F_max(G->number_of_nodes(), G->number_of_nodes()) {
         // F is a n-size vector of empty Fv-data structures, where n denotes the number of nodes in G
         F.resize(G->number_of_nodes());
-        
-#ifdef DM_COUNTERS
-        counters::create("ns");
-        counters::get("ns").create("direct_match");
-        counters::get("ns").create("resolve_augpath");
-#endif
 }
 
 bool neimansolomon_dyn_matching::new_edge(NodeID source, NodeID target) {
@@ -357,9 +342,3 @@ void neimansolomon_dyn_matching::handle_problematic () {
         }
 }
 
-void neimansolomon_dyn_matching::counters_next() {
-#ifdef DM_COUNTERS
-        counters::get("ns").get("direct_match").next();
-        counters::get("ns").get("resolve_augpath").next();
-#endif
-}

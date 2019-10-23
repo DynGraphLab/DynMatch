@@ -81,6 +81,7 @@ typedef enum {
         RANDOM_WALK, 
         BASWANA_GUPTA_SENG, 
  	NEIMAN_SOLOMON, 
+        NAIVE,
  	MV, 
         BLOSSOM	
 } AlgorithmType;

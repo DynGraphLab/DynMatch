@@ -19,17 +19,7 @@
 
 #include "naive_dyn_matching.h"
 
-#ifdef DM_COUNTERS
-#include "counters.h"
-#endif
-
-naive_dyn_matching::naive_dyn_matching (dyn_graph_access* G, bool settle_on_insertion) : dyn_matching(G) {
-        this->settle_on_insertion = settle_on_insertion;
-
-#ifdef DM_COUNTERS
-        counters::create("naive");
-        counters::get("naive").create("match()");
-#endif
+naive_dyn_matching::naive_dyn_matching (dyn_graph_access* G, MatchConfig & match_config) : dyn_matching(G, match_config) {
 }
 
 bool naive_dyn_matching::new_edge(NodeID source, NodeID target) {
@@ -40,7 +30,7 @@ bool naive_dyn_matching::new_edge(NodeID source, NodeID target) {
         // check whether the vertices are free. if so, add to the matching
         if (is_free(source) && is_free(target)) {
                 match (source, target);
-        } else if (settle_on_insertion) {
+        } else if (config.naive_settle_on_insertion) {
                 if (is_free(source) || is_free(target)) {
                         NodeID not_free  = source,
                                free_node = target;
@@ -114,8 +104,3 @@ bool naive_dyn_matching::settle (NodeID u, const NodeID* avoid_ptr) {
         return mate_found;
 }
 
-void naive_dyn_matching::counters_next() {
-#ifdef DM_COUNTERS
-        counters::get("naive").get("match()").next();
-#endif
-}
