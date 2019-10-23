@@ -41,6 +41,7 @@ int main (int argn, char ** argv) {
                 case BASWANA_GUPTA_SENG:
                         break;
                 case NEIMAN_SOLOMON:
+                        algorithm = new neimansolomon_dyn_matching(G, match_config);
                         break;
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
