@@ -8,6 +8,7 @@
 #include "definitions.h"
 #include "match_config.h"
 #include "sanity.h"
+#include "dynamic_algorithm_meta.h"
 
 int main (int argn, char ** argv) {
         MatchConfig match_config;
@@ -32,10 +33,7 @@ int main (int argn, char ** argv) {
         random_functions::setSeed(match_config.seed);
 
         dyn_graph_access * G = new dyn_graph_access(n);
-        unsigned long matching_size = 0;
 
-        timer t; 
-        t._restart(); 
         dyn_matching * algorithm = NULL;
         switch( match_config.algorithm ) {
                 case RANDOM_WALK:
@@ -64,34 +62,7 @@ int main (int argn, char ** argv) {
         //blossom_matchextragreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
         //} else {
 
-        for (size_t i = 0; i < edge_sequence.size(); ++i) { 
-                std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
-
-                if (edge_sequence.at(i).first) {
-                        algorithm->new_edge(edge.first, edge.second);
-                } else {
-                        algorithm->remove_edge(edge.first, edge.second);
-                }
-        } 
-        algorithm->postprocessing(); 
-
-        if(match_config.post_mv || match_config.post_blossom) {
-                std::cout <<  "running post processing with optimal algorithm. current matching size " << algorithm->getMSize()  << std::endl;
-        }
-
-        //TODO: matching is not output atm
-        if (match_config.post_mv) {
-                mv_algorithm mv(G, match_config);
-                mv.mv(*G, matching_size, algorithm->getM());
-        } else if (match_config.post_blossom) {
-                blossom_untouched(edge_sequence, matching_size, algorithm->getM());
-        } else {
-                matching_size = algorithm->getMSize();
-        }
-
-        std::cout << matching_size << " " << " " << t._elapsed() << std::endl;
-        if( algorithm != NULL ) 
-                check_matching(G, algorithm); // TODO also check for size
+        run_dynamic_algorithm(G, edge_sequence, algorithm, match_config);
 
         delete G;
         delete algorithm;

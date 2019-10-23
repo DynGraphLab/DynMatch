@@ -114,7 +114,6 @@ void MVGraph::get_matches(std::vector< unsigned int > & matching) const {
 	for(nodeid i=0;i<nodes.size();i++) 
 		if(nodes[i].match != UNMATCHED) 
                         matching[i] = nodes[i].match;
-			//fprintf(f,"%u\t%u\n",i,nodes[i].match);
 }
 
 
