@@ -88,6 +88,7 @@ set(LIBMATCH_SOURCE_FILES
 #./lib/algorithms/baswanaguptasen_dyn_matching.cpp
 #./lib/algorithms/naive_dyn_matching.cpp
 ./lib/algorithms/rw_dyn_matching.cpp
+./lib/algorithms/mv_algorithm.cpp
 ./lib/algorithms/dyn_matching.cpp
 #./lib/algorithms/neimansolomon_dyn_matching.cpp
   extern/argtable3-3.0.3/argtable3.c)

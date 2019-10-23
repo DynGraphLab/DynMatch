@@ -111,59 +111,17 @@ void blossom_matchextragreedy (const std::vector<std::pair<int, std::pair<NodeID
         blossom_match<boost::extra_greedy_matching>(g, &m[0], boost::get(boost::vertex_index, g), m_size, time_elapsed);
 }
 
-void blossom_untouched (const std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& sequence, unsigned long& m_size, double& time_elapsed, int& inserted, int& removed, const std::vector<NodeID>& matching) {
+void blossom_untouched (const std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& sequence, unsigned long& m_size, const std::vector<NodeID>& matching) {
         mygraph g;
         matemap m;
         
+        int inserted = 0;
+        int removed  = 0;
+
         init(sequence, g, m, inserted, removed);
         set_matching(g, m, matching);
         
+        double time_elapsed = 0;
         blossom_match<untouched_matching>(g, &m[0], boost::get(boost::vertex_index, g), m_size, time_elapsed);
 }
 
-//~ struct dyn_blossom {
-        //~ void blossom_dyn ();
-        
-        //~ mygraph g;
-        //~ matemap m;
-        
-        //~ NodeID m_size;
-        
-        //~ dyn_blossom (NodeID n) {
-                //~ for (NodeID i = 0; i < n; ++i) {
-                        //~ boost::add_vertex(g);
-                //~ }
-                
-                //~ g = mygraph(n);
-                
-                //~ vertex_iterator_t vi, vi_end;
-                //~ boost::tie(vi, vi_end) = boost::vertices(g);
-                //~ int n_vertices = *vi_end;
-                
-                //~ m = matemap(n_vertices);
-        //~ }
-        
-        //~ void new_edge (NodeID source, NodeID target) {
-                //~ double t;
-                //~ boost::add_edge(source, target, g);
-                //~ blossom_match<untouched_matching>(g, &m[0], boost::get(boost::vertex_index, g), m_size, t);
-        //~ }
-        
-        //~ void remove_edge (NodeID source, NodeID target) {
-                
-        //~ }
-//~ };
-
-/*
-void blossom_matchempty (const std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& sequence, unsigned long& m_size, double& time_elapsed, int& inserted, int& removed) {
-        blossom_matchempty (sequence, m_size, time_elapsed, inserted, removed, {});
-}
-
-void blossom_matchgreedy (const std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& sequence, unsigned long& m_size, double& time_elapsed, int& inserted, int& removed) {
-        blossom_matchgreedy (sequence, m_size, time_elapsed, inserted, removed, {});
-}
-
-void blossom_matchextragreedy (const std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& sequence, unsigned long& m_size, double& time_elapsed, int& inserted, int& removed) {
-        blossom_matchextragreedy (sequence, m_size, time_elapsed, inserted, removed, {});
-}
-*/

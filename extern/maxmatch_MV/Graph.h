@@ -69,6 +69,8 @@ struct MVGraph{
 	void step_to(nodeid to, nodeid from, unsigned int level);
 	
 	/* output matches found */
+
+        void get_matches(std::vector< unsigned int > & matching) const;
 	void write_matches(FILE* f) const;
 	/* same, but replace node IDs using the function supplied by the caller */
 	void write_matches(FILE* f, std::function<unsigned int(nodeid)> n) const;

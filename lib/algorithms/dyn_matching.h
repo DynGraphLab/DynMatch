@@ -38,10 +38,11 @@ class dyn_matching {
                 virtual bool new_edge(NodeID source, NodeID target) = 0;
                 virtual bool remove_edge(NodeID source, NodeID target) = 0;
 
-                virtual std::vector< NodeID > getM ();
+                virtual std::vector< NodeID > & getM ();
                 virtual NodeID getMSize ();
 
                 virtual void retry () { }
+                virtual void postprocessing() { }
         protected:
                 dyn_graph_access* G;
                 

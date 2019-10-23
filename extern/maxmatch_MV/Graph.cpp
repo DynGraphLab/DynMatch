@@ -109,6 +109,14 @@ void MVGraph::write_matches(FILE* f) const {
 		if(nodes[i].match != UNMATCHED && nodes[i].match > i)
 			fprintf(f,"%u\t%u\n",i,nodes[i].match);
 }
+void MVGraph::get_matches(std::vector< unsigned int > & matching) const {
+	/* write out matches, but only one way for each edge */
+	for(nodeid i=0;i<nodes.size();i++) 
+		if(nodes[i].match != UNMATCHED) 
+                        matching[i] = nodes[i].match;
+			//fprintf(f,"%u\t%u\n",i,nodes[i].match);
+}
+
 
 void MVGraph::write_matches(FILE* f, std::function<unsigned int(nodeid)> n) const {
 	/* write out matches, but only one way for each edge */
