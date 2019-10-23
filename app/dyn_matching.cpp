@@ -1,6 +1,6 @@
 #include <sys/stat.h>
 
-#include "blossom.h"
+#include "blossom_static.h"
 #include "dyn_blossom.h"
 #include "mv.h"
 #include "mv_algorithm.h"
@@ -33,7 +33,6 @@ int main (int argn, char ** argv) {
         random_functions::setSeed(match_config.seed);
 
         dyn_graph_access * G = new dyn_graph_access(n);
-
         dyn_matching * algorithm = NULL;
         switch( match_config.algorithm ) {
                 case RANDOM_WALK:
@@ -46,23 +45,26 @@ int main (int argn, char ** argv) {
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
                         break;
-                case BLOSSOM:
-                         break;
+                case BLOSSOM: {
+                        unsigned long matching_size = 0;
+                        switch( match_config.blossom_init ) {
+                                case BLOSSOMEMPTY:
+                                        blossom_matchempty(edge_sequence, matching_size);
+                                        break;
+                                case BLOSSOMGREEDY:
+                                        blossom_matchgreedy(edge_sequence, matching_size);
+                                        break;
+                                case BLOSSOMEXTRAGREEDY:
+                                        blossom_matchextragreedy(edge_sequence, matching_size);
+                                        break;
+                        }}
+
+                        break;
 
         }
 
-        // initalize timer and counters
-
-        // iterate through sequence, compute matching dynamically
-        //if (algorithms.at(0) == ALGORITHM::blossomempty) {
-        //blossom_matchempty(edge_sequence, matching_size, time_elapsed, insertions, deletions);
-        //} else if (algorithms.at(0) == ALGORITHM::blossomgreedy) {
-        //blossom_matchgreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
-        //} else if (algorithms.at(0) == ALGORITHM::blossomextragreedy) {
-        //blossom_matchextragreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
-        //} else {
-
-        run_dynamic_algorithm(G, edge_sequence, algorithm, match_config);
+        if(algorithm != NULL) 
+                run_dynamic_algorithm(G, edge_sequence, algorithm, match_config);
 
         delete G;
         delete algorithm;

@@ -29,6 +29,7 @@ inline void configuration::standard( MatchConfig & config ) {
         config.rw_ending_additional_settle = false;
         config.rw_low_degree_value         = 10;
         config.rw_repetitions_per_node     = 1;
+        config.blossom_init                = BLOSSOMEXTRAGREEDY;
 }
 
 #endif /* end of include guard: CONFIGURATION_3APG5V7Z */
