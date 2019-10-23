@@ -1,14 +1,10 @@
 #include "baswanaguptasen_dyn_matching.h"
 
-#ifdef DM_COUNTERS
-#include "counters.h"
-#endif
 
-baswanaguptasen_dyn_matching::baswanaguptasen_dyn_matching (dyn_graph_access* G) :
-        dyn_matching(G) {
+baswanaguptasen_dyn_matching::baswanaguptasen_dyn_matching (dyn_graph_access* G, MatchConfig & match_config) :
+        dyn_matching(G, match_config) {
         O.resize(G->number_of_nodes());
         levels.resize(G->number_of_nodes(), 0);
-        
         threshold = std::sqrt(G->number_of_nodes());
         
         for( unsigned i = 0; i < G->number_of_nodes(); i++) {
@@ -42,9 +38,6 @@ bool baswanaguptasen_dyn_matching::remove_edge(NodeID source, NodeID target) {
 
         return true;
 }
-
-
-// BGS SPECIFIC FUNCTIONS //
 
 void baswanaguptasen_dyn_matching::set_level (NodeID u, int level) {
         ASSERT_TRUE(level >= 0 && level <= 1);
@@ -303,6 +296,3 @@ void baswanaguptasen_dyn_matching::check_size_constraint() {
         
 }
 
-void baswanaguptasen_dyn_matching::counters_next() {
-        
-}

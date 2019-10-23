@@ -28,22 +28,18 @@
 #include <chrono>
 
 #include "dyn_matching.h"
-#include "../tools/random_functions.h"
-#include "../tools/timer.h"
+#include "tools/random_functions.h"
+#include "tools/timer.h"
 
 
 class naive_dyn_matching : public dyn_matching {
         public:
-                naive_dyn_matching (dyn_graph_access* G, bool settle_on_insertion = false);
+                naive_dyn_matching (dyn_graph_access* G, MatchConfig & config);
 
                 virtual bool new_edge(NodeID source, NodeID target);
                 virtual bool remove_edge(NodeID source, NodeID target);
 
-                virtual void counters_next();
-
         protected:
-                bool settle_on_insertion;
-                
                 virtual bool settle (NodeID u, const NodeID* avoid_ptr = nullptr);
 
 };

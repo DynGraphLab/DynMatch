@@ -29,19 +29,18 @@
 #include <chrono>
 #include <sparsehash/dense_hash_set>
 
+#include "match_config.h"
 #include "dyn_matching.h"
-#include "../tools/random_functions.h"
-#include "../tools/timer.h"
+#include "tools/random_functions.h"
+#include "tools/timer.h"
 
 class baswanaguptasen_dyn_matching : public dyn_matching {
         public:
-                baswanaguptasen_dyn_matching (dyn_graph_access* G);
+                baswanaguptasen_dyn_matching (dyn_graph_access* G, MatchConfig & config);
                 ~baswanaguptasen_dyn_matching ();
 
                 virtual bool new_edge(NodeID source, NodeID target);
                 virtual bool remove_edge(NodeID source, NodeID target);
-
-                virtual void counters_next();
 
         protected:
                 // O_u denotes the set of edges owned by u. we save those

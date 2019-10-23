@@ -36,6 +36,8 @@ struct MatchConfig
         bool                    rw_ending_additional_settle;
         unsigned long long      rw_repetitions_per_node;
 
+        bool naive_settle_on_insertion;
+
         void LogDump(FILE *out) const {
         }
 };

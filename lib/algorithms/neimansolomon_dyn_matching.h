@@ -29,20 +29,19 @@
 //#include <chrono>
 
 #include "dyn_matching.h"
-#include "../data_structure/avl_tree.h"
-#include "../data_structure/priority_queues/maxNodeHeap.h"
-#include "../data_structure/priority_queues/bucket_pq.h"
-#include "../data_structure/priority_queues/node_bucket_pq.h"
-#include "../tools/timer.h"
+#include "data_structure/avl_tree.h"
+#include "data_structure/priority_queues/maxNodeHeap.h"
+#include "data_structure/priority_queues/bucket_pq.h"
+#include "data_structure/priority_queues/node_bucket_pq.h"
+#include "tools/timer.h"
 
 class neimansolomon_dyn_matching : public dyn_matching {
         public:
-                neimansolomon_dyn_matching (dyn_graph_access* G);
+                neimansolomon_dyn_matching (dyn_graph_access* G, MatchConfig & config);
 
                 virtual bool new_edge(NodeID source, NodeID target);
                 virtual bool remove_edge(NodeID source, NodeID target);
 
-                virtual void counters_next();
 
         private:
                 struct Fv {
