@@ -9,13 +9,9 @@ dyn_matching::dyn_matching (dyn_graph_access* G, MatchConfig & config) {
 }
 
 dyn_matching::~dyn_matching () {
-        if ( G != nullptr ) {
-                delete G;
-                G = nullptr;
-        }
 }
 
-std::vector<NodeID> dyn_matching::getM () {
+std::vector<NodeID> & dyn_matching::getM () {
         return matching;
 }
 

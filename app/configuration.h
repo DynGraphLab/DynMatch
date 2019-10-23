@@ -24,11 +24,11 @@ inline void configuration::standard( MatchConfig & config ) {
         config.post_blossom                = false;
         config.post_mv                     = false;
         config.algorithm                   = RANDOM_WALK;
-        config.rw_max_length               = 0;
+        config.rw_max_length               = 10;
         config.rw_low_degree_settle        = false;
         config.rw_ending_additional_settle = false;
-        config.rw_low_degree_value         = 0;
-        config.rw_repetitions_per_node     = 0;
+        config.rw_low_degree_value         = 10;
+        config.rw_repetitions_per_node     = 1;
 }
 
 #endif /* end of include guard: CONFIGURATION_3APG5V7Z */

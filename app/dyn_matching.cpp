@@ -3,17 +3,19 @@
 #include "blossom.h"
 #include "dyn_blossom.h"
 #include "mv.h"
+#include "mv_algorithm.h"
 #include "parse_parameters.h"
 #include "definitions.h"
 #include "match_config.h"
+#include "sanity.h"
 
 int main (int argn, char ** argv) {
         MatchConfig match_config;
         std::string graph_filename;
 
         int ret_code = parse_parameters(argn, argv, 
-                       match_config, 
-                       graph_filename); 
+                        match_config, 
+                        graph_filename); 
 
         if(ret_code) {
                 return 0;
@@ -29,8 +31,8 @@ int main (int argn, char ** argv) {
         srand(match_config.seed);
         random_functions::setSeed(match_config.seed);
 
-        //================// START CALCULATIONS //================//
         dyn_graph_access * G = new dyn_graph_access(n);
+        unsigned long matching_size = 0;
 
         timer t; 
         t._restart(); 
@@ -43,68 +45,54 @@ int main (int argn, char ** argv) {
                         break;
                 case NEIMAN_SOLOMON:
                         break;
-                case MV:
+                case MV: 
+                        algorithm = new mv_algorithm(G, match_config);
                         break;
                 case BLOSSOM:
-                        break;
-        
+                         break;
+
         }
 
         // initalize timer and counters
-        double time_elapsed = 0;
-        NodeID matching_size = 0;
 
         // iterate through sequence, compute matching dynamically
         //if (algorithms.at(0) == ALGORITHM::blossomempty) {
-                //blossom_matchempty(edge_sequence, matching_size, time_elapsed, insertions, deletions);
+        //blossom_matchempty(edge_sequence, matching_size, time_elapsed, insertions, deletions);
         //} else if (algorithms.at(0) == ALGORITHM::blossomgreedy) {
-                //blossom_matchgreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
+        //blossom_matchgreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
         //} else if (algorithms.at(0) == ALGORITHM::blossomextragreedy) {
-                //blossom_matchextragreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
+        //blossom_matchextragreedy(edge_sequence, matching_size, time_elapsed, insertions, deletions);
         //} else {
-                for (size_t i = 0; i < edge_sequence.size(); ++i) { 
-                        std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
 
-                        if (edge_sequence.at(i).first) {
-                                algorithm->new_edge(edge.first, edge.second);
-                        } else {
-                                algorithm->remove_edge(edge.first, edge.second);
-                        }
-                } 
-                
-                //if (match_config.post_mv) {
-                        //mv(*G, matching_size, time_elapsed, algorithm->getM());
-                //} else if (match_config.post_blossom) {
-                        //int foo;
-                        //blossom_untouched(edge_sequence, matching_size, time_elapsed, foo, foo, algorithm->getM());
-                //} else {
-                        matching_size = algorithm->getMSize();
-                //}
-        //}
+        for (size_t i = 0; i < edge_sequence.size(); ++i) { 
+                std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
 
-        std::cout << matching_size << " " << time_elapsed << " " << t._elapsed() << std::endl;
-        std::cout << "************ checking matching ****************"  << std::endl;
-
-        // check if matching is really a matching:
-        std::vector< NodeID > matchingp = algorithm->getM();
-        std::vector< bool > is_matched(n, false);
-        forall_nodes_d((*G), n) {
-                NodeID matching_partner = matchingp[n];
-                if( matching_partner == NOMATE ) {
-                        continue;
+                if (edge_sequence.at(i).first) {
+                        algorithm->new_edge(edge.first, edge.second);
+                } else {
+                        algorithm->remove_edge(edge.first, edge.second);
                 }
+        } 
+        algorithm->postprocessing(); 
 
-                if( matchingp[matching_partner] != n) {
-                        std::cout <<  "not a matching " <<  n <<  " " << matching_partner << " " << matchingp[matching_partner]  << std::endl;
-                }
-                if( matching_partner > n ) continue; 
-                if( is_matched[n] || is_matched[matching_partner] ) {
-                        std::cout <<  "not a matching, vertex already matched"  << std::endl;
-                }
-                is_matched[n] = true;
-                is_matched[matching_partner] = true;
+        if(match_config.post_mv || match_config.post_blossom) {
+                std::cout <<  "running post processing with optimal algorithm. current matching size " << algorithm->getMSize()  << std::endl;
+        }
 
-        } endfor
+        //TODO: matching is not output atm
+        if (match_config.post_mv) {
+                mv_algorithm mv(G, match_config);
+                mv.mv(*G, matching_size, algorithm->getM());
+        } else if (match_config.post_blossom) {
+                blossom_untouched(edge_sequence, matching_size, algorithm->getM());
+        } else {
+                matching_size = algorithm->getMSize();
+        }
+
+        std::cout << matching_size << " " << " " << t._elapsed() << std::endl;
+        if( algorithm != NULL ) 
+                check_matching(G, algorithm); // TODO also check for size
+
         delete G;
         delete algorithm;
 
