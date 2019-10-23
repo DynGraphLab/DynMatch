@@ -6,9 +6,7 @@ OPT  =
 SRC  =$(wildcard *.cpp)
 OBJ  =$(SRC:.cpp=.o)
 
-all:
-	make libmv.a
-	make mmmv
+all: libmv.a mmmv
 
 libmv.a: $(OBJ)
 	rm -f libmv.a
