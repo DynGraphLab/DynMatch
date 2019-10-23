@@ -17,6 +17,8 @@ struct MatchConfig
 
         AlgorithmType algorithm;
 
+        BlossomInitType blossom_init;
+
         int seed;
         
         std::string filename;
