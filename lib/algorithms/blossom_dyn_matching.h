@@ -28,10 +28,10 @@
 #include <chrono>
 
 #include "dyn_matching.h"
-#include "../tools/random_functions.h"
-#include "../tools/timer.h"
-#include "../data_structure/union_find.h"
-#include "../tools/misc.h"
+#include "tools/random_functions.h"
+#include "tools/timer.h"
+#include "data_structure/union_find.h"
+#include "tools/misc.h"
 
 #include <boost/property_map/property_map.hpp>
 #include <boost/graph/adjacency_list.hpp>
@@ -43,13 +43,8 @@ class blossom_dyn_matching : public dyn_matching {
                 typedef std::vector<boost::graph_traits<mygraph>::vertex_descriptor> matemap;
                 typedef boost::property_map<mygraph, boost::vertex_index_t>::type vmi;
 
-                blossom_dyn_matching (dyn_graph_access* G, long max_level = -1)
-                : dyn_matching(G), kernel(create<mygraph, matemap, boost::graph_traits<mygraph>::vertex_descriptor*, vmi>(G->number_of_nodes(), max_level)) {
-
-                }
-
-                blossom_dyn_matching (dyn_graph_access* G, double eps = -1)
-                : dyn_matching(G), kernel(create<mygraph, matemap, boost::graph_traits<mygraph>::vertex_descriptor*, vmi>(G->number_of_nodes(), getDepth(eps))) {
+                blossom_dyn_matching (dyn_graph_access* G, MatchConfig & config)
+                : dyn_matching(G, config), kernel(create<mygraph, matemap, boost::graph_traits<mygraph>::vertex_descriptor*, vmi>(G->number_of_nodes(), config.rw_max_length)) {
 
                 }
 
@@ -61,10 +56,6 @@ class blossom_dyn_matching : public dyn_matching {
                         return false;
                 }
 
-                virtual void counters_next() {
-                        
-                }
-                
                 virtual void retry () {
                         
                 }
@@ -74,14 +65,6 @@ class blossom_dyn_matching : public dyn_matching {
                 }
 
         protected:
-                long getDepth (double eps) {
-                        if (eps != 0) {
-                                return (long) 2.0/eps - 1;
-                        } else {
-                                return 0;
-                        }
-                }
-                
                 template<typename Graph, typename MateMap, typename VertexIndexMap>
                 class dyn_blossom {
                         //generates the type of an iterator property map from vertices to type X

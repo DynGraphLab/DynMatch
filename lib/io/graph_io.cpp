@@ -228,32 +228,36 @@ int graph_io::read_sequence (std::string file, std::vector<std::pair<int, std::p
         std::string line;
         std::ifstream input(file);
         edge_sequence.resize(0);
-        int n = 0;
-        int i = 0;
+        int number_of_nodes = 0;
 
         if (input.is_open()) {
                 std::getline(input, line);
-                std::vector<std::string> substr = split(line, ' ');
+                std::stringstream first_line(line);
 
-                std::string hash = substr.at(0);
+                std::string hash; first_line >> hash;
                 if (hash != "#") throw std::string("META DATA SEEMS TO BE MISSING");
 
-                n = std::stoul(substr.at(1).c_str());
+                first_line >> number_of_nodes;
 
                 while (std::getline(input, line)) {
-                        i++;
-                        std::vector<std::string> substr = split(line, ' ');
+                        NodeID u = 0;
+                        NodeID v = 0;
+                        int ins_del = 0;
 
-                        int addition = atoi(substr.at(0).c_str());
-                        NodeID u = atoi(substr.at(1).c_str());
-                        NodeID v = atoi(substr.at(2).c_str());
+                        std::stringstream ss(line);
+                        ss >> ins_del;
+                        ss >> u;
+                        ss >> v;
 
-                        edge_sequence.push_back({addition, {u, v}});
+                        edge_sequence.push_back({ins_del, {u, v}});
                 }
+        } else {
+                std::cout <<  "could not open file"  << std::endl;
+                exit(0);
         }
 
         input.close();
-        return n;
+        return number_of_nodes;
 }
 
 
