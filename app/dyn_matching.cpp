@@ -3,6 +3,7 @@
 
 #include "blossom_static.h"
 #include "blossom_dyn_matching.h"
+#include "my_blossom_dyn_matching.h"
 #include "mv_algorithm.h"
 #include "io/graph_io.h"
 #include "rw_dyn_matching.h"
@@ -54,6 +55,9 @@ int main (int argn, char ** argv) {
                         break;
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
+                        break;
+                case MYBLOSSOMDYNMATCHING:
+                        algorithm = new my_blossom_dyn_matching(G, match_config);
                         break;
                 case DYNBLOSSOM:
                         algorithm = new blossom_dyn_matching(G, match_config);
