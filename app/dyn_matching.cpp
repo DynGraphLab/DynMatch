@@ -2,10 +2,13 @@
 #include <iostream>
 
 #include "blossom_static.h"
-//#include "dyn_blossom.h"
 #include "blossom_dyn_matching.h"
-#include "dynamic_matching.h"
 #include "mv_algorithm.h"
+#include "io/graph_io.h"
+#include "rw_dyn_matching.h"
+#include "baswanaguptasen_dyn_matching.h"
+#include "neimansolomon_dyn_matching.h"
+#include "naive_dyn_matching.h"
 #include "parse_parameters.h"
 #include "definitions.h"
 #include "match_config.h"

@@ -83,6 +83,26 @@ class random_functions {
 
                                 }
                         }
+                template<typename sometype>
+                        static void permutate_vector_anytype(std::vector<sometype> & vec) {
+                                if(vec.size() < 10) {
+                                        permutate_vector_good_small(vec);
+                                        return;
+                                }
+                                unsigned int size = vec.size();
+                                std::uniform_int_distribution<unsigned int> A(0,size - 4);
+                                std::uniform_int_distribution<unsigned int> B(0,size - 4);
+
+                                for( unsigned int i = 0; i < size; i++) {
+                                        unsigned int posA = A(m_mt);
+                                        unsigned int posB = B(m_mt);
+                                        std::swap(vec[posA], vec[posB]);
+                                        std::swap(vec[posA+1], vec[posB+1]);
+                                        std::swap(vec[posA+2], vec[posB+2]);
+                                        std::swap(vec[posA+3], vec[posB+3]);
+
+                                }
+                        }
 
                 template<typename sometype>
                         static void permutate_vector_good_small(std::vector<sometype> & vec) {

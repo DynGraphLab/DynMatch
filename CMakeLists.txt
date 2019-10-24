@@ -76,9 +76,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/extern)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV)
 
 set(LIBMATCH_SOURCE_FILES
-#./app/glossary.cpp
-#./app/misc.cpp
-#./lib/tools/counters.cpp
 ./lib/tools/quality_metrics.cpp
 ./lib/tools/random_functions.cpp
 ./lib/tools/timer.cpp
@@ -94,9 +91,19 @@ set(LIBMATCH_SOURCE_FILES
   extern/argtable3-3.0.3/argtable3.c)
 add_library(libmatch OBJECT ${LIBMATCH_SOURCE_FILES})
 
+set(LIBCONVERT_SOURCE_FILES
+./lib/io/graph_io.cpp
+./lib/data_structure/dyn_graph_access.cpp
+./lib/data_structure/graph_access.cpp
+./lib/tools/random_functions.cpp
+  extern/argtable3-3.0.3/argtable3.c)
+add_library(libconvert OBJECT ${LIBCONVERT_SOURCE_FILES})
+
 # generate targets for each binary
 add_executable(dynmatch app/dyn_matching.cpp $<TARGET_OBJECTS:libmatch> )
 target_link_libraries(dynmatch ${OpenMP_CXX_LIBRARIES})
 target_link_libraries(dynmatch ${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV/libmv.a)
 install(TARGETS dynmatch DESTINATION bin)
 
+add_executable(convert_metis_seq app/metis_to_sequence.cpp $<TARGET_OBJECTS:libconvert> )
+install(TARGETS convert_metis_seq DESTINATION bin)
