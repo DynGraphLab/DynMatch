@@ -112,16 +112,22 @@ class blossom_dyn_matching : public dyn_matching {
                                         vm(arg_vm)
 
                                 {
+                                        std::cout <<  "here"  << std::endl;
                                         if (max_level < 0) {
                                                 this->max_level = std::numeric_limits<e_size_t>::max();
                                         } else {
                                                 this->max_level = max_level;
                                         }
+                                        std::cout <<  "here"  << std::endl;
                                         
                                         vertex_iterator_t vi, vi_end;
                                         for(boost::tie(vi,vi_end) = vertices(g); vi != vi_end; ++vi) {
+                                        std::cout <<  "here"  << std::endl;
                                                 vertex_descriptor_t u = *vi;
+                                        //std::cout <<  "here " << u  << std::endl;
+                                        //std::cout <<  "here " << mate.size()  << std::endl;
                                                 mate[u] = get(arg_mate, u);
+                                        std::cout <<  "here"  << std::endl;
                                                 
                                                 if (mate[u] == boost::graph_traits<Graph>::null_vertex()) {
                                                         vertex_state[u] = boost::graph::detail::V_EVEN;
@@ -129,11 +135,17 @@ class blossom_dyn_matching : public dyn_matching {
                                                         vertex_state[u] = boost::graph::detail::V_UNREACHED;
                                                 }
                                                 
+                                        std::cout <<  "here"  << std::endl;
                                                 origin[u] = u;
+                                        std::cout <<  "here"  << std::endl;
                                                 pred[u] = u;
+                                        std::cout <<  "here"  << std::endl;
                                                 ancestor_of_v[u] = 0;
+                                        std::cout <<  "here"  << std::endl;
                                                 ancestor_of_w[u] = 0;
+                                        std::cout <<  "here"  << std::endl;
                                         }
+                                        std::cout <<  "here"  << std::endl;
                                 }
 
                                 bool new_edge (NodeID u, NodeID v) {
@@ -496,6 +508,8 @@ class blossom_dyn_matching : public dyn_matching {
                                 using namespace boost;
                                 typedef typename graph_traits<mygraph>::vertex_iterator v_desc;
                                 
+                                std::cout <<  "n " << n  << std::endl;
+                                std::cout <<  "max " << max_level  << std::endl;
                                 Graph arg_g(n);
                                 MateMap arg_m(n);
                                 
@@ -507,10 +521,7 @@ class blossom_dyn_matching : public dyn_matching {
                                 return dyn_blossom<Graph, RawMateMap, VertexIndexMap>(arg_g, &arg_m[0], get(vertex_index, arg_g), max_level);
                         }
                         
-                dyn_blossom<
-                        mygraph, 
-                        boost::graph_traits<mygraph>::vertex_descriptor*, 
-                        vmi> kernel;
+                dyn_blossom< mygraph, boost::graph_traits<mygraph>::vertex_descriptor*, vmi> kernel;
 };
 
 #endif // MCM_DYN_MATCHING_H

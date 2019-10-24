@@ -83,6 +83,7 @@ set(LIBMATCH_SOURCE_FILES
 ./lib/data_structure/dyn_graph_access.cpp
 ./lib/data_structure/graph_access.cpp
 ./lib/algorithms/baswanaguptasen_dyn_matching.cpp
+./lib/algorithms/my_blossom_dyn_matching.cpp
 ./lib/algorithms/naive_dyn_matching.cpp
 ./lib/algorithms/rw_dyn_matching.cpp
 ./lib/algorithms/mv_algorithm.cpp
