@@ -31,8 +31,8 @@
 #include <stdlib.h>
 #include <vector>
 
-#include "../definitions.h"
-#include "../data_structure/graph_access.h"
+#include "definitions.h"
+#include "data_structure/graph_access.h"
 
 class graph_io {
         public:
@@ -61,29 +61,6 @@ class graph_io {
                         static void readVector(std::vector<vectortype> & vec, std::string filename);
 
                 int read_sequence (std::string file, std::vector<std::pair<int, std::pair<NodeID, NodeID> > >& edge_sequence); 
-
-                std::vector<std::string> split (const std::string& input, const char& mark) {
-                        std::vector<std::string> substrings;
-                        std::string buf = "";
-
-                        for (size_t i = 0; i < input.size(); ++i) {
-                                if (input.at(i) != mark) {
-                                        buf = buf + input.at(i);
-                                } else {
-                                        substrings.push_back(buf);
-                                        buf = "";
-                                }
-                        }
-
-                        if (buf != "") {
-                                substrings.push_back(buf);
-                        }
-
-                        return substrings;
-                }
-
-
-
 
 };
 

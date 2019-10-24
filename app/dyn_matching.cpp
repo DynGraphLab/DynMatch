@@ -2,7 +2,8 @@
 #include <iostream>
 
 #include "blossom_static.h"
-#include "dyn_blossom.h"
+//#include "dyn_blossom.h"
+#include "blossom_dyn_matching.h"
 #include "dynamic_matching.h"
 #include "mv_algorithm.h"
 #include "parse_parameters.h"
@@ -51,6 +52,8 @@ int main (int argn, char ** argv) {
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
                         break;
+                case DYNBLOSSOM:
+                        algorithm = new blossom_dyn_matching(G, match_config);
                 case BLOSSOM: {
                         unsigned long matching_size = 0;
                         switch( match_config.blossom_init ) {

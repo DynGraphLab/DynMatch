@@ -83,6 +83,7 @@ typedef enum {
  	NEIMAN_SOLOMON, 
         NAIVE,
  	MV, 
+ 	DYNBLOSSOM, 
         BLOSSOM	
 } AlgorithmType;
 
