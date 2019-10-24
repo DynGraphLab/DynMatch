@@ -113,9 +113,6 @@ void neimansolomon_dyn_matching::handle_addition (NodeID u, NodeID v) {
                         // to          u---v - v_---v_free
                         match(u, v);
                         match(v_, get_free(v_));
-#ifdef DM_COUNTERS
-                        counters::get("ns").get("resolve_augpath").inc();
-#endif
                 } else {
                         // tell all neighbours of u, that u is free
                         for( unsigned int e = 0; e < G->getNodeDegree(u); e++) {

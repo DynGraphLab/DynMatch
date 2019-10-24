@@ -19,11 +19,6 @@
 
 #include "rw_dyn_matching.h"
 
-#ifdef DM_COUNTERS
-#include "counters.h"
-#endif
-
-
 rw_dyn_matching::rw_dyn_matching (dyn_graph_access* G, MatchConfig & config) : dyn_matching(G, config) {
         direct_new_mates.resize(G->number_of_nodes(), NOMATE);
         this->augpath = std::vector<NodeID> (config.rw_max_length + 4, NOMATE);
