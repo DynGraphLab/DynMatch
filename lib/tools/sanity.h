@@ -11,7 +11,7 @@ void check_matching(dyn_graph_access * G, dyn_matching * algorithm, unsigned int
         std::vector< NodeID > matchingp = algorithm->getM();
         std::vector< bool > is_matched(G->number_of_nodes(), false);
         unsigned int internal_matching_size = 0;
-        forall_nodes_d((*G), n) {
+        forall_nodes((*G), n) {
                 NodeID matching_partner = matchingp[n];
                 if( matching_partner == NOMATE ) {
                         continue;

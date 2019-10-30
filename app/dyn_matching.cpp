@@ -56,8 +56,15 @@ int main (int argn, char ** argv) {
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
                         break;
-                case MYBLOSSOMDYNMATCHING:
-                        algorithm = new my_blossom_dyn_matching(G, match_config);
+                case MYBLOSSOMDYNMATCHING: {
+                        for (size_t i = 0; i < edge_sequence.size(); ++i) { 
+                                std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
+                                G->new_edge(edge.first, edge.second);
+                                G->new_edge(edge.second, edge.first);
+                        } 
+
+                        dyn_matching* myalgorithm = new my_blossom_dyn_matching(G, match_config);
+                        delete myalgorithm;}
                         break;
                 case DYNBLOSSOM:
                         algorithm = new blossom_dyn_matching(G, match_config);

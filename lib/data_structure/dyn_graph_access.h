@@ -131,23 +131,12 @@ NodeID dyn_graph_access::number_of_nodes() {
         return node_count;
 }
 
-//std::vector<DynEdge> dyn_graph_access::getEdgesFromNode (NodeID node) {
-        //ASSERT_TRUE(m_edges.size() > 0);
-        //return m_edges[node];
-//}
-
-
 EdgeID dyn_graph_access::get_first_edge (NodeID node) {
         return 0;
 }
 
 EdgeID dyn_graph_access::get_first_invalid_edge (NodeID node) {
-        ASSERT_TRUE(m_edges.size() > 0);
-        if (m_edges.size() < node+1) {
-                std::cout << node+1;
-        }
-        ASSERT_TRUE(m_edges.size() >= node+1);
-        return m_edges.at(node).size();
+        return m_edges[node].size();
 }
 
 
@@ -161,16 +150,5 @@ NodeID dyn_graph_access::getEdgeTarget(NodeID source, EdgeID edge) {
 
         return m_edges[source][edge].target;
 }
-//makros - dyn graph access
-#define forall_edges_d(G,n,e) { \
-    for(NodeID n = 0, n_end = G.number_of_nodes(); n < n_end; ++n) \
-        for(EdgeID e = 0, e_end = G.getNodeDegree(n); e < e_end; ++e) {
-#define forall_nodes_d(G,n) { \
-    for(NodeID n = 0, end = G.number_of_nodes(); n < end; ++n) {
-#define forall_out_edges_d(G,e,n) { \
-    for(EdgeID e = G.get_first_edge(n), end = G.get_first_invalid_edge(n); e < end; ++e) {
-#define forall_out_edges_starting_at_d(G,e,n,e_bar) { \
-    for(EdgeID e = e_bar, end = G.get_first_invalid_edge(n); e < end; ++e) {
-#define endfor }}
 
 #endif /* end of include guard: dyn_graph_access_EFRXO4X2 */
