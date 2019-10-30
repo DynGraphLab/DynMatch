@@ -267,7 +267,7 @@ void baswanaguptasen_dyn_matching::check_size_constraint() {
                 }
 
                 //invariant 4
-                forall_out_edges_d((*G), e, u) {
+                forall_out_edges((*G), e, u) {
                        NodeID target = G->getEdgeTarget(u, e);
                        if( is_matched(u, target )) {
                                if( level(u) != level(target) ) {
@@ -284,7 +284,7 @@ void baswanaguptasen_dyn_matching::check_size_constraint() {
                 // every vertex on level 0 has all neighbors matched
                 // invariant 2 
                 if(level(u) == 0 && is_free(u)) {
-                        forall_out_edges_d((*G), e, u) {
+                        forall_out_edges((*G), e, u) {
                                 NodeID target = G->getEdgeTarget(u, e);
                                 if( is_free(target) ) {
                                         std::cout <<  "this one should not be free " << u <<  " " << target << std::endl;

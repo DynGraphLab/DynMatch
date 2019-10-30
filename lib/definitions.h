@@ -54,6 +54,10 @@ const int NOTINQUEUE 		       = std::numeric_limits<int>::max();
 const Count UNDEFINED_COUNT            = std::numeric_limits<Count>::max();
 const NodeID NOMATE                    = std::numeric_limits<NodeID>::max();
 const int ROOT 			       = 0;
+const NodeID EVEN                      = 0;
+const NodeID ODD                       = 1;
+const NodeID UNLABELED                 = 2;
+
 
 struct DynNode {
     EdgeID firstEdge;
