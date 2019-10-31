@@ -24,39 +24,7 @@ class node_partition
                         } endfor
                         
                 }
-                //node_partition(unsigned n = 0) {
-                        //m_n = n;
-                        
-                        ////m_parent.set_deleted_key(std::numeric_limits<unsigned>::max());
-                        ////m_parent.set_empty_key(std::numeric_limits<unsigned>::max()-1);
-                        ////m_parent.min_load_factor(0.0);
-
-                        ////m_rank.set_deleted_key(std::numeric_limits<unsigned>::max());
-                        ////m_rank.set_empty_key(std::numeric_limits<unsigned>::max()-1);
-                        ////m_rank.min_load_factor(0.0);
-                        
-                        ////for( unsigned i = 0; i < n; i++) {
-                                ////Add_Set(i);
-                        ////}
-                //};
-                
-                //inline void Union(unsigned lhs, unsigned rhs)
-                //{
-                        //int set_lhs = Find(lhs);
-                        //int set_rhs = Find(rhs);
-                        //if( set_lhs != set_rhs ) {
-                                //if( m_rank[set_lhs] < m_rank[set_rhs] ) {
-                                        //m_parent[set_lhs] = set_rhs;
-                                //} else {
-                                        //m_parent[set_rhs] = set_lhs;
-                                        //if( m_rank[set_lhs] == m_rank[set_rhs] ) {
-                                                //m_rank[set_lhs]++;
-                                        //}
-                                //}
-                                //--m_n;
-                        //}
-                //};
-
+               
                 inline NodeID Find(NodeID element)
                 {
                         if( m_parent[element] != element ) {
@@ -66,20 +34,6 @@ class node_partition
                         }
                         return element;
                 };
-
-
-                //inline void Add_Set (unsigned element) {
-                        //m_parent[element] = element;
-                        //m_rank[element] = 0;
-                        //m_n++;
-                //}
-                
-                //inline void Reset () {
-                        //m_parent.clear();
-                        //m_rank.clear();
-                        //m_n = 0;
-                //}
-
 
                 void union_blocks(NodeID lhs, NodeID rhs) {
                         NodeID set_lhs = Find(lhs);
@@ -97,7 +51,6 @@ class node_partition
 
                 void split( std::vector< NodeID > & T ) {
                         for( unsigned i = 0; i < T.size(); i++) {
-                                //reset(T[i]);
                                 m_parent[T[i]] = T[i];
                                 m_rank[T[i]] = 0;
                                 make_rep(T[i]);
@@ -117,9 +70,6 @@ class node_partition
                 NodeID operator()( NodeID v ) { return Find( v ); }
 
         private:
-                //google::dense_hash_map< unsigned, unsigned > m_parent;
-                //google::dense_hash_map< unsigned, unsigned > m_rank;
-
                 std::vector< NodeID > m_parent;
                 std::vector< NodeID > m_rank;
 
