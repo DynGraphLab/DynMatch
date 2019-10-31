@@ -59,8 +59,8 @@ int main (int argn, char ** argv) {
                 case MYBLOSSOMDYNMATCHING: {
                         for (size_t i = 0; i < edge_sequence.size(); ++i) { 
                                 std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
-                                G->new_edge(edge.first, edge.second);
-                                G->new_edge(edge.second, edge.first);
+                                if(!G->isEdge(edge.first, edge.second)) G->new_edge(edge.first, edge.second);
+                                if(!G->isEdge(edge.second, edge.first)) G->new_edge(edge.second, edge.first);
                         } 
 
                         dyn_matching* myalgorithm = new my_blossom_dyn_matching(G, match_config);
