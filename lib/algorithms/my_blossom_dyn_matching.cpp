@@ -74,7 +74,6 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
                                                         hw = base( pred[ matching[hw] ] );
                                                         path2[hw] = strue;
                                                 }
-
                                         }
 
                                         if( path1[ hw ] == strue || path2[ hv ] == strue ) {
