@@ -30,9 +30,12 @@ int main (int argn, char ** argv) {
 
 
         // initialize edge sequence
+        timer t;
+        t._restart();
         graph_io gio;
         std::vector<std::pair<int, std::pair<NodeID, NodeID> > > edge_sequence;
         int n = gio.read_sequence(graph_filename, edge_sequence);
+        std::cout <<  "io took " <<  t._elapsed()  << std::endl;
 
         // initialize seed
         srand(match_config.seed);
@@ -57,6 +60,7 @@ int main (int argn, char ** argv) {
                         algorithm = new mv_algorithm(G, match_config);
                         break;
                 case MYBLOSSOMDYNMATCHING: {
+                        t._restart();
                         for (size_t i = 0; i < edge_sequence.size(); ++i) { 
                                 std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
                                 if(!G->isEdge(edge.first, edge.second)) G->new_edge(edge.first, edge.second);
@@ -64,12 +68,15 @@ int main (int argn, char ** argv) {
                         } 
 
                         dyn_matching* myalgorithm = new my_blossom_dyn_matching(G, match_config);
+
+                        std::cout <<  "" <<  t._elapsed()  << std::endl;
                         delete myalgorithm;}
                         break;
                 case DYNBLOSSOM:
                         algorithm = new blossom_dyn_matching(G, match_config);
                 case BLOSSOM: {
                         unsigned long matching_size = 0;
+                        t._restart();
                         switch( match_config.blossom_init ) {
                                 case BLOSSOMEMPTY:
                                         blossom_matchempty(edge_sequence, matching_size);
@@ -80,7 +87,10 @@ int main (int argn, char ** argv) {
                                 case BLOSSOMEXTRAGREEDY:
                                         blossom_matchextragreedy(edge_sequence, matching_size);
                                         break;
-                        }}
+                        }
+                        std::cout <<  "matching size " <<  matching_size  << std::endl;
+                        std::cout <<  "" <<  t._elapsed()  << std::endl;
+                        }
 
                         break;
 

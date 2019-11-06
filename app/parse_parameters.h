@@ -26,6 +26,7 @@ int parse_parameters(int argn, char **argv,
         struct arg_str *filename                    = arg_strn(NULL, NULL, "FILE", 1, 1, "Path to graph file to compute matching from.");
         struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
         struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(blossom|dynblossom|myblossomdyn|naive|mv|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {blossom, dynblossom, naive, mv, randomwalk, neimansolomon, baswanaguptaseng}"  );
+        struct arg_rex *blossom_init                = arg_rex0(NULL, "blossom_init", "^(empty|greedy|extragreedy)$", "TYPE", REG_EXTENDED, "Blossom init algorithm to use. One of {empty, greedy, extragreedy}"  );
 
         struct arg_dbl *eps                         = arg_dbl0(NULL, "eps", NULL, "Epsilon.");
         struct arg_int *rw_low_degree_value         = arg_int0(NULL, "rw_low_degree_value", NULL, "Random Walk: Low degree value.");
@@ -39,7 +40,7 @@ int parse_parameters(int argn, char **argv,
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, 
+                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, 
                 end
         };
         // Parse arguments.
@@ -88,6 +89,19 @@ int parse_parameters(int argn, char **argv,
                         match_config.algorithm = BASWANA_GUPTA_SENG;
                 } else {
                         fprintf(stderr, "Invalid algorithm variant: \"%s\"\n", algorithm_type->sval[0]);
+                        exit(0);
+                }
+        }
+
+        if (blossom_init->count > 0) {
+                if(strcmp("empty", blossom_init->sval[0]) == 0) {
+                        match_config.blossom_init = BLOSSOMEMPTY;
+                } else if (strcmp("greedy", blossom_init->sval[0]) == 0) {
+                        match_config.blossom_init = BLOSSOMGREEDY;
+                } else if (strcmp("extragreedy", blossom_init->sval[0]) == 0) {
+                        match_config.blossom_init = BLOSSOMEXTRAGREEDY;
+                } else {
+                        fprintf(stderr, "Invalid blossom init variant: \"%s\"\n", blossom_init->sval[0]);
                         exit(0);
                 }
         }
