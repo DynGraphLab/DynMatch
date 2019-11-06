@@ -32,6 +32,18 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
                 pred[node]  = UNDEFINED_NODE;
         } endfor
 
+        //init
+        //forall_nodes((*G), node) {
+                //forall_out_edges((*G), e, node) {
+                        //NodeID target = G->getEdgeTarget(node, e);
+                        //if( node != target && matching[node] == NOMATE && matching[target] == NOMATE) {
+                                //matching[node] = target; matching[target] = node;
+                                //label[node] = UNLABELED; label[target] = UNLABELED;
+                        //}
+                //} endfor
+        //} endfor
+        
+
         forall_nodes((*G), node) {
                 if( matching[node] != NOMATE) continue;
 

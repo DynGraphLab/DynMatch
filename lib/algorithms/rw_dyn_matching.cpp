@@ -130,7 +130,7 @@ bool rw_dyn_matching::cs_random_walk (NodeID start, std::vector<NodeID>& augpath
         std::vector< NodeID > set_to_notmate;
 
         // perform random walk until break condition is met
-        while (!break_rw(step)) {
+        while (step < config.rw_max_length) {
 
                 if( config.rw_low_degree_settle ) {
                         if (G->getNodeDegree(u) < config.rw_low_degree_value) {
