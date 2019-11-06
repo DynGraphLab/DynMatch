@@ -45,11 +45,11 @@ class dyn_matching {
                 virtual void postprocessing() { }
         protected:
                 dyn_graph_access* G;
-                
+
                 std::vector<NodeID> matching;
                 NodeID matching_size;
                 MatchConfig config;
-                
+
                 virtual bool is_free (NodeID u);
                 virtual NodeID mate (NodeID u);
                 virtual bool is_matched (NodeID u, NodeID v);

@@ -45,6 +45,7 @@ class rw_dyn_matching : public dyn_matching {
                 virtual void handle_insertion (NodeID source, NodeID target);
                 virtual void handle_deletion (NodeID source, NodeID target);
 
+                bool fast_random_walk (NodeID start);
                 bool cs_random_walk (NodeID start, std::vector<NodeID>& augpath, size_t& length);
                 bool cs_random_walk (NodeID start, std::vector<NodeID>& augpath, size_t& length, NodeID avoid);
                 

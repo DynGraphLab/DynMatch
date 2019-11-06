@@ -36,11 +36,12 @@ int parse_parameters(int argn, char **argv,
 
         struct arg_lit *post_mv                     = arg_lit0(NULL, "post_mv","Run MV algorithm afterwards.");
         struct arg_lit *post_blossom                = arg_lit0(NULL, "post_blossom","Run Blossom algorithm afterwards.");
+        struct arg_lit *fast_rw                     = arg_lit0(NULL, "fast_rw","Use my fast rw implementation.");
         struct arg_end *end                         = arg_end(100);
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, 
+                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, 
                 end
         };
         // Parse arguments.
@@ -110,6 +111,10 @@ int parse_parameters(int argn, char **argv,
                 match_config.rw_max_length = ceil(2.0/eps->dval[0] - 1.0);
         }
 
+        if(user_seed->count > 0) {
+                match_config.seed = user_seed->ival[0];
+        }
+
         if(rw_low_degree_value->count > 0) {
                 match_config.rw_low_degree_value  = rw_low_degree_value->ival[0];
                 match_config.rw_low_degree_settle = true;
@@ -133,6 +138,10 @@ int parse_parameters(int argn, char **argv,
 
         if(post_blossom->count > 0) {
                 match_config.post_blossom = true;
+        }
+
+        if( fast_rw->count > 0 ) {
+                match_config.fast_rw = true;
         }
 
 
