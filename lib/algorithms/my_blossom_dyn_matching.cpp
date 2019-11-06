@@ -2,6 +2,7 @@
 // Author: Christian Schulz <christian.schulz@kit.edu>
 // 
 
+#include <algorithm>
 #include "my_blossom_dyn_matching.h"
 #include "node_partition.h"
 
@@ -27,22 +28,23 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
         // {base(v) | v \in V} is the node set of G'
         // and edge {v,w} represents an edge {base(v), base(w)} in G'
         forall_nodes((*G), node) {
-                //base[node]  = node;
                 label[node] = EVEN; // can be EVEN, ODD, or UNLABELED
                 pred[node]  = UNDEFINED_NODE;
         } endfor
 
         //init
-        //forall_nodes((*G), node) {
-                //forall_out_edges((*G), e, node) {
-                        //NodeID target = G->getEdgeTarget(node, e);
-                        //if( node != target && matching[node] == NOMATE && matching[target] == NOMATE) {
-                                //matching[node] = target; matching[target] = node;
-                                //label[node] = UNLABELED; label[target] = UNLABELED;
-                        //}
-                //} endfor
-        //} endfor
-        
+        forall_nodes((*G), node) {
+                if( matching[node] == NOMATE ) {
+                        forall_out_edges((*G), e, node) {
+                                NodeID target = G->getEdgeTarget(node, e);
+                                if( node != target && matching[target] == NOMATE) {
+                                        matching[node] = target; matching[target] = node;
+                                        label[node] = UNLABELED; label[target] = UNLABELED;
+                                        break;
+                                }
+                        } endfor
+                }
+        } endfor
 
         forall_nodes((*G), node) {
                 if( matching[node] != NOMATE) continue;
