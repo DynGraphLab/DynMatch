@@ -25,7 +25,7 @@ bool dyn_matching::is_free (NodeID u) {
 
 bool dyn_matching::is_matched (NodeID u, NodeID v) {
         if (is_free(u) || is_free(v)) return false;
-        
+
         ASSERT_TRUE((matching[u] == v) == (matching[v] == u));
         return matching[u] == v && matching[v] == u;
 }
@@ -38,10 +38,10 @@ void dyn_matching::match (NodeID u, NodeID v) {
         ASSERT_TRUE(is_free(u));
         ASSERT_TRUE(is_free(v));
         ASSERT_TRUE(u != v);
-        
+
         matching[u] = v;
         matching[v] = u;
-        
+
         matching_size += 2;
 }
 
@@ -49,9 +49,12 @@ void dyn_matching::unmatch (NodeID u, NodeID v) {
         ASSERT_TRUE(!is_free(u));
         ASSERT_TRUE(!is_free(v));
         ASSERT_TRUE(u != v);
-        
+
         matching[u] = NOMATE;
         matching[v] = NOMATE;
 
         matching_size -= 2;
 }
+
+
+

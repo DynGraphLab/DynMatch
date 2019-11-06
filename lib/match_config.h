@@ -27,6 +27,8 @@ struct MatchConfig
 
         bool post_blossom;
 
+        bool fast_rw;
+
         //***************************
         // Random Walk Configurations
         //***************************

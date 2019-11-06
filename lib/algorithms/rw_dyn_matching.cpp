@@ -20,8 +20,10 @@
 #include "rw_dyn_matching.h"
 
 rw_dyn_matching::rw_dyn_matching (dyn_graph_access* G, MatchConfig & config) : dyn_matching(G, config) {
-        direct_new_mates.resize(G->number_of_nodes(), NOMATE);
-        this->augpath = std::vector<NodeID> (config.rw_max_length + 4, NOMATE);
+        if( !config.fast_rw ) {
+                direct_new_mates.resize(G->number_of_nodes(), NOMATE);
+                this->augpath = std::vector<NodeID> (config.rw_max_length + 4, NOMATE);
+        }
 }
 
 bool rw_dyn_matching::new_edge(NodeID source, NodeID target) {
@@ -47,34 +49,66 @@ void rw_dyn_matching::handle_insertion (NodeID source, NodeID target) {
         if (is_free(source) && is_free(target)) {
                 match (source, target);
         } else if (is_free(source) || is_free(target)) {
-                // get the matched vertex and its mate
-                NodeID u = is_free(source)? target : source;
-                NodeID m_u = is_free(source)? source : target;
-                NodeID v = mate(u);
-
-                unmatch (u, v);
-                match (u, m_u);
-
-                unsigned long i = 0;
-                bool augpath_found = false;
-                size_t length = 0;
-
-                // alternate versions, either constant number of repetitions or based upon maximal degree
-                while (i < config.rw_repetitions_per_node && !augpath_found) {
-                        augpath_found = cs_random_walk(v, augpath, length, {u, m_u});
-                        i++;
-                }
-
-                if (augpath_found) {
-                        ASSERT_TRUE(!(length % 2));
-                        resolve_augpath(augpath, length);
+                if( config.fast_rw) {
+                        NodeID free_vertex = is_free(source) ? source : target;
+                        fast_random_walk(free_vertex);
                 } else {
-                        unmatch (u, m_u);
-                        match (u, v);
-                }
+                        // get the matched vertex and its mate
+                        NodeID u = is_free(source)? target : source;
+                        NodeID m_u = is_free(source)? source : target;
+                        NodeID v = mate(u);
+
+                        unmatch (u, v);
+                        match (u, m_u);
+
+                        unsigned long i = 0;
+                        bool augpath_found = false;
+                        size_t length = 0;
+
+                        // alternate versions, either constant number of repetitions or based upon maximal degree
+                        while (i < config.rw_repetitions_per_node && !augpath_found) {
+                                augpath_found = cs_random_walk(v, augpath, length, {u, m_u});
+                                i++;
+                        }
+
+                        if (augpath_found) {
+                                ASSERT_TRUE(!(length % 2));
+                                resolve_augpath(augpath, length);
+                        } else {
+                                unmatch (u, m_u);
+                                match (u, v);
+                        }}
         }
 }
 
+bool rw_dyn_matching::fast_random_walk (NodeID start) {
+
+
+        int steps = 0;
+        NodeID u = start; // current node
+        NodeID v = 0;
+        do {
+                // pick random outgoing edge
+                EdgeID e_bar = random_functions::nextInt(0, G->get_first_invalid_edge(u)-1);
+                v = G->getEdgeTarget(u, e_bar);
+
+                if( matching[v] != NOMATE ) {
+                        NodeID old_match = matching[v];
+                        matching[ u ] = v;
+                        matching[ v ] = u;
+                        matching[ old_match ] = NOMATE;
+                        u = old_match;
+                }
+                steps += 2;
+        } while( matching[v] != NOMATE && steps < config.rw_max_length);
+                
+        if(matching[v] == NOMATE ) {
+                match(u,v);
+        }
+
+        return true;
+
+};
 void rw_dyn_matching::handle_deletion (NodeID source, NodeID target) {
         if (is_matched(source, target)) {
                 unmatch(source, target);
@@ -201,6 +235,7 @@ bool rw_dyn_matching::cs_random_walk (NodeID start, std::vector<NodeID>& augpath
 
         if (!augpath_found) {
                 if( config.rw_ending_additional_settle ) {
+                        std::cout <<  "add"  << std::endl;
                         NodeID v;
 
                         // if no augmenting path was found, we perform a linear search
