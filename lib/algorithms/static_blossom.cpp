@@ -3,11 +3,46 @@
 // 
 
 #include <algorithm>
-#include "my_blossom_dyn_matching.h"
+#include "static_blossom.h"
 #include "node_partition.h"
 
-my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfig & match_config) : dyn_matching(G, match_config) {
+static_blossom::static_blossom(dyn_graph_access* G, MatchConfig & match_config) : dyn_matching(G, match_config), initalized(false) {
         label.resize(G->number_of_nodes()); 
+}
+
+static_blossom::~static_blossom() {
+
+}
+
+bool static_blossom::new_edge(NodeID source, NodeID target) {
+        G->new_edge(source, target);
+        G->new_edge(target, source);
+        return true;
+}
+
+bool static_blossom::remove_edge(NodeID source, NodeID target) {
+        G->remove_edge(source, target);
+        G->remove_edge(target, source);
+        return true;
+}
+
+void static_blossom::init( std::vector< NodeID > & matching ) {
+        forall_nodes((*G), node) {
+                if( matching[node] == NOMATE ) {
+                        forall_out_edges((*G), e, node) {
+                                NodeID target = G->getEdgeTarget(node, e);
+                                if( node != target && matching[target] == NOMATE) {
+                                        matching[node] = target; matching[target] = node;
+                                        label[node] = UNLABELED; label[target] = UNLABELED;
+                                        matching_size++;
+                                        break;
+                                }
+                        } endfor
+                }
+        } endfor
+}
+
+void static_blossom::postprocessing() {
         pred.resize(G->number_of_nodes()); 
         node_partition base(G);
 
@@ -27,20 +62,23 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
                 label[node] = EVEN; // can be EVEN, ODD, or UNLABELED
                 pred[node]  = UNDEFINED_NODE;
         } endfor
-
+        
         //init
-        forall_nodes((*G), node) {
-                if( matching[node] == NOMATE ) {
-                        forall_out_edges((*G), e, node) {
-                                NodeID target = G->getEdgeTarget(node, e);
-                                if( node != target && matching[target] == NOMATE) {
-                                        matching[node] = target; matching[target] = node;
-                                        label[node] = UNLABELED; label[target] = UNLABELED;
-                                        break;
-                                }
-                        } endfor
-                }
-        } endfor
+        if( !initalized ) { 
+                forall_nodes((*G), node) {
+                        if( matching[node] == NOMATE ) {
+                                forall_out_edges((*G), e, node) {
+                                        NodeID target = G->getEdgeTarget(node, e);
+                                        if( node != target && matching[target] == NOMATE) {
+                                                matching[node] = target; matching[target] = node;
+                                                label[node] = UNLABELED; label[target] = UNLABELED;
+                                                matching_size++;
+                                                break;
+                                        }
+                                } endfor
+                        }
+                } endfor
+        }
 
         forall_nodes((*G), node) {
                 if( matching[node] != NOMATE) continue;
@@ -112,6 +150,7 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
                                                 }
                                                 base.split(T);
                                                 breakthrough = true;
+                                                matching_size++;
                                                 break;
                                         }
 
@@ -119,39 +158,13 @@ my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfi
                         } endfor
                 }
         } endfor
-        forall_nodes((*G), node) {
-                if( matching[node] != NOMATE ) {
-                        matching_size++;
-                }
-        } endfor
-        std::cout <<  "matching size " <<  matching_size / 2  << std::endl;
-
-
 }
 
-my_blossom_dyn_matching::~my_blossom_dyn_matching() {
-
+NodeID  static_blossom::getMSize () {
+        return matching_size; 
 }
 
-bool my_blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
-        if(is_free(source)) augment_path(source);
-        if(is_free(target)) augment_path(target);
-        return true;
-}
-
-bool my_blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
-        return true;
-}
-
-NodeID  my_blossom_dyn_matching::getMSize () {
-        return 0;
-}
-
-void my_blossom_dyn_matching::augment_path(NodeID source) {
-
-}
-
-void my_blossom_dyn_matching::shrink_path( NodeID b, NodeID v, NodeID w, node_partition & base, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge, std::queue< NodeID > & Q) {
+void static_blossom::shrink_path( NodeID b, NodeID v, NodeID w, node_partition & base, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge, std::queue< NodeID > & Q) {
         // Note we are working in x prime (so node can be blossoms by itself
         NodeID x = base(v);
         while(x != b) {
@@ -169,7 +182,7 @@ void my_blossom_dyn_matching::shrink_path( NodeID b, NodeID v, NodeID w, node_pa
 }
 
 
-void my_blossom_dyn_matching::find_path( std::vector< NodeID > & P, NodeID x, NodeID y, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge) {
+void static_blossom::find_path( std::vector< NodeID > & P, NodeID x, NodeID y, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge) {
         if ( x == y ) {
                 P.push_back(x);
                 return;
