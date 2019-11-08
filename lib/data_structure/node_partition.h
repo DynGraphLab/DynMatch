@@ -17,14 +17,22 @@
 class node_partition 
 {
         public:
-                node_partition(dyn_graph_access * G) : m_parent(G->number_of_nodes()), m_rank(G->number_of_nodes()) {
+                node_partition(dyn_graph_access * G) {
+                        init(G); 
+                }
+
+                node_partition() {} 
+
+                inline void init( dyn_graph_access * G) {
+                        m_parent.resize(G->number_of_nodes());
+                        m_rank.resize(G->number_of_nodes());
+
                         forall_nodes((*G), node) {
                                 m_parent[node] = node;
                                 m_rank[node] = 0;
                         } endfor
-                        
                 }
-               
+
                 inline NodeID Find(NodeID element)
                 {
                         if( m_parent[element] != element ) {
@@ -64,7 +72,7 @@ class node_partition
                                 m_parent[v] = v;
                                 m_parent[set] = v; 
                         }
-                
+
                 }
 
                 NodeID operator()( NodeID v ) { return Find( v ); }

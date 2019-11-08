@@ -25,7 +25,7 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *help                        = arg_lit0(NULL, "help","Print help.");
         struct arg_str *filename                    = arg_strn(NULL, NULL, "FILE", 1, 1, "Path to graph file to compute matching from.");
         struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
-        struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(blossom|dynblossom|myblossomdyn|naive|mv|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {blossom, dynblossom, naive, mv, randomwalk, neimansolomon, baswanaguptaseng}"  );
+        struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(blossom|boostblossom|dynblossom|myblossomdyn|naive|mv|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {blossom, dynblossom, naive, mv, randomwalk, neimansolomon, baswanaguptaseng, boostblossom}"  );
         struct arg_rex *blossom_init                = arg_rex0(NULL, "blossom_init", "^(empty|greedy|extragreedy)$", "TYPE", REG_EXTENDED, "Blossom init algorithm to use. One of {empty, greedy, extragreedy}"  );
 
         struct arg_dbl *eps                         = arg_dbl0(NULL, "eps", NULL, "Epsilon.");
@@ -74,6 +74,8 @@ int parse_parameters(int argn, char **argv,
         if (algorithm_type->count > 0) {
                 if(strcmp("blossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BLOSSOM;
+                } else if (strcmp("boostblossom", algorithm_type->sval[0]) == 0) {
+                        match_config.algorithm = BOOSTBLOSSOM;
                 } else if (strcmp("mv", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = MV;
                 } else if (strcmp("randomwalk", algorithm_type->sval[0]) == 0) {
@@ -84,8 +86,6 @@ int parse_parameters(int argn, char **argv,
                         match_config.algorithm = DYNBLOSSOM;
                 } else if (strcmp("neimansolomon", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = NEIMAN_SOLOMON;
-                } else if (strcmp("myblossomdyn", algorithm_type->sval[0]) == 0) {
-                        match_config.algorithm = MYBLOSSOMDYNMATCHING;
                 } else if (strcmp("baswanaguptaseng", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BASWANA_GUPTA_SENG;
                 } else {

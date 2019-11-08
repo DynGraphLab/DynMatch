@@ -17,8 +17,8 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
 
-#ifndef MY_BLOSSOM_DYN_MATCHING_H
-#define MY_BLOSSOM_DYN_MATCHING_H
+#ifndef STATIC_BLOSSOM_MATCHING_H
+#define STATIC_BLOSSOM_MATCHING_H
 
 #include <bitset>
 #include <cassert>
@@ -34,21 +34,23 @@
 #include "tools/misc.h"
 #include "node_partition.h"
 
-class my_blossom_dyn_matching : public dyn_matching {
+class static_blossom : public dyn_matching {
         public:
-                my_blossom_dyn_matching (dyn_graph_access* G, MatchConfig & config); 
-                ~my_blossom_dyn_matching (); 
+                static_blossom (dyn_graph_access* G, MatchConfig & config); 
+                ~static_blossom (); 
 
                 virtual bool new_edge(NodeID source, NodeID target);
                 virtual bool remove_edge(NodeID source, NodeID target);
                 virtual NodeID getMSize ();
+                virtual void postprocessing();
                 
                 void shrink_path( NodeID b, NodeID v, NodeID w, node_partition & base, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge, std::queue< NodeID > & Q);
                 void find_path( std::vector< NodeID > & P, NodeID x, NodeID y, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge);
-                void augment_path(NodeID source); 
+                void init( std::vector< NodeID > & matching );
         private:
                 std::vector< NodeID > label;
                 std::vector< NodeID > pred;
+                bool initalized;
 
 };
 

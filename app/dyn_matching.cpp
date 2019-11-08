@@ -2,7 +2,7 @@
 #include <iostream>
 
 #include "extern/boost_blossom/blossom_static.h"
-#include "my_blossom_dyn_matching.h"
+#include "blossom_dyn_matching.h"
 #include "static_blossom.h"
 #include "mv_algorithm.h"
 #include "io/graph_io.h"
@@ -58,21 +58,8 @@ int main (int argn, char ** argv) {
                 case MV: 
                         algorithm = new mv_algorithm(G, match_config);
                         break;
-                case MYBLOSSOMDYNMATCHING: {
-                        t._restart();
-                        for (size_t i = 0; i < edge_sequence.size(); ++i) { 
-                                std::pair<NodeID, NodeID> & edge = edge_sequence.at(i).second;
-                                if(!G->isEdge(edge.first, edge.second)) G->new_edge(edge.first, edge.second);
-                                if(!G->isEdge(edge.second, edge.first)) G->new_edge(edge.second, edge.first);
-                        } 
-
-                        dyn_matching* myalgorithm = new my_blossom_dyn_matching(G, match_config);
-
-                        std::cout <<  "" <<  t._elapsed()  << std::endl;
-                        delete myalgorithm;}
-                        break;
                 case DYNBLOSSOM:
-                        //algorithm = new blossom_dyn_matching(G, match_config);
+                        algorithm = new blossom_dyn_matching(G, match_config);
                         break;
                 case BOOSTBLOSSOM: {
                         unsigned long matching_size = 0;
