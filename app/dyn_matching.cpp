@@ -40,7 +40,30 @@ int main (int argn, char ** argv) {
         srand(match_config.seed);
         random_functions::setSeed(match_config.seed);
 
+        
+
+
+
         dyn_graph_access * G = new dyn_graph_access(n);
+        if( match_config.measure_graph_construction_only ) {
+                timer measure; measure._restart();
+                unsigned long matching_size = 0;
+                for (size_t i = 0; i < edge_sequence.size(); ++i) { 
+                        std::pair<NodeID, NodeID> & edge = edge_sequence[i].second;
+
+                        if (edge_sequence.at(i).first) {
+                                G->new_edge(edge.first, edge.second);
+                                G->new_edge(edge.second, edge.first);
+                        } else {
+                                G->remove_edge(edge.first, edge.second);
+                                G->remove_edge(edge.second, edge.first);
+                        }
+                } 
+                std::cout <<  "graph construction takes " <<  measure._elapsed()  << std::endl;
+                delete G;
+                exit(0);
+        }
+
         dyn_matching * algorithm = NULL;
         switch( match_config.algorithm ) {
                 case RANDOM_WALK:
