@@ -54,7 +54,31 @@ class node_partition
                                         if( m_rank[set_lhs] == m_rank[set_rhs] ) m_rank[set_lhs]++;
                                 }
                         }
+                }
 
+                void union_blocks_withreset(NodeID lhs, NodeID rhs) {
+                        NodeID set_lhs = Find(lhs);
+                        NodeID set_rhs = Find(rhs);
+                        if( set_lhs != set_rhs ) {
+                                if( m_rank[set_lhs] < m_rank[set_rhs]) {
+                                        if( m_parent[set_lhs] == lhs ) m_reset.push_back(set_lhs);
+                                        m_parent[set_lhs] = set_rhs;
+                                } else {
+                                        if( m_parent[set_rhs] == rhs ) m_reset.push_back(set_lhs);
+                                        m_parent[set_rhs] = set_lhs;
+                                        if( m_rank[set_lhs] == m_rank[set_rhs] ) m_rank[set_lhs]++;
+                                }
+                        }
+                }
+
+                void reset() {
+                        for( unsigned i = 0; i < m_reset.size(); i++) {
+                                m_parent[m_reset[i]] = m_reset[i];
+                                m_rank[m_reset[i]] = 0;
+                        }
+                        m_reset.clear();
+                        m_reset.resize(0);
+                
                 }
 
                 void split( std::vector< NodeID > & T ) {
@@ -80,6 +104,7 @@ class node_partition
         private:
                 std::vector< NodeID > m_parent;
                 std::vector< NodeID > m_rank;
+                std::vector< NodeID > m_reset;
 
 };
 

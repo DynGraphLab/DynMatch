@@ -87,7 +87,9 @@ void static_blossom::postprocessing() {
                 std::vector< NodeID > T; T.push_back(node);
 
                 bool breakthrough = false;
+                int count = 0;
                 while( !breakthrough && !Q.empty()) { // grow tree rooted at node
+                        count++;
                         NodeID v = Q.front(); Q.pop();
                         // explore edges out of v
                         // assume v is even node
@@ -157,6 +159,7 @@ void static_blossom::postprocessing() {
                                 }        
                         } endfor
                 }
+                //std::cout <<  "run for " <<  count  << std::endl;
         } endfor
 }
 
