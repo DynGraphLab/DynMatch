@@ -7,10 +7,6 @@
 #include "node_partition.h"
 
 my_blossom_dyn_matching::my_blossom_dyn_matching(dyn_graph_access* G, MatchConfig & match_config) : dyn_matching(G, match_config) {
-        //matching[i] initialized to NOMATE for all i
-        //matching_size = 0
-        //base.resize(G->number_of_nodes()); // canonical representative for v in G' (G' is the graph that has blossoms shrinked
-        //
         label.resize(G->number_of_nodes()); 
         pred.resize(G->number_of_nodes()); 
         node_partition base(G);

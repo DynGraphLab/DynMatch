@@ -85,6 +85,7 @@ set(LIBMATCH_SOURCE_FILES
 ./lib/algorithms/baswanaguptasen_dyn_matching.cpp
 ./lib/algorithms/my_blossom_dyn_matching.cpp
 ./lib/algorithms/naive_dyn_matching.cpp
+./lib/algorithms/static_blossom.cpp
 ./lib/algorithms/rw_dyn_matching.cpp
 ./lib/algorithms/mv_algorithm.cpp
 ./lib/algorithms/dyn_matching.cpp

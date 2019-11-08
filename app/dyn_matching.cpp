@@ -1,9 +1,9 @@
 #include <sys/stat.h>
 #include <iostream>
 
-#include "blossom_static.h"
-#include "blossom_dyn_matching.h"
+#include "extern/boost_blossom/blossom_static.h"
 #include "my_blossom_dyn_matching.h"
+#include "static_blossom.h"
 #include "mv_algorithm.h"
 #include "io/graph_io.h"
 #include "rw_dyn_matching.h"
@@ -27,7 +27,6 @@ int main (int argn, char ** argv) {
         if(ret_code) {
                 return 0;
         }
-
 
         // initialize edge sequence
         timer t;
@@ -73,8 +72,9 @@ int main (int argn, char ** argv) {
                         delete myalgorithm;}
                         break;
                 case DYNBLOSSOM:
-                        algorithm = new blossom_dyn_matching(G, match_config);
-                case BLOSSOM: {
+                        //algorithm = new blossom_dyn_matching(G, match_config);
+                        break;
+                case BOOSTBLOSSOM: {
                         unsigned long matching_size = 0;
                         t._restart();
                         switch( match_config.blossom_init ) {
@@ -92,6 +92,9 @@ int main (int argn, char ** argv) {
                         std::cout <<  "" <<  t._elapsed()  << std::endl;
                         }
 
+                        break;
+                 case BLOSSOM: 
+                        algorithm = new static_blossom(G, match_config);
                         break;
 
         }

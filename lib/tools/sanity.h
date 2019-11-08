@@ -30,7 +30,7 @@ void check_matching(dyn_graph_access * G, dyn_matching * algorithm, unsigned int
                 is_matched[matching_partner] = true;
         } endfor
         if( internal_matching_size != matching_size ) {
-                std::cout <<  "matching size does not match"  << std::endl;
+                std::cout <<  "matching size does not match. internal " <<  internal_matching_size << " " << matching_size  << std::endl;
         }
 }
 
