@@ -67,7 +67,7 @@ bool neimansolomon_dyn_matching::new_edge(NodeID source, NodeID target) {
 
         ASSERT_TRUE(foo == bar);
         handle_addition(source, target);
-        check_invariants();
+        //check_invariants();
 
         return true;
 }
@@ -131,7 +131,7 @@ bool neimansolomon_dyn_matching::remove_edge(NodeID source, NodeID target) {
         G->remove_edge(target, source);
 
         handle_deletion(source, target);
-        check_invariants();
+        //check_invariants();
 
         return true;
 }

@@ -37,11 +37,12 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *post_mv                     = arg_lit0(NULL, "post_mv","Run MV algorithm afterwards.");
         struct arg_lit *post_blossom                = arg_lit0(NULL, "post_blossom","Run Blossom algorithm afterwards.");
         struct arg_lit *fast_rw                     = arg_lit0(NULL, "fast_rw","Use my fast rw implementation.");
+        struct arg_lit *measure_graph_only          = arg_lit0(NULL, "measure_graph_only","Only measure graph construction time.");
         struct arg_end *end                         = arg_end(100);
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, 
+                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, measure_graph_only,
                 end
         };
         // Parse arguments.
@@ -84,6 +85,7 @@ int parse_parameters(int argn, char **argv,
                         match_config.algorithm = NAIVE;
                 } else if (strcmp("dynblossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = DYNBLOSSOM;
+                        match_config.rw_max_length = std::numeric_limits< int >::max() / 2;
                 } else if (strcmp("neimansolomon", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = NEIMAN_SOLOMON;
                 } else if (strcmp("baswanaguptaseng", algorithm_type->sval[0]) == 0) {
@@ -94,6 +96,9 @@ int parse_parameters(int argn, char **argv,
                 }
         }
 
+        if (measure_graph_only->count > 0) {
+                match_config.measure_graph_construction_only = true;
+        }
         if (blossom_init->count > 0) {
                 if(strcmp("empty", blossom_init->sval[0]) == 0) {
                         match_config.blossom_init = BLOSSOMEMPTY;

@@ -13,10 +13,11 @@ blossom_dyn_matching::blossom_dyn_matching(dyn_graph_access* G, MatchConfig & ma
         path2.resize(G->number_of_nodes());
         source_bridge.resize(G->number_of_nodes());
         target_bridge.resize(G->number_of_nodes());
+        search_started.resize(G->number_of_nodes());
 
-        last_source = 100000000;
         strue = 0;
         base.init(G);
+        iteration = 1;
 
         // if base[v] = v, then v in G'
         // else v was collapsed into base[v]
@@ -29,6 +30,7 @@ blossom_dyn_matching::blossom_dyn_matching(dyn_graph_access* G, MatchConfig & ma
                 path2[node] = 0;
                 source_bridge[node] = UNDEFINED_NODE;
                 target_bridge[node] = UNDEFINED_NODE;
+                search_started[node] = 0;
         } endfor
 }
 
@@ -48,10 +50,14 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 matching_size++;
                 return true;
         }
-        if(source == last_source) return false;
-        last_source = source;
+
+        iteration++;
+        if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
+
+        search_started[ source ] = iteration;
+        search_started[ target ] = iteration;
         return true;
 }
 
@@ -69,6 +75,7 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
 
+        iteration++;
         return true;
 }
 
@@ -86,15 +93,25 @@ void blossom_dyn_matching::augment_path(NodeID node) {
 
         if( matching[node] != NOMATE) return;
 
-        std::queue< NodeID > Q; Q.push(node);
+        NodeID LEVEL = G->number_of_nodes();
+        std::queue< NodeID > Q; Q.push(node); 
+        Q.push(LEVEL);
         std::vector< NodeID > T; T.push_back(node);
 
-        //std::cout <<  "exploring " << node << std::endl;
         bool breakthrough = false;
         int count = 0; 
+        NodeID cur_level = 0;
         while( !breakthrough && !Q.empty()) { // grow tree rooted at node
                 count++;
                 NodeID v = Q.front(); Q.pop();
+                if(  v == LEVEL ) {
+                        cur_level += 2;
+                        if(cur_level > (NodeID) config.rw_max_length) break;
+                        if( Q.empty() ) break;
+
+                        v = Q.front(); Q.pop();
+                        Q.push(LEVEL);
+                }
                 // explore edges out of v
                 // assume v is even node
                 forall_out_edges((*G), e, v) {
@@ -151,10 +168,6 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                                                 matching[b] = a;
                                         }
                                         T.push_back(w);
-                                        for( unsigned i = 0; i < T.size(); i++) {
-                                                label[T[i]] = UNLABELED;
-                                        }
-                                        base.split(T);
                                         breakthrough = true;
                                         matching_size++;
                                         break;
@@ -178,10 +191,12 @@ void blossom_dyn_matching::shrink_path( NodeID b, NodeID v, NodeID w, node_parti
         // Note we are working in x prime (so node can be blossoms by itself
         NodeID x = base(v);
         while(x != b) {
-                base.union_blocks_withreset(x,b);
+                base.union_blocks(x,b);
+                //base.union_blocks_withreset(x,b);
                 x = matching[x];
 
-                base.union_blocks_withreset(x,b);
+                base.union_blocks(x,b);
+                //base.union_blocks_withreset(x,b);
                 base.make_rep(b);
 
                 Q.push(x);
