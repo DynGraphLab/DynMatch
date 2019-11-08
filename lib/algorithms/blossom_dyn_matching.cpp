@@ -14,6 +14,7 @@ blossom_dyn_matching::blossom_dyn_matching(dyn_graph_access* G, MatchConfig & ma
         source_bridge.resize(G->number_of_nodes());
         target_bridge.resize(G->number_of_nodes());
 
+        last_source = 100000000;
         strue = 0;
         base.init(G);
 
@@ -39,9 +40,18 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
         G->new_edge(source, target);
         G->new_edge(target, source);
 
+        if( is_free(source) && is_free(target) ) {
+                matching[source] = target;
+                matching[target] = source;
+                label[source] = UNLABELED;
+                label[target] = UNLABELED;
+                matching_size++;
+                return true;
+        }
+        if(source == last_source) return false;
+        last_source = source;
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
-        std::cout <<  "leaving "  << std::endl;
         return true;
 }
 
@@ -49,9 +59,13 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
         G->remove_edge(source, target);
         G->remove_edge(target, source);
 
-        if (is_matched(source, target)) 
+        if (is_matched(source, target)) {
                 unmatch(source, target);
+                label[source] = EVEN;
+                label[target] = EVEN;
+        }
 
+        
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
 
@@ -59,18 +73,27 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
 }
 
 NodeID  blossom_dyn_matching::getMSize () {
-        return 0;
+        return matching_size;
 }
 
 void blossom_dyn_matching::augment_path(NodeID node) {
-        std::cout <<  "here "  << std::endl;
+        //for( unsigned i = 0; i < reset_st_bridge.size(); i++) {
+                //source_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
+                //target_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
+        //}
+        //reset_st_bridge.clear();
+        //reset_st_bridge.resize(0);
+
         if( matching[node] != NOMATE) return;
 
         std::queue< NodeID > Q; Q.push(node);
         std::vector< NodeID > T; T.push_back(node);
 
+        //std::cout <<  "exploring " << node << std::endl;
         bool breakthrough = false;
+        int count = 0; 
         while( !breakthrough && !Q.empty()) { // grow tree rooted at node
+                count++;
                 NodeID v = Q.front(); Q.pop();
                 // explore edges out of v
                 // assume v is even node
@@ -79,7 +102,6 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                         if( base(v) == base(w) || label[base(w)] == ODD) 
                                 continue; // nothing todo
                         if( label[w] == UNLABELED ) {
-                                std::cout <<  "unlabeled case "  << std::endl;
                                 label[w] = ODD; 
                                 T.push_back(w);
 
@@ -89,44 +111,32 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                                 T.push_back(matching[w]);
                                 Q.push(matching[w]);
                         } else { // base(w) is EVEN
-                                std::cout <<  "even case"  << std::endl;
                                 NodeID hv = base(v);
                                 NodeID hw = base(w);
 
-                                std::cout <<  "here "  << std::endl;
                                 strue++;
                                 path1[hv] = strue;
                                 path2[hw] = strue;
 
-                                std::cout <<  "here "  << std::endl;
                                 while( (path1[hw] != strue && path2[hv] != strue) && (matching[hv] != NOMATE || matching[hw] != NOMATE) ) {
-                                        std::cout <<  "here A"  << std::endl;
                                         if( matching[hv] != NOMATE ) {
-                                                std::cout <<  "here B"  << std::endl;
                                                 hv = base( pred[ matching[hv] ] );
-                                                std::cout <<  "here C"  << std::endl;
                                                 path1[hv] = strue;
                                         }
 
-                                        std::cout <<  "here A"  << std::endl;
                                         if( matching[hw] != NOMATE ) {
-                                                std::cout <<  "here B " <<  matching[hw] <<  " " << pred[ matching[hw] ] << std::endl;
                                                 hw = base( pred[ matching[hw] ] );
-                                                std::cout <<  "here C"  << std::endl;
                                                 path2[hw] = strue;
                                         }
                                 }
-                                std::cout <<  "here "  << std::endl;
 
                                 if( path1[ hw ] == strue || path2[ hv ] == strue ) {
                                         // shrink blossom
-                                std::cout <<  "here "  << std::endl;
                                         NodeID b = (path1[hw] == strue) ? hw : hv; //base
                                         shrink_path(b,v,w, base, source_bridge, target_bridge, Q);
                                         shrink_path(b,w,v, base, source_bridge, target_bridge, Q);
                                 } else {
                                         // augment path
-                                        std::cout <<  "augment "  << std::endl;
                                         std::vector< NodeID > P_int;
                                         find_path( P_int, v, hv, source_bridge, target_bridge);
 
@@ -146,28 +156,39 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                                         }
                                         base.split(T);
                                         breakthrough = true;
+                                        matching_size++;
                                         break;
                                 }
 
                         }        
                 } endfor
         }
+        for( unsigned i = 0; i < T.size(); i++) {
+                if( matching[T[i]] == NOMATE ) {
+                        label[T[i]] = EVEN;
+                } else {
+                        label[T[i]] = UNLABELED;
+                }
+        }
+        base.split(T);
+        //std::cout <<  "run for " <<  count  << std::endl;
 }
 
 void blossom_dyn_matching::shrink_path( NodeID b, NodeID v, NodeID w, node_partition & base, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge, std::queue< NodeID > & Q) {
         // Note we are working in x prime (so node can be blossoms by itself
         NodeID x = base(v);
         while(x != b) {
-                base.union_blocks(x,b);
+                base.union_blocks_withreset(x,b);
                 x = matching[x];
 
-                base.union_blocks(x,b);
+                base.union_blocks_withreset(x,b);
                 base.make_rep(b);
 
                 Q.push(x);
 
                 source_bridge[x] = v; target_bridge[x] = w;
                 x = base( pred[x] );
+                //reset_st_bridge.push_back(x);
         }
 }
 

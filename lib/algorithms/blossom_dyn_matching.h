@@ -53,8 +53,11 @@ class blossom_dyn_matching : public dyn_matching {
                 std::vector< long > path2;
                 std::vector< NodeID > source_bridge;
                 std::vector< NodeID > target_bridge;
+
+                std::vector< NodeID > reset_st_bridge;
                  
                 long strue;
+                NodeID last_source;
                 node_partition base;
 };
 
