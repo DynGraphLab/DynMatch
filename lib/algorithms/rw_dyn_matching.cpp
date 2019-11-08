@@ -89,7 +89,7 @@ bool rw_dyn_matching::fast_random_walk (NodeID start) {
         NodeID v = 0;
         do {
                 // pick random outgoing edge
-                EdgeID e_bar = random_functions::nextInt(0, G->get_first_invalid_edge(u)-1);
+                EdgeID e_bar = random_functions::nextIntFast(0, G->get_first_invalid_edge(u)-1);
                 v = G->getEdgeTarget(u, e_bar);
 
                 if( matching[v] != NOMATE ) {

@@ -153,6 +153,12 @@ class random_functions {
                         return A(m_mt);
                 }
 
+                static unsigned nextIntFast(unsigned int lb, unsigned int rb) {
+                        std::uniform_int_distribution<unsigned int> A(lb,rb);
+                        return A(mt64);
+                }
+
+
                 static double nextDouble(double lb, double rb) {
                         double rnbr   = (double) rand() / (double) RAND_MAX; // rnd in 0,1
                         double length = rb - lb;
@@ -175,6 +181,7 @@ class random_functions {
         private:
                 static int m_seed;
                 static MersenneTwister m_mt;
+                static std::mt19937_64 mt64;
 };
 
 #endif /* end of include guard: RANDOM_FUNCTIONS_RMEPKWYT */

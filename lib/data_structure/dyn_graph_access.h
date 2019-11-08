@@ -63,8 +63,6 @@ class dyn_graph_access {
 
         private:
                 // %%%%%%%%%%%%%%%%%%% DATA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                // split properties for coarsening and uncoarsening
-                std::vector<DynNode> m_nodes;
                 std::vector<std::vector<DynEdge> > m_edges;
                 std::vector<google::dense_hash_map<NodeID, size_t> > m_edges_maps;
 
