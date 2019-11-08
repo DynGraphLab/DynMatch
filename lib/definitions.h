@@ -59,9 +59,9 @@ const NodeID ODD                       = 1;
 const NodeID UNLABELED                 = 2;
 
 
-struct DynNode {
-    EdgeID firstEdge;
-};
+//struct DynNode {
+    //EdgeID firstEdge;
+//};
 
 struct DynEdge {
     NodeID target;

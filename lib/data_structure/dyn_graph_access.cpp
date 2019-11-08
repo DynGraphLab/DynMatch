@@ -35,7 +35,6 @@ dyn_graph_access::~dyn_graph_access() {};
 
 void dyn_graph_access::start_construction(NodeID nodes, EdgeID edges) {
         m_building_graph = true;
-        m_nodes.resize(nodes);
         m_edges.resize(nodes);
         m_edges_maps.resize(nodes);
 
@@ -53,7 +52,6 @@ NodeID dyn_graph_access::new_node() {
 
 void dyn_graph_access::finish_construction() {
         m_building_graph = false;
-        m_nodes.resize(node_count);
         m_edges.resize(node_count);
         m_edges_maps.resize(node_count);
 }
