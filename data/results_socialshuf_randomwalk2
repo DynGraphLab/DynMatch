@@ -1,0 +1,88 @@
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/amazon-2008.graph.seq
+io took 8.80096
+285299  3.351
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/as-22july06.graph.seq
+io took 0.0786071
+3005  0.02514
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/as-skitter.graph.seq
+io took 15.9814
+175975  9.81951
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/citationCiteseer.graph.seq
+io took 3.20607
+90340  1.8971
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/cnr-2000.graph.seq
+io took 4.35051
+75935  2.78342
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coAuthorsCiteseer.graph.seq
+io took 2.25964
+85601  0.745842
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coAuthorsDBLP.graph.seq
+io took 1.60353
+106678  0.944577
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coPapersCiteseer.graph.seq
+io took 24.8029
+205514  34.5903
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coPapersDBLP.graph.seq
+io took 23.9202
+253610  24.8458
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/email-EuAll.graph.seq
+io took 0.097131
+1355  0.0313518
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/email.graph.seq
+io took 0.0141871
+417  0.00212121
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/enron.graph.seq
+io took 0.383701
+5393  0.236157
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/eu-2005.graph.seq
+io took 25.2994
+277264  23.5358
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/in-2004.graph.seq
+io took 21.8658
+363780  23.8909
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/loc-brightkite_edges.graph.seq
+io took 0.379489
+16494  0.156598
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/loc-gowalla_edges.graph.seq
+io took 1.45543
+63166  0.848167
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/p2p-Gnutella04.graph.seq
+io took 0.0753472
+2605  0.01789
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/PGPgiantcompo.graph.seq
+io took 0.038156
+3367  0.00969195
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/soc-Slashdot0902.graph.seq
+io took 0.592695
+10888  0.263347
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/web-Google.graph.seq
+io took 3.5296
+128632  2.31627
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/wiki-Talk.graph.seq
+io took 2.37918
+21013  1.15451
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/wordassociation-2011.graph.seq
+io took 0.0965581
+2932  0.0264208
+************ checking matching ****************

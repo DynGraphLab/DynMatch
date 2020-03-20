@@ -1,0 +1,66 @@
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/amazon-2008.graph.seq
+io took 5.41878
+graph construction takes 5.24266
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/as-22july06.graph.seq
+io took 0.129317
+graph construction takes 0.03089
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/as-skitter.graph.seq
+io took 8.95818
+graph construction takes 5.08617
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/citationCiteseer.graph.seq
+io took 3.46155
+graph construction takes 1.21414
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/cnr-2000.graph.seq
+io took 7.37991
+graph construction takes 4.20107
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coAuthorsCiteseer.graph.seq
+io took 1.27627
+graph construction takes 0.638564
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coAuthorsDBLP.graph.seq
+io took 1.58408
+graph construction takes 0.76122
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coPapersCiteseer.graph.seq
+io took 24.7464
+graph construction takes 25.0919
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/coPapersDBLP.graph.seq
+io took 23.4501
+graph construction takes 23.4298
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/email-EuAll.graph.seq
+io took 0.200975
+graph construction takes 0.0353088
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/email.graph.seq
+io took 0.01385
+graph construction takes 0.00176597
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/enron.graph.seq
+io took 0.395494
+graph construction takes 0.147236
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/eu-2005.graph.seq
+io took 24.7164
+graph construction takes 15.0274
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/in-2004.graph.seq
+io took 22.0991
+graph construction takes 23.1502
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/loc-brightkite_edges.graph.seq
+io took 0.404206
+graph construction takes 0.130184
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/loc-gowalla_edges.graph.seq
+io took 1.53177
+graph construction takes 0.717676
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/p2p-Gnutella04.graph.seq
+io took 0.0867019
+graph construction takes 0.00889707
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/PGPgiantcompo.graph.seq
+io took 0.0366459
+graph construction takes 0.00777197
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/soc-Slashdot0902.graph.seq
+io took 0.579774
+graph construction takes 0.225235
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/web-Google.graph.seq
+io took 4.65047
+graph construction takes 2.55685
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/wiki-Talk.graph.seq
+io took 2.5041
+graph construction takes 1.02944
+/home/christians84cs/projects/graph_collection/snw_paper_shuf/wordassociation-2011.graph.seq
+io took 0.190717
+graph construction takes 0.0363929

@@ -1,0 +1,140 @@
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/144.graph.seq
+io took 2.44291
+70209  0.612915
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/3elt.graph.seq
+io took 0.042119
+2354  0.00580001
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/4elt.graph.seq
+io took 0.127141
+7783  0.0221961
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/598a.graph.seq
+io took 1.13412
+52959  0.453898
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/add20.graph.seq
+io took 0.0154541
+1128  0.001724
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/add32.graph.seq
+io took 0.025856
+2318  0.003263
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/auto.graph.seq
+io took 9.30522
+215647  3.043
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/bcsstk29.graph.seq
+io took 0.45248
+6996  0.0670111
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/bcsstk30.graph.seq
+io took 1.58109
+14445  0.241314
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/bcsstk31.graph.seq
+io took 1.43534
+17753  0.141809
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/bcsstk32.graph.seq
+io took 1.53544
+22275  0.252335
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/bcsstk33.graph.seq
+io took 0.55786
+4369  0.0624001
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/brack2.graph.seq
+io took 0.613539
+29673  0.125852
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/crack.graph.seq
+io took 0.051671
+3159  0.00759006
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/cs4.graph.seq
+io took 0.106963
+10328  0.0178699
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/cti.graph.seq
+io took 0.133344
+8420  0.0118461
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/data.graph.seq
+io took 0.0239501
+1424  0.00185704
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_4elt2.graph.seq
+io took 0.051872
+5402  0.00735402
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_body.graph.seq
+io took 0.245589
+22081  0.0386701
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_ocean.graph.seq
+io took 0.687344
+71468  0.139573
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_pwt.graph.seq
+io took 0.42025
+17991  0.0594881
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_rotor.graph.seq
+io took 1.42426
+48034  0.23804
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_sphere.graph.seq
+io took 0.075469
+8190  0.0130372
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/fe_tooth.graph.seq
+io took 0.754176
+37417  0.168681
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/finan512.graph.seq
+io took 0.520112
+35840  0.0762999
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/largestCC.graph.seq
+io took 0.020175
+1128  0.00278902
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/m14b.graph.seq
+io took 2.75773
+103214  0.828942
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/memplus.graph.seq
+io took 0.157685
+8736  0.030704
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/t60k.graph.seq
+io took 0.242883
+29651  0.054038
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/uk.graph.seq
+io took 0.0211351
+2271  0.00370502
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/vibrobox.graph.seq
+io took 0.420139
+6146  0.0897
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/wave.graph.seq
+io took 2.91289
+77137  0.541941
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/whitaker3.graph.seq
+io took 0.077734
+4831  0.0125041
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/wing.graph.seq
+io took 0.249813
+28026  0.0807509
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/all_walschaw_graphs/wing_nodal.graph.seq
+io took 0.117241
+5291  0.0274999
+************ checking matching ****************
