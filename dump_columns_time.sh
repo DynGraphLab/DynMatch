@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for var in "$@"; do 
-        less $var | grep -v matching | grep -v took | grep -v home | awk '{print $1}' > $var.tmp
+        less $var | grep -v matching | grep -v took | grep -v home | awk '{print $2}' > $var.tmp
 done
 #less results_social_blossom | grep -v matching | grep -v took | grep -v home
 #TIME=`less results_social_blossom | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($2)^(1/22)} END {print G}'`

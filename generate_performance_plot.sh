@@ -1,9 +1,9 @@
 #/bin/bash
+#head of file algorithm names
 #input lines of A1,A2, ... AN 
+#this is for maximization problems
 
-./generate_names.sh > columns
-tail -n +2 columns > columns.raw.tmp
-
+tail -n +2 $1 > columns.raw.tmp
 less columns.raw.tmp | awk 'BEGIN {FS=","} {max=0; for(i=1; i<=NF; i++) {if( $i > max ) {max=$i}}  for(i=1; i<=NF; i++) {printf "%.5f ",$i/max} print ""}' > columns.frac.tmp
 COLUMNS=`less columns.frac.tmp | awk '{L=NF} END {print L}'`
 
@@ -28,7 +28,32 @@ LISTTMP=$(for i in `seq 1 $COLUMNS`; do
         echo -ne "staircase.$i.tmp "
 done)
 paste $LISTTMP > final_output
+NUMALGO=`head -n 1 $1 | sed 's/,/\n/g' | wc -l`
+rm algonames.tmp
+head -n 1 $1 | sed 's/,/\n/g' > algonames.tmp
+
+rm startcolumn.tmp
+for i in `seq 1 $NUMALGO`; do
+    TWO=`echo "2*$i-1" | bc`
+    echo $TWO >> startcolumn.tmp
+done 
+paste startcolumn.tmp algonames.tmp
+
+
+cp plot_head.gnuplot plot_current.gnuplot
+COUNT="1"
+while IFS= read -r line;
+do 
+        if [ $COUNT -eq "1" ]; then
+            echo "plot \"final_output\" using 1:2 with steps lw 2 lt $COUNT title '$line', \\" >> plot_current.gnuplot
+     else 
+            RHS=` echo "$COUNT+1" | bc`
+            echo "\"final_output\" using $COUNT:$RHS with steps lw 2 lt $COUNT title '$line', \\" >> plot_current.gnuplot
+
+        fi
+
+        COUNT=` echo "$COUNT+2" | bc`
+done < "algonames.tmp"
+
 rm *.tmp
-head -n 1 columns
-gnuplot < plot.gnuplot > output.png
-rm columns
+gnuplot < plot_current.gnuplot > output.png
