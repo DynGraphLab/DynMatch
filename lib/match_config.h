@@ -29,6 +29,8 @@ struct MatchConfig
 
         bool fast_rw;
 
+        bool dynblossom_speedheuristic;
+
         bool measure_graph_construction_only;
 
         //***************************

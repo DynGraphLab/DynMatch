@@ -51,13 +51,17 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 return true;
         }
 
-        iteration++;
-        if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+        if( config.dynblossom_speedheuristic ) {
+                iteration++;
+                if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+                if( search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2 ) return false;
+                search_started[ source ] = iteration;
+                search_started[ target ] = iteration;
+        }
+
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
 
-        search_started[ source ] = iteration;
-        search_started[ target ] = iteration;
         return true;
 }
 
@@ -75,12 +79,17 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
                 label[target] = EVEN;
         }
 
-        
+        if( config.dynblossom_speedheuristic ) {
+                iteration++;
+                if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+                if( search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2 ) return false;
+                search_started[ source ] = iteration;
+                search_started[ target ] = iteration;
+        }
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
-
-        iteration++;
-        return true;
+        
+                return true;
 }
 
 NodeID  blossom_dyn_matching::getMSize () {

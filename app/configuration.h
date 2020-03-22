@@ -33,6 +33,7 @@ inline void configuration::standard( MatchConfig & config ) {
         config.naive_settle_on_insertion   = false;
         config.fast_rw                     = false;
         config.measure_graph_construction_only = false;
+        config.dynblossom_speedheuristic  = false;
 }
 
 #endif /* end of include guard: CONFIGURATION_3APG5V7Z */
