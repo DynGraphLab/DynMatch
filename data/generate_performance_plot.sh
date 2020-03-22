@@ -29,10 +29,8 @@ LISTTMP=$(for i in `seq 1 $COLUMNS`; do
 done)
 paste $LISTTMP > final_output
 NUMALGO=`head -n 1 $1 | sed 's/,/\n/g' | wc -l`
-rm algonames.tmp
 head -n 1 $1 | sed 's/,/\n/g' > algonames.tmp
 
-rm startcolumn.tmp
 for i in `seq 1 $NUMALGO`; do
     TWO=`echo "2*$i-1" | bc`
     echo $TWO >> startcolumn.tmp

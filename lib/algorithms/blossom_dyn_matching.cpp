@@ -105,11 +105,11 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                 count++;
                 NodeID v = Q.front(); Q.pop();
                 if(  v == LEVEL ) {
-                        cur_level += 2;
-                        if(cur_level > (NodeID) config.rw_max_length) break;
+                        if(cur_level >= (NodeID) config.rw_max_length) break;
                         if( Q.empty() ) break;
 
                         v = Q.front(); Q.pop();
+                        cur_level += 2;
                         Q.push(LEVEL);
                 }
                 // explore edges out of v
