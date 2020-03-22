@@ -18,11 +18,12 @@ int main(int argn, char **argv)
         struct arg_str *filename                    = arg_strn(NULL, NULL, "FILE", 1, 1, "Path to Metis file.");
         struct arg_lit *help                        = arg_lit0(NULL, "help","Print help.");
         struct arg_lit *shuffle                     = arg_lit0(NULL, "shuffle","Shuffle edges.");
+        struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
         struct arg_end *end                         = arg_end(100);
 
         // Define argtable.
         void* argtable[] = {
-                filename, shuffle, help, end
+                filename, shuffle, user_seed, help, end
         };
         // Parse arguments.
         int nerrors = arg_parse(argn, argv, argtable);
@@ -64,6 +65,11 @@ int main(int argn, char **argv)
         } endfor
 
         if(shuffle->count > 0) {
+                if( user_seed->count > 0 ) {
+                        random_functions::setSeed(user_seed->ival[0]);
+                } else {
+                        random_functions::setSeed(0);
+                }
                 random_functions::permutate_vector_anytype(sequence);
         }
 
