@@ -66,7 +66,11 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
         G->remove_edge(target, source);
 
         if (is_matched(source, target)) {
-                unmatch(source, target);
+                matching[source] = NOMATE;
+                matching[target] = NOMATE;
+
+                matching_size -= 1;
+
                 label[source] = EVEN;
                 label[target] = EVEN;
         }
