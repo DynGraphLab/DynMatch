@@ -234,7 +234,6 @@ bool rw_dyn_matching::cs_random_walk (NodeID start, std::vector<NodeID>& augpath
 
         if (!augpath_found) {
                 if( config.rw_ending_additional_settle ) {
-                        std::cout <<  "add"  << std::endl;
                         NodeID v;
 
                         // if no augmenting path was found, we perform a linear search
