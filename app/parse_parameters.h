@@ -33,6 +33,7 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *rw_ending_additional_settle = arg_lit0(NULL, "rw_ending_additional_settle","Random Walk: Enable additional settle for unsuccessful paths.");
         struct arg_int *rw_repetitions_per_node     = arg_int0(NULL, "rw_repetitions_per_node", NULL, "Random Walk: Number of rw repetitions per insert/delete.");
         struct arg_lit *naive_settle_on_insertion   = arg_lit0(NULL, "naive_settle_on_insertion","Naive: settle on insertion.");
+        struct arg_lit *dynblossom_speedheuristic   = arg_lit0(NULL, "dynblossom_speedheuristic","SpeedHeuristic for dynblossom.");
 
         struct arg_lit *post_mv                     = arg_lit0(NULL, "post_mv","Run MV algorithm afterwards.");
         struct arg_lit *post_blossom                = arg_lit0(NULL, "post_blossom","Run Blossom algorithm afterwards.");
@@ -42,7 +43,7 @@ int parse_parameters(int argn, char **argv,
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, measure_graph_only,
+                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, measure_graph_only, dynblossom_speedheuristic,
                 end
         };
         // Parse arguments.
@@ -118,6 +119,10 @@ int parse_parameters(int argn, char **argv,
 
         if(user_seed->count > 0) {
                 match_config.seed = user_seed->ival[0];
+        }
+
+        if(dynblossom_speedheuristic->count > 0) {
+                match_config.dynblossom_speedheuristic = true;
         }
 
         if(rw_low_degree_value->count > 0) {

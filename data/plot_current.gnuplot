@@ -8,4 +8,4 @@ set grid
 set xrange [0.9:1] reverse
 
 plot "final_output" using 1:2 with steps lw 2 lt 1 title 'results_social_neiman', \
-"final_output" using 3:4 with steps lw 2 lt 3 title 'results_social_dynblossom0.1', \
+"final_output" using 3:4 with steps lw 2 lt 3 title 'results_social_dynblossom0.5', \

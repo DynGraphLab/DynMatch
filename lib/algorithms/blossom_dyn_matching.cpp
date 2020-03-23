@@ -51,13 +51,17 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 return true;
         }
 
-        iteration++;
-        if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+        if( config.dynblossom_speedheuristic ) {
+                iteration++;
+                if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+                if( search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2 ) return false;
+                search_started[ source ] = iteration;
+                search_started[ target ] = iteration;
+        }
+
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
 
-        search_started[ source ] = iteration;
-        search_started[ target ] = iteration;
         return true;
 }
 
@@ -66,17 +70,26 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
         G->remove_edge(target, source);
 
         if (is_matched(source, target)) {
-                unmatch(source, target);
+                matching[source] = NOMATE;
+                matching[target] = NOMATE;
+
+                matching_size -= 1;
+
                 label[source] = EVEN;
                 label[target] = EVEN;
         }
 
-        
+        if( config.dynblossom_speedheuristic ) {
+                iteration++;
+                if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
+                if( search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2 ) return false;
+                search_started[ source ] = iteration;
+                search_started[ target ] = iteration;
+        }
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
-
-        iteration++;
-        return true;
+        
+                return true;
 }
 
 NodeID  blossom_dyn_matching::getMSize () {
@@ -105,11 +118,11 @@ void blossom_dyn_matching::augment_path(NodeID node) {
                 count++;
                 NodeID v = Q.front(); Q.pop();
                 if(  v == LEVEL ) {
-                        cur_level += 2;
-                        if(cur_level > (NodeID) config.rw_max_length) break;
+                        if(cur_level >= (NodeID) config.rw_max_length) break;
                         if( Q.empty() ) break;
 
                         v = Q.front(); Q.pop();
+                        cur_level += 2;
                         Q.push(LEVEL);
                 }
                 // explore edges out of v
