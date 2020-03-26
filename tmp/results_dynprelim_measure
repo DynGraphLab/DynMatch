@@ -1,0 +1,2169 @@
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.13541
+graph construction takes 1.5019
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0463462
+graph construction takes 0.00605583
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.136159
+graph construction takes 0.0331721
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.05084
+graph construction takes 0.967715
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.027384
+graph construction takes 0.00312901
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.027987
+graph construction takes 0.00433397
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.2243
+graph construction takes 5.27717
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.143398
+graph construction takes 0.038578
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.4104
+graph construction takes 9.56768
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.43872
+graph construction takes 5.16793
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.896909
+graph construction takes 0.321828
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.90754
+graph construction takes 1.24946
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.57572
+graph construction takes 0.709836
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.82372
+graph construction takes 1.30097
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.862698
+graph construction takes 0.283408
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.06799
+graph construction takes 0.428697
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.46162
+graph construction takes 1.63655
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.81346
+graph construction takes 3.70696
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.35061
+graph construction takes 1.07339
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.71552
+graph construction takes 1.3227
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.8907
+graph construction takes 28.3071
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.5309
+graph construction takes 27.5448
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.091784
+graph construction takes 0.0178001
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129622
+graph construction takes 0.0356421
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.143866
+graph construction takes 0.0350139
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0484059
+graph construction takes 0.00515699
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.180296
+graph construction takes 0.044075
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.743958
+graph construction takes 0.257033
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.705
+graph construction takes 28.5767
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0985739
+graph construction takes 0.0200009
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.48665
+graph construction takes 0.158774
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.15634
+graph construction takes 0.521463
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.438162
+graph construction takes 0.133044
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.86732
+graph construction takes 0.842917
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.151453
+graph construction takes 0.0388989
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.27588
+graph construction takes 0.552943
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.74576
+graph construction takes 0.299398
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.6258
+graph construction takes 22.1847
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.598245
+graph construction takes 0.224139
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.82547
+graph construction takes 1.26969
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.80447
+graph construction takes 2.48844
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.156759
+graph construction takes 0.0418379
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0916188
+graph construction takes 0.015511
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0749879
+graph construction takes 0.015399
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.09799
+graph construction takes 0.399582
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.262261
+graph construction takes 0.0901761
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0248191
+graph construction takes 0.003021
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.471024
+graph construction takes 0.147563
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.06205
+graph construction takes 1.44926
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.21176
+graph construction takes 3.15589
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.093688
+graph construction takes 0.0161581
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.23561
+graph construction takes 1.81986
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.358567
+graph construction takes 0.128773
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.21109
+graph construction takes 0.0527191
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.18611
+graph construction takes 0.0465162
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 2.99084
+graph construction takes 1.46681
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0452378
+graph construction takes 0.00605798
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.141443
+graph construction takes 0.0325558
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.12304
+graph construction takes 0.963208
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0289581
+graph construction takes 0.00310898
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.032686
+graph construction takes 0.00434494
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.43
+graph construction takes 5.2744
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.147681
+graph construction takes 0.0380089
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3893
+graph construction takes 9.56194
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.3408
+graph construction takes 5.17434
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.899847
+graph construction takes 0.321894
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.7625
+graph construction takes 1.26886
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.59131
+graph construction takes 0.723268
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.87741
+graph construction takes 1.3283
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.847441
+graph construction takes 0.287417
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.06786
+graph construction takes 0.433454
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.44162
+graph construction takes 1.65631
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.76877
+graph construction takes 3.7332
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.28178
+graph construction takes 1.08948
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.81014
+graph construction takes 1.34513
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.0138
+graph construction takes 28.0143
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.2224
+graph construction takes 27.0616
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0925128
+graph construction takes 0.0178721
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129865
+graph construction takes 0.0345368
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.144785
+graph construction takes 0.0353749
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.043535
+graph construction takes 0.00521708
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.175974
+graph construction takes 0.0434692
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.731352
+graph construction takes 0.257071
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.5559
+graph construction takes 28.5624
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0949361
+graph construction takes 0.0202112
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.471105
+graph construction takes 0.157613
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.21707
+graph construction takes 0.514539
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.411032
+graph construction takes 0.134998
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.85405
+graph construction takes 0.828237
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.145531
+graph construction takes 0.0380049
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.27023
+graph construction takes 0.552467
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.739035
+graph construction takes 0.300368
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.6942
+graph construction takes 21.9009
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.642873
+graph construction takes 0.224669
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.68781
+graph construction takes 1.2776
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.86452
+graph construction takes 2.48392
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.154285
+graph construction takes 0.0413101
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0874348
+graph construction takes 0.015518
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.073154
+graph construction takes 0.0151949
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.07968
+graph construction takes 0.398917
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.259356
+graph construction takes 0.0901439
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.023814
+graph construction takes 0.00304604
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.483262
+graph construction takes 0.144692
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.0163
+graph construction takes 1.42278
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.03926
+graph construction takes 3.11512
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.084841
+graph construction takes 0.016294
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.32364
+graph construction takes 1.82167
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.348673
+graph construction takes 0.129731
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.237437
+graph construction takes 0.053612
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.190585
+graph construction takes 0.0470901
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.06726
+graph construction takes 1.48749
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0428441
+graph construction takes 0.00628209
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.142184
+graph construction takes 0.0333319
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.26792
+graph construction takes 0.965286
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.026124
+graph construction takes 0.00311995
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0321271
+graph construction takes 0.00435281
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.3142
+graph construction takes 5.26828
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.144892
+graph construction takes 0.037792
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.1131
+graph construction takes 9.46447
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.70193
+graph construction takes 5.11454
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.877783
+graph construction takes 0.322786
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.88864
+graph construction takes 1.25182
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.61541
+graph construction takes 0.720427
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.74069
+graph construction takes 1.30924
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.825256
+graph construction takes 0.285939
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.08343
+graph construction takes 0.431403
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.34111
+graph construction takes 1.65944
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.77026
+graph construction takes 3.70257
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.31155
+graph construction takes 1.07774
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.81464
+graph construction takes 1.3223
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.1066
+graph construction takes 28.3117
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.7551
+graph construction takes 27.4188
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0881419
+graph construction takes 0.0177851
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.131027
+graph construction takes 0.035409
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.138305
+graph construction takes 0.035069
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.045821
+graph construction takes 0.005409
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.167439
+graph construction takes 0.0437441
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.736448
+graph construction takes 0.254808
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.0753
+graph construction takes 28.5519
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.096504
+graph construction takes 0.019974
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.479432
+graph construction takes 0.156027
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.18965
+graph construction takes 0.509929
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.434538
+graph construction takes 0.131797
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.89714
+graph construction takes 0.839859
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.143943
+graph construction takes 0.038516
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.25358
+graph construction takes 0.55716
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.774702
+graph construction takes 0.486962
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.457
+graph construction takes 22.0231
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.587478
+graph construction takes 0.2251
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.7898
+graph construction takes 1.27965
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.77798
+graph construction takes 2.48437
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.163533
+graph construction takes 0.0415199
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0920498
+graph construction takes 0.0154722
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.071593
+graph construction takes 0.0152659
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.05934
+graph construction takes 0.396085
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.254079
+graph construction takes 0.089992
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.027148
+graph construction takes 0.00320816
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.46227
+graph construction takes 0.145353
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.29925
+graph construction takes 1.46457
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.12356
+graph construction takes 3.13604
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0858729
+graph construction takes 0.0162251
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.20463
+graph construction takes 1.80588
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.361464
+graph construction takes 0.131759
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.225463
+graph construction takes 0.0535259
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.179996
+graph construction takes 0.0470879
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.07339
+graph construction takes 1.49582
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0426631
+graph construction takes 0.00617599
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.130315
+graph construction takes 0.03388
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.07879
+graph construction takes 0.962347
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0246849
+graph construction takes 0.00308609
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0333509
+graph construction takes 0.00445294
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.4666
+graph construction takes 5.26204
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.14613
+graph construction takes 0.0385439
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.901
+graph construction takes 9.38732
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.29078
+graph construction takes 5.23865
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.882449
+graph construction takes 0.317933
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.81069
+graph construction takes 1.27129
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.6963
+graph construction takes 0.722375
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.7001
+graph construction takes 1.32576
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.800262
+graph construction takes 0.28287
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.07735
+graph construction takes 0.423311
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.38139
+graph construction takes 1.64784
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.16486
+graph construction takes 3.7279
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.41975
+graph construction takes 1.07791
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77002
+graph construction takes 1.34538
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.9247
+graph construction takes 28.0417
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.232
+graph construction takes 27.5047
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0940411
+graph construction takes 0.0179331
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.137592
+graph construction takes 0.034826
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.143785
+graph construction takes 0.0350962
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0495179
+graph construction takes 0.00520301
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.183181
+graph construction takes 0.043623
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.737418
+graph construction takes 0.257333
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.867
+graph construction takes 28.6003
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.099648
+graph construction takes 0.02036
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.468219
+graph construction takes 0.159919
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.2001
+graph construction takes 0.512909
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.414534
+graph construction takes 0.132782
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.82935
+graph construction takes 0.842283
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.145007
+graph construction takes 0.038954
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.25718
+graph construction takes 0.551949
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.746771
+graph construction takes 0.299829
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.6621
+graph construction takes 22.2116
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.594937
+graph construction takes 0.224437
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.72429
+graph construction takes 1.27852
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.77673
+graph construction takes 2.49487
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.164333
+graph construction takes 0.041532
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0948861
+graph construction takes 0.015424
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0724561
+graph construction takes 0.0154319
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.05384
+graph construction takes 0.401702
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.258924
+graph construction takes 0.091538
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0237091
+graph construction takes 0.00305009
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.465729
+graph construction takes 0.147467
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.00827
+graph construction takes 1.46635
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.8698
+graph construction takes 3.17187
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.091228
+graph construction takes 0.016444
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.1675
+graph construction takes 1.80865
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.359818
+graph construction takes 0.130552
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.222381
+graph construction takes 0.052779
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.195759
+graph construction takes 0.0471921
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.11115
+graph construction takes 1.47729
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0439301
+graph construction takes 0.00611591
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.13682
+graph construction takes 0.0330641
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.15995
+graph construction takes 0.97109
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0262349
+graph construction takes 0.00311613
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.034462
+graph construction takes 0.00429296
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.80563
+graph construction takes 5.34113
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.142146
+graph construction takes 0.0376542
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3928
+graph construction takes 9.44631
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.57934
+graph construction takes 5.19857
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.874497
+graph construction takes 0.315449
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.7944
+graph construction takes 1.24568
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.60618
+graph construction takes 0.710918
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.77438
+graph construction takes 1.31547
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.819993
+graph construction takes 0.287117
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.07624
+graph construction takes 0.424035
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.25225
+graph construction takes 1.62644
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.03257
+graph construction takes 3.65423
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.33392
+graph construction takes 1.07394
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.79982
+graph construction takes 1.32667
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.212
+graph construction takes 28.0728
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.2271
+graph construction takes 27.4338
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0911388
+graph construction takes 0.0181351
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.131701
+graph construction takes 0.0346432
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.140229
+graph construction takes 0.0359421
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0493579
+graph construction takes 0.00522304
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.175249
+graph construction takes 0.0438449
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.720438
+graph construction takes 0.255942
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.4865
+graph construction takes 28.3458
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.100872
+graph construction takes 0.020205
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.49253
+graph construction takes 0.157509
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.21402
+graph construction takes 0.513606
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.411162
+graph construction takes 0.13127
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.9046
+graph construction takes 0.838732
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.147199
+graph construction takes 0.0385861
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.28828
+graph construction takes 0.558208
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.731629
+graph construction takes 0.29883
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.8455
+graph construction takes 22.1709
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.610009
+graph construction takes 0.223156
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.62086
+graph construction takes 1.27736
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.81107
+graph construction takes 2.49034
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.163764
+graph construction takes 0.0413299
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0954759
+graph construction takes 0.0154839
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0773411
+graph construction takes 0.0151789
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.09544
+graph construction takes 0.392821
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.26898
+graph construction takes 0.0905209
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0256798
+graph construction takes 0.00301194
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.4828
+graph construction takes 0.147613
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.01646
+graph construction takes 1.44723
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.88234
+graph construction takes 3.17971
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.086452
+graph construction takes 0.016325
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.03731
+graph construction takes 1.79129
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.357466
+graph construction takes 0.130706
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.21176
+graph construction takes 0.0538418
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.179253
+graph construction takes 0.0470901
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.13826
+graph construction takes 1.49059
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.044831
+graph construction takes 0.0060389
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.133906
+graph construction takes 0.033396
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.09594
+graph construction takes 0.969575
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.026685
+graph construction takes 0.00310779
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0310061
+graph construction takes 0.00421882
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.3015
+graph construction takes 5.26482
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.146108
+graph construction takes 0.0385389
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.2267
+graph construction takes 9.44569
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.69988
+graph construction takes 5.20324
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.827986
+graph construction takes 0.318082
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.76253
+graph construction takes 1.27109
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.60403
+graph construction takes 0.728365
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.75702
+graph construction takes 1.33281
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.857705
+graph construction takes 0.287497
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.02902
+graph construction takes 0.435826
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.25905
+graph construction takes 1.66402
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.00988
+graph construction takes 3.70817
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.36001
+graph construction takes 1.06204
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.70953
+graph construction takes 1.31885
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 47.8804
+graph construction takes 27.6588
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.0683
+graph construction takes 27.5289
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.091429
+graph construction takes 0.01858
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.13161
+graph construction takes 0.0344732
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.144353
+graph construction takes 0.0350749
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0468171
+graph construction takes 0.00518394
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.185713
+graph construction takes 0.0439732
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.733712
+graph construction takes 0.256878
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.6899
+graph construction takes 28.6965
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.103206
+graph construction takes 0.0205059
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.480493
+graph construction takes 0.159181
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.21711
+graph construction takes 0.509786
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.410225
+graph construction takes 0.134392
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.89537
+graph construction takes 0.838201
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.144671
+graph construction takes 0.0388391
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.28145
+graph construction takes 0.552536
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.743003
+graph construction takes 0.299504
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.8744
+graph construction takes 22.0053
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.603274
+graph construction takes 0.223163
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.68177
+graph construction takes 1.26915
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.77297
+graph construction takes 2.49829
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.161078
+graph construction takes 0.0415049
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.087239
+graph construction takes 0.01544
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0768709
+graph construction takes 0.015291
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.08844
+graph construction takes 0.398545
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.271063
+graph construction takes 0.0901949
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.025903
+graph construction takes 0.00303793
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.482827
+graph construction takes 0.147987
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.18282
+graph construction takes 1.4626
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.91663
+graph construction takes 3.17704
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0899739
+graph construction takes 0.0162759
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.11351
+graph construction takes 1.82717
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.356875
+graph construction takes 0.130196
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.217038
+graph construction takes 0.053369
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.180356
+graph construction takes 0.046916
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.14703
+graph construction takes 1.4942
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0443101
+graph construction takes 0.00619984
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.136009
+graph construction takes 0.0335259
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.13343
+graph construction takes 0.970852
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.02666
+graph construction takes 0.00310302
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.032732
+graph construction takes 0.00426388
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.86609
+graph construction takes 5.2684
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.13735
+graph construction takes 0.0381548
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.7526
+graph construction takes 9.50478
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.6113
+graph construction takes 5.17703
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.845275
+graph construction takes 0.323756
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.90978
+graph construction takes 1.278
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.6348
+graph construction takes 0.726705
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.77701
+graph construction takes 1.32623
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.815536
+graph construction takes 0.285831
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.03885
+graph construction takes 0.433335
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.50424
+graph construction takes 1.66198
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.84848
+graph construction takes 3.69572
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.24741
+graph construction takes 1.07708
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.91482
+graph construction takes 1.34449
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.9182
+graph construction takes 28.3326
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.8807
+graph construction takes 27.5861
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.091244
+graph construction takes 0.017803
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.133857
+graph construction takes 0.034523
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.1399
+graph construction takes 0.0349159
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.046396
+graph construction takes 0.00522304
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.179478
+graph construction takes 0.043587
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.747225
+graph construction takes 0.255559
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.9605
+graph construction takes 28.247
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.104016
+graph construction takes 0.0200169
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.481889
+graph construction takes 0.159585
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.21069
+graph construction takes 0.515466
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.438764
+graph construction takes 0.130444
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88603
+graph construction takes 0.833567
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.145916
+graph construction takes 0.038749
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.31907
+graph construction takes 0.556193
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.757854
+graph construction takes 0.297786
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.5877
+graph construction takes 22.0686
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.609126
+graph construction takes 0.223479
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.67852
+graph construction takes 1.28153
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 5.02852
+graph construction takes 2.48447
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.154181
+graph construction takes 0.041141
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0821559
+graph construction takes 0.015636
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0742249
+graph construction takes 0.0155849
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.06722
+graph construction takes 0.398291
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.253401
+graph construction takes 0.0884058
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0251081
+graph construction takes 0.00300002
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.465714
+graph construction takes 0.146348
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.13334
+graph construction takes 1.45388
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.88977
+graph construction takes 3.14528
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0883801
+graph construction takes 0.0163791
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.38442
+graph construction takes 1.82194
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.33926
+graph construction takes 0.130543
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.220825
+graph construction takes 0.0531919
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.181996
+graph construction takes 0.0467961
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 2.99669
+graph construction takes 1.507
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0457821
+graph construction takes 0.0067451
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.134255
+graph construction takes 0.033438
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.08178
+graph construction takes 0.968947
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.025162
+graph construction takes 0.0032568
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0326672
+graph construction takes 0.00437999
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.3235
+graph construction takes 5.26055
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.139815
+graph construction takes 0.0411119
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.6893
+graph construction takes 10.4428
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 10.0048
+graph construction takes 5.34888
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.857717
+graph construction takes 0.322982
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.79993
+graph construction takes 1.28175
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.61254
+graph construction takes 0.729859
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.76203
+graph construction takes 1.83546
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.873125
+graph construction takes 0.302775
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.05678
+graph construction takes 0.472875
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.2492
+graph construction takes 1.66192
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.84274
+graph construction takes 3.71319
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.30024
+graph construction takes 1.09103
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77766
+graph construction takes 1.33137
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.5095
+graph construction takes 28.0644
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 42.4455
+graph construction takes 27.7066
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0986161
+graph construction takes 0.0224311
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.12908
+graph construction takes 0.034492
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.139997
+graph construction takes 0.034894
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0471849
+graph construction takes 0.00528908
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.172251
+graph construction takes 0.044266
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.712333
+graph construction takes 0.25627
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.6449
+graph construction takes 28.6167
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0969539
+graph construction takes 0.0236869
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.469533
+graph construction takes 0.167813
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.19248
+graph construction takes 0.521272
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.420628
+graph construction takes 0.141403
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.86273
+graph construction takes 1.08058
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.147317
+graph construction takes 0.044024
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.26518
+graph construction takes 0.606279
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.724022
+graph construction takes 0.31094
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.987
+graph construction takes 22.0323
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.613696
+graph construction takes 0.225337
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.69209
+graph construction takes 1.26648
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.80816
+graph construction takes 2.52478
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.165124
+graph construction takes 0.0421739
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0913329
+graph construction takes 0.017616
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0721209
+graph construction takes 0.0166762
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.06
+graph construction takes 0.447269
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.252982
+graph construction takes 0.090328
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0248299
+graph construction takes 0.00339794
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.457395
+graph construction takes 0.163618
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.0192
+graph construction takes 1.45828
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.89186
+graph construction takes 3.27264
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0846801
+graph construction takes 0.016573
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.14905
+graph construction takes 1.81022
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.366981
+graph construction takes 0.143905
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.228713
+graph construction takes 0.0552351
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.187575
+graph construction takes 0.048382
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.2037
+graph construction takes 1.49216
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0462141
+graph construction takes 0.00614691
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.136579
+graph construction takes 0.050844
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.12227
+graph construction takes 0.967299
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.023412
+graph construction takes 0.00320101
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0333481
+graph construction takes 0.00424695
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.5292
+graph construction takes 5.28142
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.14696
+graph construction takes 0.0385451
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.0662
+graph construction takes 10.0318
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.60202
+graph construction takes 5.18353
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.865641
+graph construction takes 0.32323
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.99016
+graph construction takes 1.30968
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.58414
+graph construction takes 0.766477
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.75606
+graph construction takes 1.32385
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.803957
+graph construction takes 0.285177
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.09054
+graph construction takes 0.426772
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.22151
+graph construction takes 1.6433
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.1807
+graph construction takes 3.72923
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.25497
+graph construction takes 1.17464
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.89385
+graph construction takes 1.3477
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.377
+graph construction takes 29.0266
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.764
+graph construction takes 27.661
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.087971
+graph construction takes 0.0198271
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.127037
+graph construction takes 0.0363841
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.149181
+graph construction takes 0.0363159
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.04848
+graph construction takes 0.00592995
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.180251
+graph construction takes 0.0452518
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.726308
+graph construction takes 0.259217
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.5366
+graph construction takes 28.615
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.103579
+graph construction takes 0.0201099
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.457397
+graph construction takes 0.163012
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.17254
+graph construction takes 0.517649
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.40472
+graph construction takes 0.133301
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 2.023
+graph construction takes 0.846533
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.153865
+graph construction takes 0.04002
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.31354
+graph construction takes 0.563304
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.77904
+graph construction takes 0.302133
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.7869
+graph construction takes 22.4337
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.621314
+graph construction takes 0.242684
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.74989
+graph construction takes 1.30734
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.8572
+graph construction takes 2.56333
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.164475
+graph construction takes 0.044497
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.087996
+graph construction takes 0.0165248
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0758388
+graph construction takes 0.016835
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.05137
+graph construction takes 0.412882
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.271881
+graph construction takes 0.0951018
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0248251
+graph construction takes 0.00334406
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.473847
+graph construction takes 0.159085
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 2.97393
+graph construction takes 1.55824
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.20541
+graph construction takes 3.12404
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0848169
+graph construction takes 0.0193529
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.25702
+graph construction takes 1.80172
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.35753
+graph construction takes 0.139992
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.211795
+graph construction takes 0.053602
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.18498
+graph construction takes 0.046998
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.05951
+graph construction takes 1.53109
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0425651
+graph construction takes 0.00742102
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.142523
+graph construction takes 0.0365472
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.15303
+graph construction takes 1.06752
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.027143
+graph construction takes 0.00346708
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.033798
+graph construction takes 0.00462198
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.1721
+graph construction takes 5.33052
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.14353
+graph construction takes 0.0404658
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.7448
+graph construction takes 9.51795
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.67855
+graph construction takes 5.26942
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.865602
+graph construction takes 0.326225
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.91168
+graph construction takes 1.27307
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.71771
+graph construction takes 0.720405
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.73766
+graph construction takes 1.32381
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.816225
+graph construction takes 0.285328
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.04959
+graph construction takes 0.440636
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.52706
+graph construction takes 1.6688
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.9582
+graph construction takes 3.75615
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.2654
+graph construction takes 1.11812
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77817
+graph construction takes 1.34958
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 44.6449
+graph construction takes 28.2595
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.5485
+graph construction takes 27.5897
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0908659
+graph construction takes 0.017931
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.131165
+graph construction takes 0.0404999
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.150382
+graph construction takes 0.0416601
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0509269
+graph construction takes 0.00562501
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.171431
+graph construction takes 0.043612
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.709677
+graph construction takes 0.267949
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 48.4714
+graph construction takes 28.7609
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.103346
+graph construction takes 0.022754
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.47089
+graph construction takes 0.159906
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.18777
+graph construction takes 0.510558
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.44764
+graph construction takes 0.132499
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88157
+graph construction takes 0.839103
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.141391
+graph construction takes 0.0391309
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.30498
+graph construction takes 0.601593
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.732111
+graph construction takes 0.302151
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.4189
+graph construction takes 21.683
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.607832
+graph construction takes 0.242801
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.69007
+graph construction takes 1.28043
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.75144
+graph construction takes 2.49917
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.162682
+graph construction takes 0.04146
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0853159
+graph construction takes 0.0156841
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.073776
+graph construction takes 0.015635
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.14364
+graph construction takes 0.40179
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.257108
+graph construction takes 0.103526
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0208361
+graph construction takes 0.00308108
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.49844
+graph construction takes 0.159336
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.0011
+graph construction takes 1.47589
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.92466
+graph construction takes 3.20007
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0851219
+graph construction takes 0.016536
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.18462
+graph construction takes 1.84198
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.36121
+graph construction takes 0.130484
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.225768
+graph construction takes 0.0533402
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.179619
+graph construction takes 0.047015
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.07971
+graph construction takes 1.49867
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0480571
+graph construction takes 0.00669312
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.136714
+graph construction takes 0.0330989
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.08482
+graph construction takes 0.970682
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0258551
+graph construction takes 0.00322509
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0332341
+graph construction takes 0.0042479
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.97502
+graph construction takes 5.28852
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.140842
+graph construction takes 0.0382249
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3092
+graph construction takes 9.61953
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.6767
+graph construction takes 6.4021
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.882345
+graph construction takes 0.341178
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.84413
+graph construction takes 1.3003
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.68038
+graph construction takes 0.745198
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.89233
+graph construction takes 1.45148
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.819579
+graph construction takes 0.285568
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.05698
+graph construction takes 0.430184
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.51669
+graph construction takes 1.71812
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.28114
+graph construction takes 3.86634
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.27856
+graph construction takes 1.09157
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.7866
+graph construction takes 1.37103
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.8186
+graph construction takes 29.0907
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.7642
+graph construction takes 28.0721
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.090034
+graph construction takes 0.0179861
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.13723
+graph construction takes 0.034462
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.145958
+graph construction takes 0.03827
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.049511
+graph construction takes 0.00540805
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.17499
+graph construction takes 0.04898
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.747952
+graph construction takes 0.295856
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 48.2459
+graph construction takes 31.3916
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.097523
+graph construction takes 0.0219851
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.482605
+graph construction takes 0.189213
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.15593
+graph construction takes 0.512565
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.411515
+graph construction takes 0.134065
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.87128
+graph construction takes 0.843633
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.141763
+graph construction takes 0.041687
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.24667
+graph construction takes 0.572553
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.77506
+graph construction takes 0.298464
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.7217
+graph construction takes 23.6627
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.603412
+graph construction takes 0.226187
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.73523
+graph construction takes 1.27997
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.79849
+graph construction takes 2.5946
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.153031
+graph construction takes 0.0447099
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0844779
+graph construction takes 0.0170281
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.076704
+graph construction takes 0.018153
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.12232
+graph construction takes 0.427004
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.26
+graph construction takes 0.091439
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0232708
+graph construction takes 0.00334406
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.477551
+graph construction takes 0.161738
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.10203
+graph construction takes 1.48037
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.7914
+graph construction takes 3.30766
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0867341
+graph construction takes 0.0209558
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.10396
+graph construction takes 1.83367
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.348173
+graph construction takes 0.131042
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.226191
+graph construction takes 0.0534899
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.177578
+graph construction takes 0.0468209
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.1038
+graph construction takes 1.5578
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.04356
+graph construction takes 0.0062809
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.134599
+graph construction takes 0.0455348
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.05654
+graph construction takes 0.998256
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0267801
+graph construction takes 0.00337791
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.029021
+graph construction takes 0.00626302
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.1985
+graph construction takes 5.22874
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.132948
+graph construction takes 0.047534
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 17.1227
+graph construction takes 11.5633
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.82725
+graph construction takes 5.23782
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.868043
+graph construction takes 0.341909
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.90326
+graph construction takes 1.46782
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.61336
+graph construction takes 0.749647
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.86906
+graph construction takes 1.48379
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.805394
+graph construction takes 0.331624
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.02822
+graph construction takes 0.463437
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.3055
+graph construction takes 1.66113
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.84392
+graph construction takes 3.75199
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.41515
+graph construction takes 1.08367
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.78004
+graph construction takes 1.34038
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.5841
+graph construction takes 29.4931
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 42.9772
+graph construction takes 28.1481
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0915861
+graph construction takes 0.021143
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129101
+graph construction takes 0.0380051
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.148547
+graph construction takes 0.0381422
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0474989
+graph construction takes 0.00559211
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.171519
+graph construction takes 0.058109
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.763457
+graph construction takes 0.266602
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.3843
+graph construction takes 29.3111
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.097949
+graph construction takes 0.0252042
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.467399
+graph construction takes 0.158716
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.13502
+graph construction takes 0.532119
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.413739
+graph construction takes 0.142426
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.93291
+graph construction takes 0.853439
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.145183
+graph construction takes 0.0445409
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.29186
+graph construction takes 0.556737
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.768769
+graph construction takes 0.305579
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.0932
+graph construction takes 27.4181
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.62945
+graph construction takes 0.251605
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.62078
+graph construction takes 1.2816
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.87008
+graph construction takes 2.47767
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.16561
+graph construction takes 0.0414331
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.089004
+graph construction takes 0.0189459
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0793281
+graph construction takes 0.016701
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.09899
+graph construction takes 0.408442
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.255976
+graph construction takes 0.09062
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.023927
+graph construction takes 0.00331402
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.466075
+graph construction takes 0.173577
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.00804
+graph construction takes 1.49763
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.10948
+graph construction takes 3.31936
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.086215
+graph construction takes 0.0233412
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.04504
+graph construction takes 1.82164
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.345969
+graph construction takes 0.140266
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.212727
+graph construction takes 0.0606482
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.197544
+graph construction takes 0.0516188
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.04303
+graph construction takes 1.50223
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0448992
+graph construction takes 0.00666404
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.136548
+graph construction takes 0.036849
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.08369
+graph construction takes 1.01041
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.025517
+graph construction takes 0.00310802
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.03035
+graph construction takes 0.00439906
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.5241
+graph construction takes 5.45825
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.144207
+graph construction takes 0.038758
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3739
+graph construction takes 9.68067
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.62095
+graph construction takes 5.17299
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.859101
+graph construction takes 0.339769
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.95771
+graph construction takes 1.27444
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.72021
+graph construction takes 0.731623
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.75093
+graph construction takes 1.3227
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.799116
+graph construction takes 0.302522
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.03095
+graph construction takes 0.462686
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.49093
+graph construction takes 1.73265
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.33591
+graph construction takes 3.78994
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.39553
+graph construction takes 1.10585
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.8803
+graph construction takes 1.3431
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.5286
+graph construction takes 28.6471
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.8894
+graph construction takes 27.6505
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.094285
+graph construction takes 0.017606
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129325
+graph construction takes 0.034322
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.147471
+graph construction takes 0.034966
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0439501
+graph construction takes 0.00525498
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.177027
+graph construction takes 0.043932
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.729015
+graph construction takes 0.296646
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 49.1845
+graph construction takes 28.0627
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0995462
+graph construction takes 0.0234959
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.474771
+graph construction takes 0.166884
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.15913
+graph construction takes 0.530753
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.436384
+graph construction takes 0.139965
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.85624
+graph construction takes 0.926965
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.140889
+graph construction takes 0.0386829
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.33185
+graph construction takes 0.551015
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.73818
+graph construction takes 0.300533
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.2174
+graph construction takes 22.195
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.589526
+graph construction takes 0.223884
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.67217
+graph construction takes 1.28071
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.85535
+graph construction takes 2.49241
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.171351
+graph construction takes 0.042942
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.085109
+graph construction takes 0.01542
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0789859
+graph construction takes 0.015162
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.0582
+graph construction takes 0.399983
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.255546
+graph construction takes 0.090425
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0251608
+graph construction takes 0.00305104
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.486925
+graph construction takes 0.147052
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.03014
+graph construction takes 1.43432
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.02522
+graph construction takes 3.18899
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0914872
+graph construction takes 0.016084
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.21617
+graph construction takes 1.82384
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.365825
+graph construction takes 0.130996
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.213588
+graph construction takes 0.053874
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.177656
+graph construction takes 0.047014
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.19959
+graph construction takes 1.50134
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.045717
+graph construction takes 0.00613213
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.142988
+graph construction takes 0.0323961
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.10014
+graph construction takes 0.966638
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.026432
+graph construction takes 0.00314307
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.034214
+graph construction takes 0.00424194
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.9768
+graph construction takes 5.18083
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.139931
+graph construction takes 0.05667

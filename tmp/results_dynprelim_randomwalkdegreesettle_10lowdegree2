@@ -1,0 +1,2892 @@
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.04634
+71787  1.61368
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0442381
+2293  0.00714588
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.134445
+7594  0.037684
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.0958
+54947  1.05013
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0267639
+1135  0.00364113
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0334542
+2343  0.00503302
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.1075
+322047  6.20268
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.140788
+3279  0.04775
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 17.0958
+201885  12.1692
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.34001
+222574  5.81783
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.855587
+6937  0.335208
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.79778
+14426  1.29816
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.6473
+17694  0.752351
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.93819
+22219  1.35929
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.834707
+4362  0.286341
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.02801
+30489  0.467719
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.35491
+105699  2.02935
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.21598
+83476  5.01032
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.41789
+96487  1.26317
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.81344
+122263  1.59254
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.0335
+211773  29.4794
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.84
+262477  29.1783
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0923429
+4857  0.0205112
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.131387
+10819  0.040272
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.141503
+8220  0.0396399
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.049895
+1402  0.00605607
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.172997
+1552  0.052645
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.737247
+6193  0.325797
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.4455
+305198  35.943
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.097307
+5406  0.022959
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.46498
+21781  0.17805
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.15443
+69871  0.586747
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.429621
+17877  0.14868
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.92319
+49321  0.903423
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.148032
+7997  0.0424318
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.28563
+37970  0.600228
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.734036
+35652  0.337691
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.6882
+399656  28.7896
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.612958
+19594  0.258045
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.66321
+74646  1.477
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.74524
+106575  2.67487
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.15678
+8557  0.0471079
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.084554
+2947  0.0176661
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.071641
+3850  0.0178289
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.0978
+12549  0.435496
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.258438
+28630  0.102479
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0238831
+2267  0.00365591
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.471853
+6111  0.152521
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.07025
+77435  1.56116
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.1188
+145159  3.86965
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.08406
+4778  0.0184488
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.02934
+24499  2.26468
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.356001
+29866  0.149581
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.223174
+5418  0.058428
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.193185
+3636  0.0523481
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.03506
+71751  1.57346
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0444429
+2303  0.00710106
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.133374
+7595  0.03757
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.14394
+54972  1.04472
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0271411
+1127  0.00364089
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0323319
+2331  0.00509501
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.2021
+322082  6.20543
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.139504
+3282  0.048157
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 17.2485
+201776  12.0016
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.28908
+222641  5.83795
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.857919
+6939  0.335323
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.83176
+14426  1.30418
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.65955
+17679  0.744159
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.7094
+22224  1.35753
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.821895
+4361  0.296513
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.04476
+30511  0.469445
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.48605
+105754  2.03026
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.92776
+83580  4.9942
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.41664
+96473  1.25162
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.75368
+122220  1.6049
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.9357
+211797  29.0002
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 45.0461
+262513  28.9773
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0933089
+4890  0.0204301
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.128264
+10838  0.0402179
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.14058
+8206  0.0398262
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0493748
+1400  0.00598502
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.17916
+1559  0.0525689
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.723312
+6183  0.327474
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.6914
+305350  36.3755
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0973208
+5407  0.0228012
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.477849
+21762  0.179408
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.15875
+69881  0.579466
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.435637
+17907  0.144073
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.84152
+49300  0.888152
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.144077
+7984  0.041872
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.30266
+37976  0.604925
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.7353
+35624  0.332563
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.7568
+399600  28.5039
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.612275
+19593  0.258969
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.66859
+74592  1.4678
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.69681
+106603  2.674
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.162092
+8555  0.046916
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.088248
+2942  0.0176539
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.076648
+3831  0.0177181
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.08961
+12579  0.434603
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.270383
+28602  0.103041
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0252421
+2274  0.00367904
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.462992
+6103  0.155832
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.02044
+77463  1.57612
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.17707
+145254  3.93834
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0875201
+4769  0.01861
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.11327
+24524  2.2376
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.348898
+29850  0.147401
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.227281
+5419  0.05797
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.188111
+3647  0.05316
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.16499
+71750  1.60708
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0430841
+2290  0.00713801
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.141342
+7596  0.037462
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.09025
+54942  1.03756
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.026721
+1132  0.00361204
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0332649
+2343  0.00500989
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.82166
+322124  6.05347
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.139759
+3275  0.0478809
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.4571
+201896  12.3662
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.3522
+222615  5.83474
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.86019
+6933  0.330738
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.79905
+14424  1.29154
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.67322
+17682  0.750748
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.74742
+22228  1.36309
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.845445
+4361  0.29784
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.07964
+30510  0.4669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.38603
+105686  2.03712
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.01581
+83550  4.84826
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.27031
+96578  1.25086
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77118
+122233  1.59366
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.2967
+211733  29.008
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.7795
+262601  28.9988
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.094882
+4896  0.0202401
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.130876
+10835  0.0396528
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.145619
+8226  0.039844
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.050468
+1406  0.00594997
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.169206
+1562  0.052418
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.740176
+6179  0.327789
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 48.399
+305293  36.1049
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0988059
+5420  0.0225341
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.461794
+21726  0.17728
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.22379
+69947  0.58745
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.410683
+17880  0.146624
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88314
+49329  0.90411
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.14721
+7982  0.0424631
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.31896
+37973  0.604634
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.733865
+35613  0.336013
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.9136
+399599  29.2488
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.606688
+19530  0.262299
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.65231
+74637  1.47897
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.72051
+106558  2.71916
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.156916
+8570  0.0467129
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.089251
+2957  0.0174031
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0750852
+3842  0.017802
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.03876
+12569  0.432985
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.25403
+28593  0.103047
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.025511
+2274  0.00364399
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.466998
+6100  0.155987
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.01317
+77456  1.55752
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.09405
+145198  3.83592
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.088923
+4764  0.01895
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.12864
+24552  2.2506
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.360037
+29873  0.147636
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.21695
+5419  0.0582719
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.183303
+3674  0.0523002
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.12723
+71786  1.618
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.045186
+2304  0.00712204
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.131821
+7597  0.037415
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.1883
+54945  1.0442
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.026206
+1139  0.00360394
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0330238
+2337  0.00514698
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.0914
+322195  6.15669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.137607
+3284  0.0480978
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3326
+201855  12.4316
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.43798
+222621  5.73903
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.857633
+6933  0.330523
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.97444
+14429  1.27534
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.6175
+17683  0.753338
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.7659
+22228  1.35318
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.823037
+4362  0.296617
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.10061
+30496  0.466238
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.43817
+105693  2.05792
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.80048
+83567  5.01721
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.28011
+96451  1.25498
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.79615
+122184  1.61006
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.2025
+211713  29.516
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.7981
+262550  28.6861
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.091506
+4872  0.020241
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.132777
+10826  0.040025
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.145627
+8219  0.0401418
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.049644
+1400  0.00602913
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.180529
+1556  0.051929
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.807268
+6176  0.327311
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.3342
+305285  36.0218
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.10122
+5436  0.022728
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.481995
+21744  0.177595
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.18928
+69935  0.589688
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.410474
+17887  0.147612
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.84882
+49319  0.904381
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.145429
+8001  0.042254
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.27259
+37971  0.598772
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.7369
+35650  0.337939
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.3542
+399484  28.7263
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.601817
+19590  0.260806
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.6787
+74663  1.49272
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.74425
+106568  2.72345
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.154224
+8558  0.0469308
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.092133
+2947  0.0176489
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0748951
+3831  0.017915
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.11898
+12551  0.433871
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.27017
+28588  0.102836
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0245321
+2275  0.00363684
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.454103
+6104  0.153739
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.17283
+77449  1.58643
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.9522
+145172  3.86675
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0886619
+4774  0.0186319
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.01496
+24569  2.29773
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.363777
+29888  0.148632
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.211808
+5422  0.05813
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.185249
+3666  0.0533969
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.11234
+71757  1.62069
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.046706
+2296  0.00717092
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.139021
+7603  0.037518
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.09356
+54960  1.03861
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0264962
+1129  0.00358891
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.027889
+2333  0.00519419
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.3089
+322068  6.12398
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.146392
+3288  0.048116
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.1862
+201837  12.1388
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.89685
+222626  5.77052
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.854728
+6933  0.331113
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.85534
+14425  1.27549
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.61885
+17682  0.753256
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.72863
+22229  1.35308
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.804482
+4362  0.293453
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.03317
+30478  0.459634
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.33551
+105692  2.01433
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.66941
+83567  4.96991
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.34865
+96534  1.24068
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.74713
+122359  1.61016
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 47.7428
+211744  29.7466
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.3016
+262602  28.8936
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0875151
+4855  0.0206811
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.127649
+10813  0.040319
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.144223
+8223  0.0395501
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.047852
+1404  0.00612116
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.185395
+1549  0.052804
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.717503
+6170  0.327152
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.449
+305242  36.2487
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.101006
+5416  0.0229108
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.466814
+21745  0.177164
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.14575
+69915  0.583399
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.434367
+17885  0.145285
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.90425
+49318  0.906433
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.150728
+8001  0.0418482
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.33605
+37955  0.598479
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.749309
+35666  0.338541
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.4299
+399723  29.4033
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.625756
+19561  0.259208
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.79711
+74574  1.47108
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.69368
+106573  2.69296
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.15675
+8563  0.0476151
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.086376
+2944  0.0176458
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.077234
+3842  0.0178621
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.11621
+12555  0.438474
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.261818
+28588  0.103105
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0263009
+2266  0.00367403
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.459105
+6107  0.155607
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.1852
+77449  1.58297
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.13265
+145091  3.8935
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0909832
+4778  0.018486
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.09984
+24520  2.24073
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.350365
+29896  0.149481
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.226719
+5414  0.058095
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.17875
+3650  0.0524049
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.06653
+71766  1.60421
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.043694
+2295  0.00717807
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.139294
+7589  0.0376501
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.10831
+54968  1.04059
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0270791
+1123  0.00363517
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0315621
+2328  0.00504994
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.4771
+322069  6.1728
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.144911
+3287  0.048562
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.4765
+201900  12.05
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.40425
+222634  5.87243
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.89556
+6938  0.335093
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.8282
+14426  1.301
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.66129
+17684  0.752119
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.69836
+22228  1.35707
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.831004
+4360  0.29793
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.06301
+30485  0.461715
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.36594
+105674  2.00161
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.59537
+83538  4.90187
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.30566
+96475  1.2596
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.80224
+122143  1.57378
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 47.2805
+211744  29.424
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.7863
+262581  28.9929
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0932741
+4880  0.0202692
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.125798
+10830  0.0400848
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.138638
+8218  0.0398109
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.051229
+1406  0.00593805
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.168746
+1549  0.052563
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.715763
+6177  0.328534
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.0361
+305356  36.3481
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.102041
+5415  0.0228171
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.461528
+21726  0.178332
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.16179
+69914  0.586636
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.410106
+17896  0.147277
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.91191
+49318  0.90482
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.14527
+7994  0.042212
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.2771
+37921  0.603875
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.766249
+35624  0.338117
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.0505
+399582  28.9709
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.581998
+19569  0.259908
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.82469
+74695  1.47309
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.95301
+106569  2.67401
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.168444
+8533  0.047231
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.084295
+2945  0.0176411
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.072221
+3843  0.017822
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.0415
+12582  0.437702
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.271599
+28605  0.103132
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0245912
+2259  0.003654
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.465905
+6102  0.15582
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.19521
+77464  1.58094
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.18366
+145138  3.86837
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.087378
+4777  0.018585
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.1617
+24561  2.27886
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.340592
+29848  0.149844
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.234762
+5423  0.0580621
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.189892
+3663  0.0523381
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.21959
+71751  1.61032
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.043108
+2295  0.00739717
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.13322
+7595  0.0376351
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.115
+54970  1.0473
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.025296
+1132  0.00364494
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.032804
+2334  0.00504112
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.85198
+322169  6.08848
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.141684
+3287  0.047801
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.1956
+201877  12.3801
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.51652
+222614  5.86506
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.827007
+6930  0.335644
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.77049
+14423  1.28452
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.66113
+17678  0.747918
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.74367
+22213  1.35121
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.819822
+4365  0.295124
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.0688
+30497  0.468166
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.46393
+105734  2.03484
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.96717
+83557  4.88289
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.29559
+96530  1.24969
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.78215
+122227  1.59285
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 44.2921
+211762  29.5647
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.2
+262633  29.132
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.094532
+4873  0.020282
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.135388
+10814  0.0400531
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.14016
+8233  0.0393879
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0542469
+1405  0.00610614
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.168426
+1554  0.0521379
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.762062
+6191  0.327948
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.8038
+305379  36.4275
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0970452
+5406  0.0227311
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.472623
+21764  0.178843
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.19052
+69913  0.579289
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.429689
+17910  0.146897
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88506
+49308  0.90118
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.152501
+7998  0.0419791
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.435
+37953  0.60123
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.736212
+35636  0.339509
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 42.066
+399518  28.8411
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.593461
+19568  0.260601
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.71002
+74554  1.48448
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.76896
+106577  2.7142
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.156649
+8556  0.04685
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.090096
+2950  0.0175321
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0731812
+3844  0.0179791
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.08882
+12548  0.430451
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.298008
+28641  0.101966
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0247879
+2275  0.00360203
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.489295
+6096  0.155534
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.04606
+77469  1.56329
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.8262
+145194  3.88506
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.087795
+4764  0.0186231
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.03735
+24523  2.26788
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.351684
+29886  0.149679
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.235797
+5416  0.057539
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.178232
+3664  0.0526471
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 2.98318
+71775  1.62513
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0442629
+2292  0.00722599
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.129754
+7596  0.0375578
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.06448
+54939  1.05095
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.027137
+1135  0.00365996
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0329158
+2343  0.00500202
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.0516
+322246  8.57261
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.148096
+3275  0.0531402
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3122
+201924  12.6221
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.39058
+222639  6.05505
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.842618
+6928  0.333933
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.89448
+14423  1.30019
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.61456
+17693  0.750834
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.8455
+22224  1.35412
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.83764
+4359  0.300897
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.02396
+30509  0.471263
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.29626
+105686  2.1277
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.02654
+83527  4.95204
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.31759
+96437  1.24806
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.75383
+122229  1.58975
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.4411
+211709  29.1994
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 42.6644
+262553  29.149
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0982699
+4870  0.020112
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.127996
+10831  0.0397892
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.144237
+8200  0.0392931
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0457098
+1404  0.00590801
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.182472
+1552  0.0519519
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.727926
+6179  0.340963
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 46.8881
+305295  36.0033
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.098732
+5399  0.0257249
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.457047
+21738  0.189732
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.18389
+69920  0.654998
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.414947
+17896  0.180098
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.92343
+49312  0.99796
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.138113
+7997  0.0469401
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.25674
+37933  0.671826
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.72667
+35621  0.337095
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.1234
+399621  29.6572
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.610057
+19558  0.262465
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.71708
+74599  1.52742
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 5.03356
+106564  2.72498
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.166985
+8563  0.0535371
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.082608
+2951  0.019851
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.072372
+3844  0.0202601
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.06778
+12562  0.43339
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.257427
+28603  0.103274
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.026932
+2257  0.00435805
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.501625
+6106  0.157438
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.02734
+77436  1.61162
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.22426
+145116  3.92097
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0864489
+4777  0.018436
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.28334
+24502  2.30505
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.347088
+29840  0.153217
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.226194
+5415  0.0599871
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.178923
+3654  0.071068
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.1529
+71766  1.63233
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.046546
+2300  0.00714421
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.133691
+7603  0.037709
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.15802
+54987  1.05543
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0265131
+1136  0.00365281
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0315249
+2330  0.00510693
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.86998
+322113  6.15928
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.141895
+3284  0.056015
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.3497
+201818  12.2791
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.25794
+222581  5.86195
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.835783
+6928  0.355367
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.79191
+14424  1.36903
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.64411
+17690  0.75734
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.718
+22224  1.34622
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.83267
+4361  0.293576
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.09246
+30519  0.461464
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.36047
+105568  2.07
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.88919
+83512  5.32179
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.4107
+96562  1.26564
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.89396
+122242  1.75097
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 44.7304
+211751  30.6348
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.0747
+262571  29.1808
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.087316
+4865  0.021266
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.128004
+10827  0.0409529
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.145185
+8219  0.0456779
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0465491
+1404  0.00612903
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.180142
+1554  0.05392
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.733619
+6166  0.343478
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.7344
+305298  37.3482
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.09952
+5414  0.023196
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.474705
+21755  0.186994
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.20539
+69925  0.603533
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.414682
+17899  0.149465
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88149
+49323  0.937954
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.147981
+8001  0.04287
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.25593
+37959  0.650799
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.761724
+35629  0.342927
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 41.3513
+399858  29.5837
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.599881
+19525  0.263669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.76352
+74599  1.5046
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.77168
+106562  2.78518
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.155436
+8553  0.0500419
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0868921
+2940  0.0232499
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0765679
+3846  0.01981
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.05997
+12571  0.478739
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.270795
+28571  0.108612
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.024267
+2260  0.00388908
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.498504
+6105  0.163286
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 2.97632
+77411  1.66144
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.8058
+145238  3.89995
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0979168
+4784  0.0185099
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.2721
+24539  2.26967
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.349241
+29855  0.14994
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.219773
+5421  0.0579989
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.182153
+3648  0.052516
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.02099
+71756  1.67827
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0462458
+2300  0.00863099
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.137925
+7574  0.041796
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.0959
+54970  1.17288
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0271671
+1131  0.00378394
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0317969
+2333  0.00579405
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.90952
+322095  6.23471
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.143087
+3281  0.051239
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 17.2292
+201903  12.1859
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.61689
+222620  5.89871
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.863134
+6935  0.336322
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.87269
+14425  1.29738
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.62062
+17675  0.747067
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.80183
+22218  1.34539
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.857928
+4359  0.296941
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.0672
+30514  0.471314
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.49552
+105678  2.07752
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.01673
+83537  5.00921
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.26005
+96550  1.25775
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.8573
+122185  1.6089
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 46.9609
+211758  29.5872
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 45.0697
+262582  28.9252
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.089699
+4870  0.0272391
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.130212
+10846  0.043246
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.147041
+8228  0.0486629
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.046742
+1401  0.00736594
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.173504
+1550  0.0539989
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.716532
+6200  0.354533
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.4741
+305263  38.8055
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.101226
+5423  0.0227952
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.485541
+21750  0.179375
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.22762
+69924  0.585214
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.407624
+17887  0.151505
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.97946
+49304  0.912151
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.147204
+7998  0.042803
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.26508
+37931  0.605939
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.760442
+35632  0.345338
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.7924
+399620  29.5975
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.635194
+19581  0.324017
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.73102
+74519  1.49394
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.85284
+106561  2.72929
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.165127
+8555  0.047411
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.084861
+2953  0.0180411
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.075983
+3835  0.0182321
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.07554
+12558  0.453247
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.251456
+28601  0.103096
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0231931
+2277  0.00372219
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.470247
+6107  0.158362
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.0422
+77479  1.58999
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.94168
+145156  4.07543
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.091069
+4767  0.018707
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.24887
+24481  2.27515
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.349302
+29856  0.148838
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.226805
+5419  0.05811
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.189943
+3670  0.052048
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.03568
+71757  1.61788
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0434561
+2292  0.00704002
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.132079
+7601  0.0374699
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.17322
+54982  1.05263
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.023773
+1135  0.00359988
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0289249
+2341  0.0050621
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 9.82313
+322098  6.19446
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.142189
+3279  0.0480149
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.1652
+201763  12.1558
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.87077
+222599  5.83949
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.870693
+6936  0.341308
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.80645
+14422  1.31741
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.64676
+17688  0.778659
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.74481
+22217  1.42299
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.804461
+4364  0.296459
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.09566
+30503  0.497846
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.29624
+105754  2.02902
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 7.86805
+83567  4.86527
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.33186
+96497  1.35068
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77564
+122314  1.64192
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.0466
+211824  29.8802
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 43.1039
+262546  29.9473
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0904429
+4867  0.020354
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.131021
+10838  0.0579751
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.141246
+8220  0.0439889
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.04897
+1404  0.00661993
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.171358
+1555  0.056035
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.730261
+6190  0.331415
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 47.4917
+305298  36.2321
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0944171
+5414  0.032536
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.458452
+21758  0.176451
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.19411
+69896  0.585314
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.411714
+17897  0.147606
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.95119
+49334  0.933185
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.149904
+7995  0.0457549
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.26092
+37971  0.621549
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.735272
+35636  0.392164
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 39.6924
+399658  28.8053
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.618159
+19519  0.263703
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.6878
+74600  1.52254
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.72976
+106541  3.08918
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.163386
+8524  0.050209
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.094162
+2952  0.0215161
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0730331
+3837  0.019449
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.05133
+12569  0.484251
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.259069
+28574  0.127172
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0233781
+2268  0.00384307
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.460859
+6113  0.167144
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.17983
+77437  1.66611
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 5.87788
+145163  3.90054
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.0840039
+4767  0.0187399
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.12865
+24574  2.24859
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.368215
+29893  0.146598
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.212995
+5419  0.0576861
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.186049
+3652  0.0522451
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.00327
+71763  2.40463
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.0444438
+2292  0.00708699
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.13533
+7582  0.0406771
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.11314
+54943  1.10147
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0229871
+1133  0.00375295
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.031533
+2321  0.00532818
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.189
+322086  6.14866
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.137334
+3279  0.0522001
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.4714
+201869  13.6974
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.55582
+222631  6.11889
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.845848
+6931  0.443478
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.82475
+14421  1.3137
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.59986
+17677  0.766604
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.85627
+22219  1.38453
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.808975
+4359  0.294259
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.06981
+30492  0.47543
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.3617
+105684  2.07466
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.53379
+83476  4.91386
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.37504
+96487  1.25406
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.77937
+122293  1.60991
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.0744
+211742  29.5405
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 44.9749
+262442  28.9638
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.0974331
+4866  0.0235879
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129743
+10841  0.0428858
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.141035
+8234  0.044044
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.047668
+1403  0.00829792
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.173436
+1558  0.058408
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.70505
+6191  0.333166
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.2466
+305323  37.1568
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.0966129
+5424  0.0231249
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.479144
+21758  0.183977
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.21773
+69934  0.727436
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.409347
+17893  0.151718
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.88889
+49312  0.931255
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.164055
+7971  0.0470152
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.26929
+37977  0.603915
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.757853
+35661  0.387217
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.3393
+399630  29.5899
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.613155
+19521  0.260992
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.61969
+74691  1.46548
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.94154
+106536  2.75479
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.157853
+8559  0.0509138
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0906241
+2948  0.0191181
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0734389
+3834  0.018523
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.12286
+12577  0.452466
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.253198
+28585  0.127485
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0242891
+2274  0.00399089
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.477728
+6099  0.179449
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.04879
+77430  1.5859
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.08931
+145159  4.36962
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.089956
+4767  0.0185871
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.07371
+24543  2.38948
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.342675
+29884  0.164989
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.217447
+5416  0.0656152
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.18821
+3649  0.065758
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.07331
+71755  1.80949
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.043381
+2293  0.00811887
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.141062
+7583  0.041173
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.06172
+54952  1.05658
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.025557
+1129  0.00355291
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0305059
+2336  0.00509
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.5068
+322156  6.16007
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.137038
+3288  0.0509899
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-skitter.graph.seq
+io took 16.7242
+201837  14.1845
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/auto.graph.seq
+io took 9.67048
+222648  6.05958
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk29.graph.seq
+io took 0.841217
+6935  0.336201
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk30.graph.seq
+io took 2.83115
+14419  1.37633
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk31.graph.seq
+io took 1.6294
+17686  0.753484
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk32.graph.seq
+io took 2.79262
+22228  1.42459
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/bcsstk33.graph.seq
+io took 0.838566
+4362  0.298497
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/brack2.graph.seq
+io took 1.09164
+30466  0.473925
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/citationCiteseer.graph.seq
+io took 3.48621
+105648  2.09151
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cnr-2000.graph.seq
+io took 8.02946
+83483  5.18988
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsCiteseer.graph.seq
+io took 2.32585
+96466  1.25615
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coAuthorsDBLP.graph.seq
+io took 2.75893
+122365  1.63384
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersCiteseer.graph.seq
+io took 45.3109
+211702  29.6835
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/coPapersDBLP.graph.seq
+io took 45.1871
+262507  31.9669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/crack.graph.seq
+io took 0.088943
+4870  0.0202
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cs4.graph.seq
+io took 0.129867
+10844  0.039659
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/cti.graph.seq
+io took 0.140489
+8224  0.039813
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/data.graph.seq
+io took 0.0498559
+1399  0.00598407
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/email-EuAll.graph.seq
+io took 0.174647
+1556  0.056329
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/enron.graph.seq
+io took 0.734929
+6197  0.383274
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/eu-2005.graph.seq
+io took 45.1013
+305264  44.2669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_4elt2.graph.seq
+io took 0.100352
+5420  0.026371
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_body.graph.seq
+io took 0.457166
+21762  0.215486
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_ocean.graph.seq
+io took 1.1614
+69920  0.602953
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_pwt.graph.seq
+io took 0.415716
+17880  0.172841
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_rotor.graph.seq
+io took 1.85562
+49289  0.911058
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_sphere.graph.seq
+io took 0.152549
+7993  0.0423779
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/fe_tooth.graph.seq
+io took 1.27377
+37962  0.60184
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/finan512.graph.seq
+io took 0.758229
+35591  0.3382
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/in-2004.graph.seq
+io took 40.0418
+399814  29.1065
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-brightkite_edges.graph.seq
+io took 0.601451
+19570  0.263159
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/loc-gowalla_edges.graph.seq
+io took 2.68141
+74582  1.475
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/m14b.graph.seq
+io took 4.94413
+106555  2.67624
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/memplus.graph.seq
+io took 0.156813
+8547  0.046859
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/p2p-Gnutella04.graph.seq
+io took 0.0882108
+2924  0.0175669
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/PGPgiantcompo.graph.seq
+io took 0.0777929
+3846  0.01791
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/soc-Slashdot0902.graph.seq
+io took 1.07649
+12564  0.439657
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/t60k.graph.seq
+io took 0.259357
+28619  0.101323
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/uk.graph.seq
+io took 0.0250621
+2267  0.00359511
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/vibrobox.graph.seq
+io took 0.464309
+6106  0.156352
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wave.graph.seq
+io took 3.20264
+77454  2.18269
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/web-Google.graph.seq
+io took 6.0959
+145184  3.88279
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/whitaker3.graph.seq
+io took 0.08389
+4781  0.018512
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wiki-Talk.graph.seq
+io took 4.05223
+24535  2.30717
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing.graph.seq
+io took 0.351858
+29894  0.149038
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wing_nodal.graph.seq
+io took 0.212779
+5421  0.057838
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/wordassociation-2011.graph.seq
+io took 0.191515
+3638  0.0526059
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/144.graph.seq
+io took 3.11447
+71774  1.57827
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/3elt.graph.seq
+io took 0.041451
+2298  0.00711393
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/4elt.graph.seq
+io took 0.133108
+7600  0.037384
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/598a.graph.seq
+io took 2.05693
+54970  1.02469
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add20.graph.seq
+io took 0.0282979
+1137  0.00358295
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/add32.graph.seq
+io took 0.0330911
+2331  0.00501609
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/amazon-2008.graph.seq
+io took 10.2091
+322134  6.16719
+************ checking matching ****************
+/home/christians84cs/projects/graph_collection/dyn_collection_prelim/as-22july06.graph.seq
+io took 0.144308
+3286  0.0484002
+************ checking matching ****************

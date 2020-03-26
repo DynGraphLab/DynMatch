@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo measure 
+TIME=`less results_social_measure | grep takes | awk 'BEGIN {G=1} {G*=($4)^(1/22)} END {print G}'`
+echo $TIME
 echo blossom
 SIZE=`less results_social_blossom | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($1)^(1/22)} END {print G}'`
 TIME=`less results_social_blossom | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($2)^(1/22)} END {print G}'`
@@ -29,7 +32,9 @@ SIZE=`less results_social_baswana | grep -v matching | grep -v took | grep -v ho
 TIME=`less results_social_baswana | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($2)^(1/22)} END {print G}'`
 echo $SIZE $TIME
 
-
+echo measure 
+TIME=`less results_walshaw_measure | grep takes | awk 'BEGIN {G=1} {G*=($4)^(1/22)} END {print G}'`
+echo $TIME
 echo blossom
 SIZE=`less results_walshaw_blossom | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($1)^(1/35)} END {print G}'`
 TIME=`less results_walshaw_blossom | grep -v matching | grep -v took | grep -v home | awk 'BEGIN {G=1} {G*=($2)^(1/35)} END {print G}'`
