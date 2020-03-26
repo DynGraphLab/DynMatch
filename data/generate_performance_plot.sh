@@ -43,10 +43,10 @@ COUNT="1"
 while IFS= read -r line;
 do 
         if [ $COUNT -eq "1" ]; then
-            echo "plot \"final_output\" using 1:2 with steps lw 2 lt $COUNT title '$line', \\" >> plot_current.gnuplot
+            echo "plot \"final_output\" using 1:2 with steps lw 4 lt $COUNT title '$line', \\" >> plot_current.gnuplot
      else 
             RHS=` echo "$COUNT+1" | bc`
-            echo "\"final_output\" using $COUNT:$RHS with steps lw 2 lt $COUNT title '$line', \\" >> plot_current.gnuplot
+            echo "\"final_output\" using $COUNT:$RHS with steps lw 4 lt $COUNT title '$line', \\" >> plot_current.gnuplot
 
         fi
 
