@@ -21,11 +21,12 @@ int main(int argn, char **argv)
         struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
         struct arg_int *user_delete_b               = arg_int0(NULL, "delete_x", NULL, "");
         struct arg_lit *reinsert_deleted            = arg_lit0(NULL, "reinsert_deleted","Shuffle edges.");
+        struct arg_int *sliding_window              = arg_int0(NULL, "sliding_window", NULL, "Sliding window size m/x (x parameter).");
         struct arg_end *end                         = arg_end(100);
 
         // Define argtable.
         void* argtable[] = {
-                filename, shuffle, user_seed, user_delete_b, reinsert_deleted, help, end
+                filename, shuffle, user_seed, sliding_window, user_delete_b, reinsert_deleted, help, end
         };
         // Parse arguments.
         int nerrors = arg_parse(argn, argv, argtable);
@@ -80,31 +81,47 @@ int main(int argn, char **argv)
         
         ofstream f(ss.str());
         f << "# " << G.number_of_nodes() << " " << G.number_of_edges()/2 << std::endl;
-        for( unsigned int i = 0; i < sequence.size(); i++) {
-                f << "1 " << sequence[i].first << " " << sequence[i].second << std::endl;
-        }
-        
-        
-
-        std::vector< int > deleted_edges;
-        if(user_delete_b->count > 0) {
-                std::vector< bool > already_deleted(G.number_of_edges(),false);
-                int number_of_edges_to_delete = user_delete_b->ival[0];
-                number_of_edges_to_delete = std::min(number_of_edges_to_delete, (int)G.number_of_edges()/2);
-                for( unsigned i = 0; i < number_of_edges_to_delete; i++) {
-                        int pos = 0;
-                        do {
-                                pos = random_functions::nextInt(0, G.number_of_edges());
-                        } while( already_deleted[pos] );
-                        f << "0 " << sequence[pos].first << " " << sequence[pos].second << std::endl;
-                        already_deleted[pos] = true;
-                        deleted_edges.push_back(pos);
+        if( sliding_window->count == 0 ) {
+                for( unsigned int i = 0; i < sequence.size(); i++) {
+                        f << "1 " << sequence[i].first << " " << sequence[i].second << std::endl;
                 }
-        }
-        if(reinsert_deleted) {
-                for( unsigned i = 0; i < deleted_edges.size(); i++) {
-                        int pos = deleted_edges[i];
-                        f << "1 " << sequence[pos].first << " " << sequence[pos].second << std::endl;
+
+                std::vector< int > deleted_edges;
+                if(user_delete_b->count > 0) {
+                        std::vector< bool > already_deleted(G.number_of_edges(),false);
+                        int number_of_edges_to_delete = user_delete_b->ival[0];
+                        number_of_edges_to_delete = std::min(number_of_edges_to_delete, (int)G.number_of_edges()/2);
+                        for( unsigned i = 0; i < number_of_edges_to_delete; i++) {
+                                int pos = 0;
+                                do {
+                                        pos = random_functions::nextInt(0, G.number_of_edges());
+                                } while( already_deleted[pos] );
+                                f << "0 " << sequence[pos].first << " " << sequence[pos].second << std::endl;
+                                already_deleted[pos] = true;
+                                deleted_edges.push_back(pos);
+                        }
+                }
+                if(reinsert_deleted) {
+                        for( unsigned i = 0; i < deleted_edges.size(); i++) {
+                                int pos = deleted_edges[i];
+                                f << "1 " << sequence[pos].first << " " << sequence[pos].second << std::endl;
+                        }
+                }
+        } else {
+                int sliding_window_size = G.number_of_edges() / sliding_window->ival[0];
+                std::queue< int > to_delete;
+                unsigned int i =0; 
+                for( ; i < sliding_window_size; i++) {
+                        f << "1 " << sequence[i].first << " " << sequence[i].second << std::endl;
+                        to_delete.push(i);
+                }
+
+                for( ; i < sequence.size(); i++) {
+                        int cur_delete = to_delete.front();
+                        to_delete.pop();
+                        f << "0 " << sequence[cur_delete].first << " " << sequence[cur_delete].second << std::endl;
+                        to_delete.push(i);
+                        f << "1 " << sequence[i].first << " " << sequence[i].second << std::endl;
                 }
         }
 
