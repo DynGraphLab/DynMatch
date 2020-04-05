@@ -14,6 +14,7 @@ blossom_dyn_matching::blossom_dyn_matching(dyn_graph_access* G, MatchConfig & ma
         source_bridge.resize(G->number_of_nodes());
         target_bridge.resize(G->number_of_nodes());
         search_started.resize(G->number_of_nodes());
+        fallback_visited.resize(G->number_of_nodes());
 
         strue = 0;
         base.init(G);
@@ -31,6 +32,7 @@ blossom_dyn_matching::blossom_dyn_matching(dyn_graph_access* G, MatchConfig & ma
                 source_bridge[node] = UNDEFINED_NODE;
                 target_bridge[node] = UNDEFINED_NODE;
                 search_started[node] = 0;
+                fallback_visited[node] = false;
         } endfor
 }
 
@@ -41,12 +43,13 @@ blossom_dyn_matching::~blossom_dyn_matching() {
 bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
         G->new_edge(source, target);
         G->new_edge(target, source);
-
+        
         if( is_free(source) && is_free(target) ) {
                 matching[source] = target;
                 matching[target] = source;
                 label[source] = UNLABELED;
                 label[target] = UNLABELED;
+
                 matching_size++;
                 return true;
         }
@@ -59,10 +62,58 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 search_started[ target ] = iteration;
         }
 
-        if(is_free(source)) augment_path(source);
-        if(is_free(target)) augment_path(target);
+        if( config.maintain_opt ) {
+               if(!is_free(source) && !is_free(target)) {
+                       maintain_opt_fallback(source, target);                       
+               } else {
+                       if(is_free(source)) augment_path(source);
+                       if(is_free(target)) augment_path(target);
+               }
+ 
+        } else {
+               if(is_free(source)) augment_path(source);
+               if(is_free(target)) augment_path(target);
+        }
 
         return true;
+}
+
+bool blossom_dyn_matching::maintain_opt_fallback(NodeID source, NodeID target) {
+       // perform BFS to find all reachable free nodes 
+        std::vector< NodeID > touched_nodes;
+        std::vector< NodeID > free_nodes;
+
+
+        std::queue< NodeID > bfsqueue;
+        bfsqueue.push(source);
+        fallback_visited[source] = true;
+        
+        while(!bfsqueue.empty()) {
+                NodeID node = bfsqueue.front();
+                bfsqueue.pop(); 
+                
+                forall_out_edges((*G), e, node) {
+                        NodeID target = G->getEdgeTarget(node,e);
+                        if(!fallback_visited[target]) {
+                                fallback_visited[target] = true;
+                                bfsqueue.push(target);
+                                touched_nodes.push_back(target);
+                                if( matching[target] == NOMATE ) {
+                                        free_nodes.push_back(target);
+                                }
+                        }
+                } endfor
+        }
+        
+        int cur_matching_size = matching_size;
+        for( unsigned i = 0; i < free_nodes.size(); i++) {
+                augment_path(free_nodes[i]);
+                if(cur_matching_size != matching_size) { break;} // augmented a path
+
+        }
+        for( unsigned i = 0; i < touched_nodes.size(); i++) {
+                fallback_visited[touched_nodes[i]] = false;
+        }
 }
 
 bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {

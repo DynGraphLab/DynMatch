@@ -46,6 +46,8 @@ class blossom_dyn_matching : public dyn_matching {
                 void shrink_path( NodeID b, NodeID v, NodeID w, node_partition & base, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge, std::queue< NodeID > & Q);
                 void find_path( std::vector< NodeID > & P, NodeID x, NodeID y, std::vector< NodeID > & source_bridge, std::vector< NodeID > & target_bridge);
                 void augment_path(NodeID source); 
+
+                bool maintain_opt_fallback(NodeID source, NodeID target);
         private:
                 std::vector< NodeID > label;
                 std::vector< NodeID > pred;
@@ -55,6 +57,7 @@ class blossom_dyn_matching : public dyn_matching {
                 std::vector< NodeID > target_bridge;
                 std::vector< NodeID > reset_st_bridge;
                 std::vector< NodeID > search_started;
+                std::vector< bool > fallback_visited;
                 int iteration;
                  
                 long strue;
