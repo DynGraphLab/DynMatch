@@ -3,6 +3,7 @@
 
 #include "extern/boost_blossom/blossom_static.h"
 #include "blossom_dyn_matching.h"
+#include "blossom_dyn_matching_naive.h"
 #include "static_blossom.h"
 #include "mv_algorithm.h"
 #include "io/graph_io.h"
@@ -84,6 +85,10 @@ int main (int argn, char ** argv) {
                 case DYNBLOSSOM:
                         algorithm = new blossom_dyn_matching(G, match_config);
                         break;
+                case DYNBLOSSOMNAIVE:
+                        algorithm = new blossom_dyn_matching_naive(G, match_config);
+                        break;
+
                 case BOOSTBLOSSOM: {
                         unsigned long matching_size = 0;
                         t._restart();

@@ -88,6 +88,7 @@ typedef enum {
         NAIVE,
  	MV, 
  	DYNBLOSSOM, 
+ 	DYNBLOSSOMNAIVE, 
         BOOSTBLOSSOM,
         BLOSSOM	
 } AlgorithmType;
