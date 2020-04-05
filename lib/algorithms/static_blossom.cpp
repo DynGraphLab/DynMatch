@@ -155,7 +155,6 @@ void static_blossom::postprocessing() {
                                                 }
                                                 base.split(T);
                                                 breakthrough = true;
-                                                //std::cout <<  "v " << v  << std::endl;
                                                 matching_size++;
                                                 break;
                                         }

@@ -33,6 +33,8 @@ struct MatchConfig
 
         bool measure_graph_construction_only;
 
+        bool maintain_opt;
+
         //***************************
         // Random Walk Configurations
         //***************************

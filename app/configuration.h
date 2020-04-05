@@ -34,6 +34,7 @@ inline void configuration::standard( MatchConfig & config ) {
         config.fast_rw                     = false;
         config.measure_graph_construction_only = false;
         config.dynblossom_speedheuristic  = false;
+        config.maintain_opt               = false;
 }
 
 #endif /* end of include guard: CONFIGURATION_3APG5V7Z */
