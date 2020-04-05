@@ -26,20 +26,24 @@ bool static_blossom::remove_edge(NodeID source, NodeID target) {
         return true;
 }
 
-void static_blossom::init( std::vector< NodeID > & matching ) {
+void static_blossom::init( std::vector< NodeID > & matching_param ) {
+        pred.resize(G->number_of_nodes()); 
         forall_nodes((*G), node) {
-                if( matching[node] == NOMATE ) {
-                        forall_out_edges((*G), e, node) {
-                                NodeID target = G->getEdgeTarget(node, e);
-                                if( node != target && matching[target] == NOMATE) {
-                                        matching[node] = target; matching[target] = node;
-                                        label[node] = UNLABELED; label[target] = UNLABELED;
-                                        matching_size++;
-                                        break;
-                                }
-                        } endfor
+                label[node] = EVEN; // can be EVEN, ODD, or UNLABELED
+                pred[node]  = UNDEFINED_NODE;
+        } endfor
+
+        forall_nodes((*G), node) {
+                if( matching_param[node] != NOMATE) {
+                        matching[node] = matching_param[node];
+                        matching[matching_param[node]] = node;
+                        label[node] = UNLABELED;
+                        label[matching_param[node]] = UNLABELED;
+                        matching_size++;
                 }
         } endfor
+        matching_size /= 2;
+        initalized = true;
 }
 
 void static_blossom::postprocessing() {
@@ -53,18 +57,17 @@ void static_blossom::postprocessing() {
         std::vector< NodeID > source_bridge(G->number_of_nodes(),UNDEFINED_NODE);
         std::vector< NodeID > target_bridge(G->number_of_nodes(),UNDEFINED_NODE);
 
-
-        // if base[v] = v, then v in G'
-        // else v was collapsed into base[v]
-        // {base(v) | v \in V} is the node set of G'
-        // and edge {v,w} represents an edge {base(v), base(w)} in G'
-        forall_nodes((*G), node) {
-                label[node] = EVEN; // can be EVEN, ODD, or UNLABELED
-                pred[node]  = UNDEFINED_NODE;
-        } endfor
-        
         //init
         if( !initalized ) { 
+                // if base[v] = v, then v in G'
+                // else v was collapsed into base[v]
+                // {base(v) | v \in V} is the node set of G'
+                // and edge {v,w} represents an edge {base(v), base(w)} in G'
+                forall_nodes((*G), node) {
+                        label[node] = EVEN; // can be EVEN, ODD, or UNLABELED
+                        pred[node]  = UNDEFINED_NODE;
+                } endfor
+
                 forall_nodes((*G), node) {
                         if( matching[node] == NOMATE ) {
                                 forall_out_edges((*G), e, node) {
@@ -152,6 +155,7 @@ void static_blossom::postprocessing() {
                                                 }
                                                 base.split(T);
                                                 breakthrough = true;
+                                                //std::cout <<  "v " << v  << std::endl;
                                                 matching_size++;
                                                 break;
                                         }
