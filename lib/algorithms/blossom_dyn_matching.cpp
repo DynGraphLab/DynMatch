@@ -87,6 +87,7 @@ bool blossom_dyn_matching::maintain_opt_fallback(NodeID source, NodeID target) {
         std::queue< NodeID > bfsqueue;
         bfsqueue.push(source);
         fallback_visited[source] = true;
+        touched_nodes.push_back(source);
         
         while(!bfsqueue.empty()) {
                 NodeID node = bfsqueue.front();
