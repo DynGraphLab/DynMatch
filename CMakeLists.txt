@@ -110,3 +110,8 @@ install(TARGETS dynmatch DESTINATION bin)
 
 add_executable(convert_metis_seq app/metis_to_sequence.cpp $<TARGET_OBJECTS:libconvert> )
 install(TARGETS convert_metis_seq DESTINATION bin)
+
+add_executable(clean_sequence app/clean_sequence.cpp $<TARGET_OBJECTS:libmatch> )
+target_link_libraries(clean_sequence ${OpenMP_CXX_LIBRARIES})
+target_link_libraries(clean_sequence ${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV/libmv.a)
+install(TARGETS clean_sequence DESTINATION bin)
