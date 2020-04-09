@@ -30,17 +30,11 @@ int main (int argn, char ** argv) {
         }
 
         // initialize edge sequence
-        timer t;
-        t._restart();
         graph_io gio;
         std::vector<std::pair<int, std::pair<NodeID, NodeID> > > edge_sequence;
         int n = gio.read_sequence(graph_filename, edge_sequence);
 
-        // initialize seed
-        srand(match_config.seed);
-        random_functions::setSeed(match_config.seed);
         dyn_graph_access * G = new dyn_graph_access(n);
-        unsigned long matching_size = 0;
         NodeID maxnumnodes = 0;
         for (size_t i = 0; i < edge_sequence.size(); ++i) { 
                 std::pair<NodeID, NodeID> & edge = edge_sequence[i].second;
@@ -61,7 +55,30 @@ int main (int argn, char ** argv) {
                 }
         } 
         delete G;
-        std::cout <<  (maxnumnodes+1)  << std::endl;
+        std::cout <<  "# " << (maxnumnodes+1)  << " " << edge_sequence.size() << std::endl;
+        dyn_graph_access * G = new dyn_graph_access(n);
+        NodeID maxnumnodes = 0;
+        for (size_t i = 0; i < edge_sequence.size(); ++i) { 
+                std::pair<NodeID, NodeID> & edge = edge_sequence[i].second;
+
+                maxnumnodes = std::max(edge.first, maxnumnodes);
+                maxnumnodes = std::max(edge.second, maxnumnodes);
+                if( edge.first == edge.second ) continue;
+                if (edge_sequence.at(i).first) {
+                        if(!G->isEdge(edge.first, edge.second)) {
+                                G->new_edge(edge.first, edge.second);
+                                G->new_edge(edge.second, edge.first);
+                                std::cout <<  "1 " << edge.first << " " << edge.second  << std::endl;
+                        }
+                } else {
+                        if( G->isEdge(edge.first, edge.second) ) {
+                                G->remove_edge(edge.first, edge.second);
+                                G->remove_edge(edge.second, edge.first);
+                                std::cout <<  "0 " << edge.first << " " << edge.second  << std::endl;
+                        }
+                }
+        } 
+        delete G;
 
         return 0;
 }
