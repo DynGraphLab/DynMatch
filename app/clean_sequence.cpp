@@ -35,9 +35,12 @@ int main (int argn, char ** argv) {
         int n = gio.read_sequence(graph_filename, edge_sequence);
 
         dyn_graph_access * G = new dyn_graph_access(n);
+        std::cout <<  "n " << n  << std::endl;
         NodeID maxnumnodes = 0;
         for (size_t i = 0; i < edge_sequence.size(); ++i) { 
                 std::pair<NodeID, NodeID> & edge = edge_sequence[i].second;
+               
+                std::cout <<  "cir " << edge.first << " " << edge.second  << std::endl;
 
                 maxnumnodes = std::max(edge.first, maxnumnodes);
                 maxnumnodes = std::max(edge.second, maxnumnodes);
@@ -56,13 +59,10 @@ int main (int argn, char ** argv) {
         } 
         delete G;
         std::cout <<  "# " << (maxnumnodes+1)  << " " << edge_sequence.size() << std::endl;
-        dyn_graph_access * G = new dyn_graph_access(n);
-        NodeID maxnumnodes = 0;
+        G = new dyn_graph_access(n);
         for (size_t i = 0; i < edge_sequence.size(); ++i) { 
                 std::pair<NodeID, NodeID> & edge = edge_sequence[i].second;
 
-                maxnumnodes = std::max(edge.first, maxnumnodes);
-                maxnumnodes = std::max(edge.second, maxnumnodes);
                 if( edge.first == edge.second ) continue;
                 if (edge_sequence.at(i).first) {
                         if(!G->isEdge(edge.first, edge.second)) {

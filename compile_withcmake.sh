@@ -25,5 +25,6 @@ cd ..
 mkdir deploy
 cp ./build/dynmatch deploy/
 cp ./build/conver* deploy/
+cp ./build/clean* deploy/
 rm -rf build
 
