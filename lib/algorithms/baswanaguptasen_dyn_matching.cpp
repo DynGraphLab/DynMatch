@@ -5,7 +5,7 @@ baswanaguptasen_dyn_matching::baswanaguptasen_dyn_matching (dyn_graph_access* G,
         dyn_matching(G, match_config) {
         O.resize(G->number_of_nodes());
         levels.resize(G->number_of_nodes(), 0);
-        threshold = std::sqrt(G->number_of_nodes());
+        threshold = std::max(1,(int)std::ceil(std::sqrt(G->number_of_nodes())/match_config.bgs_factor));
         
         for( unsigned i = 0; i < G->number_of_nodes(); i++) {
                 O[i].set_deleted_key(std::numeric_limits<NodeID>::max());
@@ -171,7 +171,7 @@ void baswanaguptasen_dyn_matching::handling_deletion (NodeID u) {
                 // the set of owned edges of the previously update neighbours increased
                 // by 1, therefore they might violate invariant 2.
                 for (auto w : O[u]) {
-                        if (O[w].size() >= std::sqrt(G->number_of_nodes())) {
+                        if (O[w].size() >= threshold) {
                                 NodeID mate_w = mate(w);
                                 if (!is_free(w)) {
                                         unmatch(w, mate_w);

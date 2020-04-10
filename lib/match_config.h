@@ -31,9 +31,13 @@ struct MatchConfig
 
         bool dynblossom_speedheuristic;
 
+        bool dynblossom_weakspeedheuristic;
+
         bool measure_graph_construction_only;
 
         bool maintain_opt;
+
+        double bgs_factor;
 
         //***************************
         // Random Walk Configurations

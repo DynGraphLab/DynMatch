@@ -43,7 +43,7 @@ blossom_dyn_matching::~blossom_dyn_matching() {
 bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
         G->new_edge(source, target);
         G->new_edge(target, source);
-        
+
         if( is_free(source) && is_free(target) ) {
                 matching[source] = target;
                 matching[target] = source;
@@ -54,7 +54,7 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 return true;
         }
 
-        if( config.dynblossom_speedheuristic ) {
+        if( config.dynblossom_speedheuristic || config.dynblossom_weakspeedheuristic) {
                 iteration++;
                 if( search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2 ) return false;
                 if( search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2 ) return false;
@@ -62,60 +62,62 @@ bool blossom_dyn_matching::new_edge(NodeID source, NodeID target) {
                 search_started[ target ] = iteration;
         }
 
+        //if( config.dynblossom_weakspeedheuristic ) {
+                //iteration++;
+                //if( (search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2) 
+                 //|| (search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2)) {
+                        //if(is_free(source)) {
+                                //forall_out_edges((*G), e, source) {
+                                        //NodeID w = G->getEdgeTarget(source, e);
+                                        //if( matching[w] == NOMATE ) {
+                                                //label[source] = UNLABELED;
+                                                //label[w] = UNLABELED;
+
+                                                //matching[source] = w;
+                                                //matching[w] = source;
+
+                                                //matching_size++;
+                                                //break;
+                                        //}
+                                //} endfor 
+                        //}
+                        //if(is_free(target)) {
+                                //forall_out_edges((*G), e, target) {
+                                        //NodeID w = G->getEdgeTarget(target, e);
+                                        //if( matching[w] == NOMATE ) {
+                                                //label[target] = UNLABELED;
+                                                //label[w] = UNLABELED;
+
+                                                //matching[target] = w;
+                                                //matching[w] = target;
+
+                                                //matching_size++;
+                                                //break;
+                                        //}
+                                //} endfor 
+                        //}
+                        //return false;
+                //}
+                //search_started[ source ] = iteration;
+                //search_started[ target ] = iteration;
+        //}
+
         if( config.maintain_opt ) {
-               if(!is_free(source) && !is_free(target)) {
-                       maintain_opt_fallback(source, target);                       
-               } else {
-                       if(is_free(source)) augment_path(source);
-                       if(is_free(target)) augment_path(target);
-               }
- 
+                if(!is_free(source) && !is_free(target)) {
+                        maintain_opt_fallback(source, target);                       
+                } else {
+                        if(is_free(source)) augment_path(source);
+                        if(is_free(target)) augment_path(target);
+                }
+
         } else {
-               if(is_free(source)) augment_path(source);
-               if(is_free(target)) augment_path(target);
+                if(is_free(source)) augment_path(source);
+                if(is_free(target)) augment_path(target);
         }
 
         return true;
 }
 
-bool blossom_dyn_matching::maintain_opt_fallback(NodeID source, NodeID target) {
-       // perform BFS to find all reachable free nodes 
-        std::vector< NodeID > touched_nodes;
-        std::vector< NodeID > free_nodes;
-
-
-        std::queue< NodeID > bfsqueue;
-        bfsqueue.push(source);
-        fallback_visited[source] = true;
-        touched_nodes.push_back(source);
-        
-        while(!bfsqueue.empty() && free_nodes.size() == 0) {
-                NodeID node = bfsqueue.front();
-                bfsqueue.pop(); 
-                
-                forall_out_edges((*G), e, node) {
-                        NodeID target = G->getEdgeTarget(node,e);
-                        if(!fallback_visited[target]) {
-                                fallback_visited[target] = true;
-                                bfsqueue.push(target);
-                                touched_nodes.push_back(target);
-                                if( matching[target] == NOMATE ) {
-                                        free_nodes.push_back(target);
-                                }
-                        }
-                } endfor
-        }
-        
-        int cur_matching_size = matching_size;
-        for( unsigned i = 0; i < free_nodes.size(); i++) {
-                augment_path(free_nodes[i]);
-                if(cur_matching_size != matching_size) { break;} // augmented a path
-
-        }
-        for( unsigned i = 0; i < touched_nodes.size(); i++) {
-                fallback_visited[touched_nodes[i]] = false;
-        }
-}
 
 bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
         G->remove_edge(source, target);
@@ -138,10 +140,92 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
                 search_started[ source ] = iteration;
                 search_started[ target ] = iteration;
         }
+        if( config.dynblossom_weakspeedheuristic ) {
+                iteration++;
+                if( (search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2) 
+                 || (search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2)) {
+                        int rw_max_length_ = config.rw_max_length;
+                        config.rw_max_length = 3; 
+                        if(is_free(source)) augment_path(source);
+                        if(is_free(target)) augment_path(target);
+                        config.rw_max_length = rw_max_length_;
+                        //if(is_free(source)) {
+                                //forall_out_edges((*G), e, source) {
+                                        //NodeID w = G->getEdgeTarget(source, e);
+                                        //if( matching[w] == NOMATE ) {
+                                                //label[source] = UNLABELED;
+                                                //label[w] = UNLABELED;
+
+                                                //matching[source] = w;
+                                                //matching[w] = source;
+
+                                                //matching_size++;
+                                                //break;
+                                        //}
+                                //} endfor 
+                        //}
+                        //if(is_free(target)) {
+                                //forall_out_edges((*G), e, target) {
+                                        //NodeID w = G->getEdgeTarget(target, e);
+                                        //if( matching[w] == NOMATE ) {
+                                                //label[target] = UNLABELED;
+                                                //label[w] = UNLABELED;
+
+                                                //matching[target] = w;
+                                                //matching[w] = target;
+
+                                                //matching_size++;
+                                                //break;
+                                        //}
+                                //} endfor 
+                        //}
+                        return false;
+                }
+                search_started[ source ] = iteration;
+                search_started[ target ] = iteration;
+        }
         if(is_free(source)) augment_path(source);
         if(is_free(target)) augment_path(target);
-        
-                return true;
+
+        return true;
+}
+bool blossom_dyn_matching::maintain_opt_fallback(NodeID source, NodeID target) {
+        // perform BFS to find all reachable free nodes 
+        std::vector< NodeID > touched_nodes;
+        std::vector< NodeID > free_nodes;
+
+
+        std::queue< NodeID > bfsqueue;
+        bfsqueue.push(source);
+        fallback_visited[source] = true;
+        touched_nodes.push_back(source);
+
+        while(!bfsqueue.empty() && free_nodes.size() == 0) {
+                NodeID node = bfsqueue.front();
+                bfsqueue.pop(); 
+
+                forall_out_edges((*G), e, node) {
+                        NodeID target = G->getEdgeTarget(node,e);
+                        if(!fallback_visited[target]) {
+                                fallback_visited[target] = true;
+                                bfsqueue.push(target);
+                                touched_nodes.push_back(target);
+                                if( matching[target] == NOMATE ) {
+                                        free_nodes.push_back(target);
+                                }
+                        }
+                } endfor
+        }
+
+        int cur_matching_size = matching_size;
+        for( unsigned i = 0; i < free_nodes.size(); i++) {
+                augment_path(free_nodes[i]);
+                if(cur_matching_size != matching_size) { break;} // augmented a path
+
+        }
+        for( unsigned i = 0; i < touched_nodes.size(); i++) {
+                fallback_visited[touched_nodes[i]] = false;
+        }
 }
 
 NodeID  blossom_dyn_matching::getMSize () {
@@ -150,8 +234,8 @@ NodeID  blossom_dyn_matching::getMSize () {
 
 void blossom_dyn_matching::augment_path(NodeID node) {
         //for( unsigned i = 0; i < reset_st_bridge.size(); i++) {
-                //source_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
-                //target_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
+        //source_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
+        //target_bridge[reset_st_bridge[i]] = UNDEFINED_NODE;
         //}
         //reset_st_bridge.clear();
         //reset_st_bridge.resize(0);
