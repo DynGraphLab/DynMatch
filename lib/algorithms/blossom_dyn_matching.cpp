@@ -145,7 +145,7 @@ bool blossom_dyn_matching::remove_edge(NodeID source, NodeID target) {
                 if( (search_started[source] != 0 && iteration - search_started[source] < G->number_of_edges()/2) 
                  || (search_started[target] != 0 && iteration - search_started[target] < G->number_of_edges()/2)) {
                         int rw_max_length_ = config.rw_max_length;
-                        config.rw_max_length = 3; 
+                        config.rw_max_length = std::min(config.rw_max_length,3); 
                         if(is_free(source)) augment_path(source);
                         if(is_free(target)) augment_path(target);
                         config.rw_max_length = rw_max_length_;
