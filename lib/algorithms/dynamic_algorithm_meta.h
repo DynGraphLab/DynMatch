@@ -23,10 +23,7 @@ void run_dynamic_algorithm(dyn_graph_access * G, std::vector<std::pair<int, std:
         algorithm->postprocessing(); 
         matching_size = algorithm->getMSize();
 
-        if (match_config.post_mv) {
-                mv_algorithm mv(G, match_config);
-                mv.mv(*G, matching_size, algorithm->getM());
-        } else if (match_config.post_blossom) {
+        if (match_config.post_blossom) {
                 timer tpost; tpost._restart();
                 static_blossom sblossom(G, match_config);
                 sblossom.init(algorithm->getM());

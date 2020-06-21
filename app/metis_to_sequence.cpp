@@ -91,7 +91,7 @@ int main(int argn, char **argv)
                         std::vector< bool > already_deleted(G.number_of_edges(),false);
                         int number_of_edges_to_delete = user_delete_b->ival[0];
                         number_of_edges_to_delete = std::min(number_of_edges_to_delete, (int)G.number_of_edges()/2);
-                        for( unsigned i = 0; i < number_of_edges_to_delete; i++) {
+                        for( int i = 0; i < number_of_edges_to_delete; i++) {
                                 int pos = 0;
                                 do {
                                         pos = random_functions::nextInt(0, G.number_of_edges());
@@ -110,13 +110,13 @@ int main(int argn, char **argv)
         } else {
                 int sliding_window_size = G.number_of_edges() / sliding_window->ival[0];
                 std::queue< int > to_delete;
-                unsigned int i =0; 
+                int i =0; 
                 for( ; i < sliding_window_size; i++) {
                         f << "1 " << sequence[i].first << " " << sequence[i].second << std::endl;
                         to_delete.push(i);
                 }
 
-                for( ; i < sequence.size(); i++) {
+                for( ; i < (int) sequence.size(); i++) {
                         int cur_delete = to_delete.front();
                         to_delete.pop();
                         f << "0 " << sequence[cur_delete].first << " " << sequence[cur_delete].second << std::endl;

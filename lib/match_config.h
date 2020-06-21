@@ -23,8 +23,6 @@ struct MatchConfig
         
         std::string filename;
 
-        bool post_mv;
-
         bool post_blossom;
 
         bool fast_rw;

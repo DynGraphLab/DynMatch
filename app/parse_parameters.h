@@ -13,6 +13,7 @@
 #include <sstream>
 #include <argtable3.h>
 #include <regex.h>
+#include <string.h>
 #include "configuration.h"
 
 int parse_parameters(int argn, char **argv, 
@@ -38,7 +39,6 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *dynblossom_maintain_opt     = arg_lit0(NULL, "maintain_opt","Maintain optimum in dynblossom.");
         struct arg_dbl *bgs_factor                  = arg_dbl0(NULL, "bgs_factor", NULL, "BGS factor.");
 
-        struct arg_lit *post_mv                     = arg_lit0(NULL, "post_mv","Run MV algorithm afterwards.");
         struct arg_lit *post_blossom                = arg_lit0(NULL, "post_blossom","Run Blossom algorithm afterwards.");
         struct arg_lit *fast_rw                     = arg_lit0(NULL, "fast_rw","Use my fast rw implementation.");
         struct arg_lit *measure_graph_only          = arg_lit0(NULL, "measure_graph_only","Only measure graph construction time.");
@@ -46,7 +46,7 @@ int parse_parameters(int argn, char **argv,
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_mv, post_blossom, fast_rw, measure_graph_only, dynblossom_speedheuristic, dynblossom_weakspeedheuristic, dynblossom_maintain_opt, bgs_factor,
+                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_blossom, fast_rw, measure_graph_only, dynblossom_speedheuristic, dynblossom_weakspeedheuristic, dynblossom_maintain_opt, bgs_factor,
                 end
         };
         // Parse arguments.
@@ -79,10 +79,6 @@ int parse_parameters(int argn, char **argv,
         if (algorithm_type->count > 0) {
                 if(strcmp("blossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BLOSSOM;
-                } else if (strcmp("boostblossom", algorithm_type->sval[0]) == 0) {
-                        match_config.algorithm = BOOSTBLOSSOM;
-                } else if (strcmp("mv", algorithm_type->sval[0]) == 0) {
-                        match_config.algorithm = MV;
                 } else if (strcmp("randomwalk", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = RANDOM_WALK;
                 } else if (strcmp("naive", algorithm_type->sval[0]) == 0) {
@@ -158,9 +154,6 @@ int parse_parameters(int argn, char **argv,
 
         if(bgs_factor->count > 0) {
                 match_config.bgs_factor = bgs_factor->dval[0];
-        }
-        if(post_mv->count > 0) {
-                match_config.post_mv = true;
         }
 
         if(post_blossom->count > 0) {
