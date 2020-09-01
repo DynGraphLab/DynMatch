@@ -53,7 +53,7 @@ Maintain optimum in dynblossom. (Without this option the algorithm is called UNS
  Only measure graph construction time.
 
 
-## Usage File Format ##
+## File Format ##
 The main folder contains example dynamic sequences in the example folder.
 Here are the first couple of lines of munmun_digg.undo.0.1.seq. The first number after the # is the number of nodes that the graph has (at most) and the next number is the number of updates that are performed. Then in each line is one operation. The first number is 1 if an edge is inserted and 0 if an edge is deleted. The two numbers after that are the corresponding end points of the respective edge.
 ```code
