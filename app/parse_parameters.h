@@ -26,7 +26,7 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *help                        = arg_lit0(NULL, "help","Print help.");
         struct arg_str *filename                    = arg_strn(NULL, NULL, "FILE", 1, 1, "Path to graph file to compute matching from.");
         struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
-        struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(staticblossom|dynblossom|naive|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptaseng}"  );
+        struct arg_rex *algorithm_type              = arg_rex1(NULL, "algorithm", "^(staticblossom|dynblossom|naive|randomwalk|neimansolomon|baswanaguptasen)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptasen}"  );
 
         struct arg_dbl *eps                         = arg_dbl0(NULL, "eps", NULL, "Epsilon. Limit search depth of random walk or augmenting path search in dynblossom to 2/eps-1.");
         struct arg_lit *dynblossom_speedheuristic   = arg_lit0(NULL, "dynblossom_lazy","Lazy approach for dynblossom, i.e. only start augmenting path searchs after x newly inserted edges on an endpoint.");
@@ -77,15 +77,20 @@ int parse_parameters(int argn, char **argv,
         if (algorithm_type->count > 0) {
                 if(strcmp("staticblossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BLOSSOM;
+                        std::cout <<  "running static blossom after makeing all updates"  << std::endl;
                 } else if (strcmp("randomwalk", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = RANDOM_WALK;
+                        std::cout <<  "running dynamic random walks"  << std::endl;
                 } else if (strcmp("dynblossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = DYNBLOSSOM;
                         match_config.rw_max_length = std::numeric_limits< int >::max() / 2;
+                        std::cout <<  "running dynamic blossom algorithm"  << std::endl;
                 } else if (strcmp("neimansolomon", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = NEIMAN_SOLOMON;
-                } else if (strcmp("baswanaguptaseng", algorithm_type->sval[0]) == 0) {
+                        std::cout <<  "running dynamic neiman solomon"  << std::endl;
+                } else if (strcmp("baswanaguptasen", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BASWANA_GUPTA_SENG;
+                        std::cout <<  "running dynamic baswana gupta sen"  << std::endl;
                 } else {
                         fprintf(stderr, "Invalid algorithm variant: \"%s\"\n", algorithm_type->sval[0]);
                         exit(0);
