@@ -1,6 +1,4 @@
 # Dynamic Matching in Practice 
-Installation Notes
-=====
 ## Downloading DynMatch: 
 You can download DynMatch with the following command line:
 
@@ -8,7 +6,7 @@ You can download DynMatch with the following command line:
 git clone https://github.com/DynGraphLab/DynMatch
 ```
 
-## Compiling KaHIP: 
+## Compiling DynMatch: 
 To compile the codes, just type 
 ```console
 ./compile_withcmake.sh. 
