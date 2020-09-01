@@ -26,27 +26,25 @@ int parse_parameters(int argn, char **argv,
         struct arg_lit *help                        = arg_lit0(NULL, "help","Print help.");
         struct arg_str *filename                    = arg_strn(NULL, NULL, "FILE", 1, 1, "Path to graph file to compute matching from.");
         struct arg_int *user_seed                   = arg_int0(NULL, "seed", NULL, "Seed to use for the PRNG.");
-        struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(blossom|boostblossom|dynblossom|ndynblossom|myblossomdyn|naive|mv|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {blossom, dynblossom, dynblossomnaive, naive, mv, randomwalk, neimansolomon, baswanaguptaseng, boostblossom}"  );
-        struct arg_rex *blossom_init                = arg_rex0(NULL, "blossom_init", "^(empty|greedy|extragreedy)$", "TYPE", REG_EXTENDED, "Blossom init algorithm to use. One of {empty, greedy, extragreedy}"  );
+        struct arg_rex *algorithm_type              = arg_rex0(NULL, "algorithm", "^(staticblossom|dynblossom|naive|randomwalk|neimansolomon|baswanaguptaseng)$", "TYPE", REG_EXTENDED, "Algorithm to use. One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptaseng}"  );
 
-        struct arg_dbl *eps                         = arg_dbl0(NULL, "eps", NULL, "Epsilon.");
-        struct arg_int *rw_low_degree_value         = arg_int0(NULL, "rw_low_degree_value", NULL, "Random Walk: Low degree value.");
-        struct arg_lit *rw_ending_additional_settle = arg_lit0(NULL, "rw_ending_additional_settle","Random Walk: Enable additional settle for unsuccessful paths.");
-        struct arg_int *rw_repetitions_per_node     = arg_int0(NULL, "rw_repetitions_per_node", NULL, "Random Walk: Number of rw repetitions per insert/delete.");
-        struct arg_lit *naive_settle_on_insertion   = arg_lit0(NULL, "naive_settle_on_insertion","Naive: settle on insertion.");
-        struct arg_lit *dynblossom_speedheuristic   = arg_lit0(NULL, "dynblossom_speedheuristic","SpeedHeuristic for dynblossom.");
-        struct arg_lit *dynblossom_weakspeedheuristic = arg_lit0(NULL, "dynblossom_weakspeedheuristic","WeakSpeedHeuristic for dynblossom.");
-        struct arg_lit *dynblossom_maintain_opt     = arg_lit0(NULL, "maintain_opt","Maintain optimum in dynblossom.");
+        struct arg_dbl *eps                         = arg_dbl0(NULL, "eps", NULL, "Epsilon. Limit search depth of random walk or augmenting path search in dynblossom to 2/eps-1.");
+        struct arg_lit *dynblossom_speedheuristic   = arg_lit0(NULL, "dynblossom_lazy","Lazy approach for dynblossom, i.e. only start augmenting path searchs after x newly inserted edges on an endpoint.");
+        //struct arg_lit *dynblossom_weakspeedheuristic = arg_lit0(NULL, "dynblossom_weakspeedheuristic","WeakSpeedHeuristic for dynblossom.");
+        struct arg_lit *dynblossom_maintain_opt     = arg_lit0(NULL, "dynblossom_maintain_opt","Maintain optimum in dynblossom. (Without this option the algorithm is called UNSAFE.)");
         struct arg_dbl *bgs_factor                  = arg_dbl0(NULL, "bgs_factor", NULL, "BGS factor.");
 
-        struct arg_lit *post_blossom                = arg_lit0(NULL, "post_blossom","Run Blossom algorithm afterwards.");
-        struct arg_lit *fast_rw                     = arg_lit0(NULL, "fast_rw","Use my fast rw implementation.");
         struct arg_lit *measure_graph_only          = arg_lit0(NULL, "measure_graph_only","Only measure graph construction time.");
         struct arg_end *end                         = arg_end(100);
 
         // Define argtable.
         void* argtable[] = {
-                help, filename, user_seed, algorithm_type, blossom_init, eps, rw_low_degree_value, rw_ending_additional_settle, rw_repetitions_per_node, naive_settle_on_insertion, post_blossom, fast_rw, measure_graph_only, dynblossom_speedheuristic, dynblossom_weakspeedheuristic, dynblossom_maintain_opt, bgs_factor,
+                help, filename, user_seed, algorithm_type, 
+                eps, 
+                dynblossom_speedheuristic, 
+                //dynblossom_weakspeedheuristic, 
+                dynblossom_maintain_opt, 
+                measure_graph_only, 
                 end
         };
         // Parse arguments.
@@ -77,17 +75,12 @@ int parse_parameters(int argn, char **argv,
         cfg.standard(match_config);
 
         if (algorithm_type->count > 0) {
-                if(strcmp("blossom", algorithm_type->sval[0]) == 0) {
+                if(strcmp("staticblossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = BLOSSOM;
                 } else if (strcmp("randomwalk", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = RANDOM_WALK;
-                } else if (strcmp("naive", algorithm_type->sval[0]) == 0) {
-                        match_config.algorithm = NAIVE;
                 } else if (strcmp("dynblossom", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = DYNBLOSSOM;
-                        match_config.rw_max_length = std::numeric_limits< int >::max() / 2;
-                } else if (strcmp("ndynblossom", algorithm_type->sval[0]) == 0) {
-                        match_config.algorithm = DYNBLOSSOMNAIVE;
                         match_config.rw_max_length = std::numeric_limits< int >::max() / 2;
                 } else if (strcmp("neimansolomon", algorithm_type->sval[0]) == 0) {
                         match_config.algorithm = NEIMAN_SOLOMON;
@@ -102,18 +95,6 @@ int parse_parameters(int argn, char **argv,
         if (measure_graph_only->count > 0) {
                 match_config.measure_graph_construction_only = true;
         }
-        if (blossom_init->count > 0) {
-                if(strcmp("empty", blossom_init->sval[0]) == 0) {
-                        match_config.blossom_init = BLOSSOMEMPTY;
-                } else if (strcmp("greedy", blossom_init->sval[0]) == 0) {
-                        match_config.blossom_init = BLOSSOMGREEDY;
-                } else if (strcmp("extragreedy", blossom_init->sval[0]) == 0) {
-                        match_config.blossom_init = BLOSSOMEXTRAGREEDY;
-                } else {
-                        fprintf(stderr, "Invalid blossom init variant: \"%s\"\n", blossom_init->sval[0]);
-                        exit(0);
-                }
-        }
 
         if(eps->count > 0 ){
                 match_config.rw_max_length = ceil(2.0/eps->dval[0] - 1.0);
@@ -127,43 +108,17 @@ int parse_parameters(int argn, char **argv,
                 match_config.dynblossom_speedheuristic = true;
         }
 
-        if(dynblossom_weakspeedheuristic->count > 0) {
-                match_config.dynblossom_weakspeedheuristic = true;
-        }
+        //if(dynblossom_weakspeedheuristic->count > 0) {
+                //match_config.dynblossom_weakspeedheuristic = true;
+        //}
 
         if(dynblossom_maintain_opt->count > 0) {
                 match_config.maintain_opt = true;
         }
 
-        if(rw_low_degree_value->count > 0) {
-                match_config.rw_low_degree_value  = rw_low_degree_value->ival[0];
-                match_config.rw_low_degree_settle = true;
-        }
-
-        if(rw_ending_additional_settle->count > 0) {
-                match_config.rw_ending_additional_settle = true;
-        }
-
-        if(rw_repetitions_per_node->count > 0) {
-                match_config.rw_repetitions_per_node = rw_repetitions_per_node->ival[0];
-        }
-
-        if(naive_settle_on_insertion->count > 0) {
-                match_config.naive_settle_on_insertion = true;
-        }
-
         if(bgs_factor->count > 0) {
                 match_config.bgs_factor = bgs_factor->dval[0];
         }
-
-        if(post_blossom->count > 0) {
-                match_config.post_blossom = true;
-        }
-
-        if( fast_rw->count > 0 ) {
-                match_config.fast_rw = true;
-        }
-
 
         return 0;
 }
