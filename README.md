@@ -22,6 +22,37 @@ make
 cd ..
 ```
 
+## Usage DynMatch ##
+`dynmatch FILE [options]`.    
+
+### Options ###
+This is a brief overview of the most important options.
+
+`FILE`
+Path to graph file that you want the maximum independent set for.
+
+`-help`
+Print help.
+
+`-seed=<int>`
+Seed to use for the random number generator.
+
+`--algorithm=TYPE`
+Algorithm to use. One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptasen}
+
+`-eps=<double>`
+Epsilon. Limit search depth of random walk or augmenting path search in dynblossom to 2/eps-1.
+Config to use for the evolutionary algorithm [standard|social].
+
+`--dynblossom_lazy`
+Lazy approach for dynblossom, i.e. only start augmenting path searchs after x newly inserted edges on an endpoint.
+
+`--dynblossom_maintain_opt`
+Maintain optimum in dynblossom. (Without this option the algorithm is called UNSAFE.)
+
+`-measure_graph_only` 
+ Only measure graph construction time.
+
 Licence
 =====
 The program is licenced under MIT licence.
