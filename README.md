@@ -52,6 +52,19 @@ Maintain optimum in dynblossom. (Without this option the algorithm is called UNS
 `-measure_graph_only` 
  Only measure graph construction time.
 
+
+## Usage File Format ##
+The main folder contains example dynamic sequences in the example folder.
+Here are the first couple of lines of munmun_digg.undo.0.1.seq:
+```code
+# 30399 87627
+1 1 2
+1 51 52
+1 91 92
+1 124 125
+1 34 35
+1 152 153
+```
 Licence
 =====
 The program is licenced under MIT licence.
