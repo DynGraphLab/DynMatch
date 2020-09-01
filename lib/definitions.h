@@ -86,10 +86,8 @@ typedef enum {
         BASWANA_GUPTA_SENG, 
  	NEIMAN_SOLOMON, 
         NAIVE,
- 	MV, 
  	DYNBLOSSOM, 
  	DYNBLOSSOMNAIVE, 
-        BOOSTBLOSSOM,
         BLOSSOM	
 } AlgorithmType;
 

@@ -10,9 +10,6 @@ if [[ "$unamestr" == "Darwin" ]]; then
         NCORES=`sysctl -n hw.ncpu`
 fi
 
-cd extern/maxmatch_MV/
-make -j $NCORES
-cd ../../
 
 rm -rf deploy
 rm -rf build
@@ -25,6 +22,5 @@ cd ..
 mkdir deploy
 cp ./build/dynmatch deploy/
 cp ./build/conver* deploy/
-cp ./build/clean* deploy/
 rm -rf build
 

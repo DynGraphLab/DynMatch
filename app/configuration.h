@@ -22,7 +22,6 @@ inline void configuration::standard( MatchConfig & config ) {
         config.filename                    = "";
         config.seed                        = 0;
         config.post_blossom                = false;
-        config.post_mv                     = false;
         config.algorithm                   = RANDOM_WALK;
         config.rw_max_length               = 10;
         config.rw_low_degree_settle        = false;

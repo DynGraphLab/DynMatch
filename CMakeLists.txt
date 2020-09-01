@@ -88,7 +88,6 @@ set(LIBMATCH_SOURCE_FILES
 ./lib/algorithms/naive_dyn_matching.cpp
 ./lib/algorithms/static_blossom.cpp
 ./lib/algorithms/rw_dyn_matching.cpp
-./lib/algorithms/mv_algorithm.cpp
 ./lib/algorithms/dyn_matching.cpp
 ./lib/algorithms/neimansolomon_dyn_matching.cpp
   extern/argtable3-3.0.3/argtable3.c)
@@ -105,13 +104,8 @@ add_library(libconvert OBJECT ${LIBCONVERT_SOURCE_FILES})
 # generate targets for each binary
 add_executable(dynmatch app/dyn_matching.cpp $<TARGET_OBJECTS:libmatch> )
 target_link_libraries(dynmatch ${OpenMP_CXX_LIBRARIES})
-target_link_libraries(dynmatch ${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV/libmv.a)
 install(TARGETS dynmatch DESTINATION bin)
 
 add_executable(convert_metis_seq app/metis_to_sequence.cpp $<TARGET_OBJECTS:libconvert> )
 install(TARGETS convert_metis_seq DESTINATION bin)
 
-add_executable(clean_sequence app/clean_sequence.cpp $<TARGET_OBJECTS:libmatch> )
-target_link_libraries(clean_sequence ${OpenMP_CXX_LIBRARIES})
-target_link_libraries(clean_sequence ${CMAKE_CURRENT_SOURCE_DIR}/extern/maxmatch_MV/libmv.a)
-install(TARGETS clean_sequence DESTINATION bin)
