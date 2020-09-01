@@ -42,7 +42,6 @@ One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptasen}
 
 `-eps=<double>`
 Epsilon. Limit search depth of random walk or augmenting path search in dynblossom to 2/eps-1.
-Config to use for the evolutionary algorithm [standard|social].
 
 `--dynblossom_lazy`
 Only start augmenting path searchs after x newly inserted edges on an endpoint.
