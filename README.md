@@ -1,5 +1,6 @@
 # Dynamic Matching in Practice 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_shield)
 ## Downloading DynMatch: 
 You can download DynMatch with the following command line:
 
@@ -108,3 +109,7 @@ If you publish results using our algorithms, please acknowledge our work by quot
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_large)
