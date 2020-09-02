@@ -2,6 +2,13 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1c89d5d92e3d44df94dd8773faff10e8)](https://app.codacy.com/gh/DynGraphLab/DynMatch?utm_source=github.com&utm_medium=referral&utm_content=DynGraphLab/DynMatch&utm_campaign=Badge_Grade_Dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_shield)
+<p align="center">
+<img src="./img/matching2.png"
+  alt="framework overview"
+  width="320" height="241">
+</p>
+
+
 ## Downloading DynMatch: 
 You can download DynMatch with the following command line:
 
