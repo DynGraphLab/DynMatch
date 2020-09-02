@@ -1,15 +1,6 @@
 /******************************************************************************
  * node_bucket_pq.h
  *
- * Source of VieCut.
- *
- * Adapted from KaHIP.
- *
- ******************************************************************************
- * Copyright (C) 2013-2015 Christian Schulz <christian.schulz@univie.ac.at>
- * Copyright (C) 2018 Alexander Noe <alexander.noe@univie.ac.at>
- *
- * Published under the MIT license in the LICENSE file.
  *****************************************************************************/
 
 #ifndef NODE_BUCKET_PQ_H

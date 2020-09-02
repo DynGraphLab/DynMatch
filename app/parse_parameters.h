@@ -1,7 +1,7 @@
 /******************************************************************************
  * parse_parameters.h 
  * *
- * Source of KaHIP -- Karlsruhe High Quality Partitioning.
+ * Source of DynMatch 
  * Christian Schulz <christian.schulz.phone@gmail.com>
  *****************************************************************************/
 

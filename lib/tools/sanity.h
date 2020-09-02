@@ -1,5 +1,5 @@
 //
-// Author: Christian Schulz <christian.schulz@kit.edu>
+// Author: Christian Schulz <christian.schulz@informatik.uni-heidelberg.de>
 // 
 
 #ifndef SANITY_AEH1IUTO

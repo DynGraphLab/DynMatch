@@ -1,8 +1,6 @@
 /******************************************************************************
  * bucket_pq.h 
  * *
- * Source of KaHIP -- Karlsruhe High Quality Partitioning.
- * Christian Schulz <christian.schulz.phone@gmail.com>
  *****************************************************************************/
 
 #ifndef BUCKET_PQ_EM8YJPA9

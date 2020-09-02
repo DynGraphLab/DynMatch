@@ -1,5 +1,4 @@
 //
-// Author: Christian Schulz <christian.schulz@kit.edu>
 // 
 
 #include <algorithm>

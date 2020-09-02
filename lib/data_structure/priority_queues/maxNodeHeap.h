@@ -1,8 +1,6 @@
 /******************************************************************************
  * maxNodeHeap.h 
  * *
- * Source of KaHIP -- Karlsruhe High Quality Partitioning.
- * Christian Schulz <christian.schulz.phone@gmail.com>
  *****************************************************************************/
 
 #ifndef MAX_NODE_HEAP_39CK1B8I

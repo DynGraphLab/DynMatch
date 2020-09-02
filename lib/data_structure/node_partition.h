@@ -1,8 +1,6 @@
 /******************************************************************************
  * union_find.h 
  * *
- * Source of KaHIP -- Karlsruhe High Quality Partitioning.
- * Christian Schulz <christian.schulz.phone@gmail.com>
  *****************************************************************************/
 
 #ifndef NODE_PARTITION_H

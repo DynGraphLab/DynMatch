@@ -1,5 +1,4 @@
 //
-// Author: Christian Schulz <christian.schulz@kit.edu>
 // 
 
 #ifndef DYNAMIC_ALGORITHM_META_2LKHAHEY
