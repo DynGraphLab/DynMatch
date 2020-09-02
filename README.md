@@ -111,6 +111,4 @@ If you publish results using our algorithms, please acknowledge our work by quot
 }
 ```
 
-
-## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_large)
