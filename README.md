@@ -1,4 +1,5 @@
 # Dynamic Matching in Practice 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Downloading DynMatch: 
 You can download DynMatch with the following command line:
 
