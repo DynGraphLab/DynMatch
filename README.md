@@ -12,9 +12,6 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2004.09099-b31b1b)](https://arxiv.org/abs/2004.09099)
 [![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 
-<p align="center">
-  <img src="./img/dynmatch-banner.png" alt="DynMatch Banner" width="600"/>
-</p>
 
 Part of the [DynGraphLab &mdash; Dynamic Graph Algorithms](https://github.com/DynGraphLab) open source framework. Developed at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de).
 
