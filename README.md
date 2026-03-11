@@ -12,16 +12,15 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2004.09099-b31b1b)](https://arxiv.org/abs/2004.09099)
 [![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 
+<p align="center">
+  <img src="./img/dynmatch-banner.png" alt="DynMatch Banner" width="600"/>
+</p>
 
 Part of the [DynGraphLab &mdash; Dynamic Graph Algorithms](https://github.com/DynGraphLab) open source framework. Developed at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de).
 
 ## Description
 
 In recent years, significant advances have been made in the design and analysis of fully dynamic maximal matching algorithms. However, these theoretical results have received very little attention from the practical perspective. Few of the algorithms are implemented and tested on real datasets, and their practical potential is far from understood. DynMatch bridges the gap between theory and practice for the fully dynamic maximal matching problem. We engineer several algorithms and empirically study them on an extensive set of dynamic instances.
-
-<p align="center">
-<img src="./img/matching2.png" alt="framework overview" width="320" height="241">
-</p>
 
 An [overview talk](https://drive.google.com/file/d/1HMCTWshidkOCyDLB923CXELYYSBUddq8/view) and [slides](https://drive.google.com/file/d/1rtv6jwSe4DD88sevEHLkG3ESVtcr9_ak/view?usp=sharing) explaining the algorithms are available.
 
