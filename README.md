@@ -32,7 +32,7 @@ brew install DynGraphLab/dyngraphlab/dynmatch
 
 Then run:
 ```console
-dynmatch FILE --algorithm=randomwalk
+dynmatch FILE --algorithm=dynblossom --dynblossom_maintain_opt
 ```
 
 ## Installation (from source)
