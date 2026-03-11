@@ -36,47 +36,58 @@
   </g>
 
   <!-- Graph visualization - Left side -->
-  <g transform="translate(40, 20)">
+  <!-- Nodes:
+    A(120,65) B(210,65) C(290,65) D(370,100)
+    E(210,100) F(120,150) G(210,185) H(290,150) I(370,185)
+    Matching (no shared vertices): A-B, C-D, F-G, E-H
+    Unmatched node: I (neighbors D,H both matched => maximal)
+  -->
+  <g transform="translate(0, 0)">
     <!-- Unmatched edges (gray) -->
-    <line x1="80" y1="45" x2="170" y2="80" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <line x1="170" y1="80" x2="250" y2="45" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <line x1="80" y1="45" x2="80" y2="130" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <line x1="250" y1="45" x2="330" y2="80" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <line x1="170" y1="80" x2="170" y2="165" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <line x1="250" y1="45" x2="250" y2="130" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="120" y1="65" x2="210" y2="100" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="120" y1="65" x2="120" y2="150" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="210" y1="65" x2="210" y2="100" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="210" y1="65" x2="290" y2="65" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="290" y1="65" x2="290" y2="150" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="210" y1="100" x2="210" y2="185" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="370" y1="100" x2="370" y2="185" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="290" y1="150" x2="370" y2="185" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="120" y1="150" x2="210" y2="100" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <line x1="120" y1="150" x2="290" y2="150" stroke="#475569" stroke-width="2" opacity="0.5"/>
 
-    <!-- Matched edges (green/emerald, highlighted) -->
-    <line x1="80" y1="45" x2="170" y2="45" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
-    <line x1="250" y1="130" x2="330" y2="80" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
-    <line x1="80" y1="130" x2="170" y2="165" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
-    <line x1="250" y1="45" x2="330" y2="165" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
-    <line x1="170" y1="80" x2="250" y2="130" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- Matched edges (green, no two share a vertex) -->
+    <!-- A(120,65) - B(210,65) -->
+    <line x1="120" y1="65" x2="210" y2="65" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- C(290,65) - D(370,100) -->
+    <line x1="290" y1="65" x2="370" y2="100" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- F(120,150) - G(210,185) -->
+    <line x1="120" y1="150" x2="210" y2="185" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
+    <!-- E(210,100) - H(290,150) -->
+    <line x1="210" y1="100" x2="290" y2="150" stroke="#34d399" stroke-width="3.5" filter="url(#glow)"/>
 
     <!-- Nodes -->
-    <circle cx="80" cy="45" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="170" cy="45" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="170" cy="80" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="250" cy="45" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="330" cy="80" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="80" cy="130" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="170" cy="165" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="250" cy="130" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
-    <circle cx="330" cy="165" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="120" cy="65" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="210" cy="65" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="290" cy="65" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="370" cy="100" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="210" cy="100" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="120" cy="150" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="210" cy="185" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="290" cy="150" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
+    <circle cx="370" cy="185" r="8" fill="#1e293b" stroke="#60a5fa" stroke-width="2" filter="url(#nodeGlow)"/>
 
     <!-- Legend -->
-    <line x1="200" y1="200" x2="230" y2="200" stroke="#34d399" stroke-width="3"/>
-    <text x="236" y="204" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Matched edges</text>
-    <line x1="200" y1="218" x2="230" y2="218" stroke="#475569" stroke-width="2" opacity="0.5"/>
-    <text x="236" y="222" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Unmatched edges</text>
+    <line x1="120" y1="220" x2="150" y2="220" stroke="#34d399" stroke-width="3"/>
+    <text x="156" y="224" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Matched edges</text>
+    <line x1="280" y1="220" x2="310" y2="220" stroke="#475569" stroke-width="2" opacity="0.5"/>
+    <text x="316" y="224" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Unmatched edges</text>
   </g>
 
   <!-- Text - Right side -->
   <g transform="translate(500, 0)">
-    <!-- DynMatch title -->
     <text x="180" y="115" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="56" font-weight="700">
       <tspan fill="#60a5fa">Dyn</tspan><tspan fill="#e2e8f0">Match</tspan>
     </text>
-    <!-- Subtitle -->
     <text x="180" y="150" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-style="italic">
       Dynamic Matching in Practice
     </text>
