@@ -1,4 +1,4 @@
-# DynMatch &mdash; Dynamic Matching in Practice
+# DynMatch: Dynamic Matching in Practice
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C++11](https://img.shields.io/badge/C++-11-blue.svg)](https://en.cppreference.com/w/cpp/11)
