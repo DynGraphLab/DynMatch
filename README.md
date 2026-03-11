@@ -1,124 +1,108 @@
-# Dynamic Matching in Practice 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1c89d5d92e3d44df94dd8773faff10e8)](https://app.codacy.com/gh/DynGraphLab/DynMatch?utm_source=github.com&utm_medium=referral&utm_content=DynGraphLab/DynMatch&utm_campaign=Badge_Grade_Dashboard)
-[![Build Status](https://travis-ci.com/DynGraphLab/DynMatch.svg?branch=master)](https://travis-ci.com/DynGraphLab/DynMatch)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_shield)
+# DynMatch &mdash; Dynamic Matching in Practice
 
-In recent years, significant advances have been made in the design and analysis of fully dynamic maximal matching algorithms.  However, these theoretical results have received very little attention from the practical perspective. Few of the algorithms are implemented and tested on real datasets, and their practical potential is far from understood.  Here, we provide a start to bridge the gap between theory and practice that is currently observed for the fully dynamic maximal matching problem. We engineer several algorithms and empirically study those algorithms on an extensive set of dynamic instances. We provide an _overview talk_ over the algorithms contained in the framework [here](https://drive.google.com/file/d/1HMCTWshidkOCyDLB923CXELYYSBUddq8/view). If you just want to have a look at slides explaining the algorithms, you can click [here](https://drive.google.com/file/d/1rtv6jwSe4DD88sevEHLkG3ESVtcr9_ak/view?usp=sharing). Experimental results and indepth descriptions of the algorithms can be found [here](https://doi.org/10.4230/LIPIcs.ESA.2020.58).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![C++11](https://img.shields.io/badge/C++-11-blue.svg)](https://en.cppreference.com/w/cpp/11)
+[![CMake](https://img.shields.io/badge/build-CMake-blue)](https://cmake.org/)
+[![Linux](https://img.shields.io/badge/platform-Linux-blue)](https://github.com/DynGraphLab/DynMatch)
+[![macOS](https://img.shields.io/badge/platform-macOS-blue)](https://github.com/DynGraphLab/DynMatch)
+[![Homebrew](https://img.shields.io/badge/homebrew-available-orange)](https://github.com/DynGraphLab/homebrew-dyngraphlab)
+[![GitHub Stars](https://img.shields.io/github/stars/DynGraphLab/DynMatch)](https://github.com/DynGraphLab/DynMatch/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/DynGraphLab/DynMatch)](https://github.com/DynGraphLab/DynMatch/issues)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/DynGraphLab/DynMatch)](https://github.com/DynGraphLab/DynMatch/commits)
+[![arXiv](https://img.shields.io/badge/arXiv-2004.09099-b31b1b)](https://arxiv.org/abs/2004.09099)
+[![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 
 <p align="center">
-<img src="./img/matching2.png"
-  alt="framework overview"
-  width="320" height="241">
+  <img src="./img/dynmatch-banner.png" alt="DynMatch Banner" width="600"/>
 </p>
 
-## Downloading DynMatch: 
-You can download DynMatch with the following command line:
+Part of the [DynGraphLab &mdash; Dynamic Graph Algorithms](https://github.com/DynGraphLab) open source framework. Developed at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de).
+
+## Description
+
+In recent years, significant advances have been made in the design and analysis of fully dynamic maximal matching algorithms. However, these theoretical results have received very little attention from the practical perspective. Few of the algorithms are implemented and tested on real datasets, and their practical potential is far from understood. DynMatch bridges the gap between theory and practice for the fully dynamic maximal matching problem. We engineer several algorithms and empirically study them on an extensive set of dynamic instances.
+
+<p align="center">
+<img src="./img/matching2.png" alt="framework overview" width="320" height="241">
+</p>
+
+An [overview talk](https://drive.google.com/file/d/1HMCTWshidkOCyDLB923CXELYYSBUddq8/view) and [slides](https://drive.google.com/file/d/1rtv6jwSe4DD88sevEHLkG3ESVtcr9_ak/view?usp=sharing) explaining the algorithms are available.
+
+## Install via Homebrew
+
+```console
+brew install DynGraphLab/dyngraphlab/dynmatch
+```
+
+Then run:
+```console
+dynmatch FILE --algorithm=randomwalk
+```
+
+## Installation (from source)
 
 ```console
 git clone https://github.com/DynGraphLab/DynMatch
+cd DynMatch
+./compile_withcmake.sh
 ```
 
-## Compiling DynMatch: 
-To compile the codes, just type 
+All binaries are placed in `./deploy/`. Alternatively, use the standard CMake process:
+
 ```console
-./compile_withcmake.sh. 
-```
-In this case, all binaries, libraries and headers are in the folder ./deploy/ 
-
-Alternatively use the standard cmake build process:
-```console 
-mkdir build
-cd build 
-cmake ../ -DCMAKE_BUILD_TYPE=Release     
-make 
-cd ..
+mkdir build && cd build
+cmake ../ -DCMAKE_BUILD_TYPE=Release
+make && cd ..
 ```
 
-## Usage DynMatch ##
-`dynmatch FILE [options]`.    
+## Usage
 
-### Options ###
-This is a brief overview of the most important options.
+```console
+dynmatch FILE [options]
+```
 
-`FILE`
-Path to graph file that you maintain a dynamic matching for.
+### Options
 
-`-help`
-Print help.
+| Option | Description |
+|:-------|:-----------|
+| `FILE` | Path to dynamic graph sequence file |
+| `--algorithm=TYPE` | One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptasen} |
+| `-seed=<int>` | Seed for the random number generator |
+| `-eps=<double>` | Epsilon: limits search depth of random walk or augmenting path search to 2/eps-1 |
+| `--dynblossom_lazy` | Only start augmenting path searches after x newly inserted edges on an endpoint |
+| `--dynblossom_maintain_opt` | Maintain optimum in dynblossom (without this the algorithm is called UNSAFE) |
+| `-measure_graph_only` | Only measure graph construction time |
+| `-help` | Print help |
 
-`-seed=<int>`
-Seed to use for the random number generator.
+## Input Format
 
-`--algorithm=TYPE`
-One of {staticblossom, dynblossom, randomwalk, neimansolomon, baswanaguptasen}
+Dynamic graph sequence format. The first line starts with `#` followed by the number of nodes and updates. Each subsequent line specifies an operation: `1 u v` for edge insertion, `0 u v` for edge deletion.
 
-`-eps=<double>`
-Epsilon. Limit search depth of random walk or augmenting path search in dynblossom to 2/eps-1.
-
-`--dynblossom_lazy`
-Only start augmenting path searchs after x newly inserted edges on an endpoint.
-
-`--dynblossom_maintain_opt`
-Maintain optimum in dynblossom. (Without this option the algorithm is called UNSAFE)
-
-`-measure_graph_only` 
- Only measure graph construction time.
-
-
-## File Format ##
-The main folder contains example dynamic sequences in the example folder.
-Here are the first couple of lines of munmun_digg.undo.0.1.seq. The first number after the # is the number of nodes that the graph has (at most) and the next number is the number of updates that are performed. Then in each line is one operation. The first number is 1 if an edge is inserted and 0 if an edge is deleted. The two numbers after that are the corresponding end points of the respective edge.
-```code
+```
 # 30399 87627
 1 1 2
 1 51 52
-1 91 92
-1 124 125
-1 34 35
-1 152 153
+0 1 2
 ```
-Licence
-=====
-The program is licenced under MIT licence.
-If you publish results using our algorithms, please acknowledge our work by quoting the following paper:
 
+## License
 
+The program is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+If you publish results using our algorithms, please acknowledge our work by citing the following paper:
 
-```
+```bibtex
 @inproceedings{DBLP:conf/esa/Henzinger0P020,
-  author    = {Monika Henzinger and
-               Shahbaz Khan and
-               Richard Paul and
-               Christian Schulz},
-  title     = {Dynamic Matching Algorithms in Practice},
-  booktitle = {28th Annual European Symposium on Algorithms, {ESA} 2020, September
-               7-9, 2020, Pisa, Italy (Virtual Conference)},
-  pages     = {58:1--58:20},
-  year      = {2020},
-  crossref  = {DBLP:conf/esa/2020},
-  url       = {https://doi.org/10.4230/LIPIcs.ESA.2020.58},
-  doi       = {10.4230/LIPIcs.ESA.2020.58},
-  timestamp = {Wed, 26 Aug 2020 16:56:07 +0200},
-  biburl    = {https://dblp.org/rec/conf/esa/Henzinger0P020.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
-
-@proceedings{DBLP:conf/esa/2020,
-  editor    = {Fabrizio Grandoni and
-               Grzegorz Herman and
-               Peter Sanders},
-  title     = {28th Annual European Symposium on Algorithms, {ESA} 2020, September
-               7-9, 2020, Pisa, Italy (Virtual Conference)},
-  series    = {LIPIcs},
-  volume    = {173},
-  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
-  year      = {2020},
-  isbn      = {978-3-95977-162-7},
-  timestamp = {Wed, 26 Aug 2020 16:29:43 +0200},
-  biburl    = {https://dblp.org/rec/conf/esa/2020.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  author       = {Monika Henzinger and
+                  Shahbaz Khan and
+                  Richard D. Paul and
+                  Christian Schulz},
+  title        = {Dynamic Matching Algorithms in Practice},
+  booktitle    = {28th Annual European Symposium on Algorithms, {ESA} 2020},
+  series       = {LIPIcs},
+  volume       = {173},
+  pages        = {58:1--58:20},
+  publisher    = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year         = {2020},
+  doi          = {10.4230/LIPICS.ESA.2020.58}
 }
 ```
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDynGraphLab%2FDynMatch?ref=badge_large)
