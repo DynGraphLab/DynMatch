@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1f3a"/>
+      <stop offset="100%" stop-color="#0f1328"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="flood"/>
+      <feComposite in="flood" in2="SourceAlpha" operator="in" result="shadow"/>
+      <feGaussianBlur in="shadow" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="0" dy="2" result="offsetBlur"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="160" x2="640" y2="160" stroke="#60a5fa" stroke-width="0.5"/>
+    <line x1="0" y1="320" x2="640" y2="320" stroke="#60a5fa" stroke-width="0.5"/>
+    <line x1="0" y1="480" x2="640" y2="480" stroke="#60a5fa" stroke-width="0.5"/>
+    <line x1="160" y1="0" x2="160" y2="640" stroke="#60a5fa" stroke-width="0.5"/>
+    <line x1="320" y1="0" x2="320" y2="640" stroke="#60a5fa" stroke-width="0.5"/>
+    <line x1="480" y1="0" x2="480" y2="640" stroke="#60a5fa" stroke-width="0.5"/>
+  </g>
+
+  <!--
+    Graph section (left half)
+    Original banner nodes scaled by 2.5x, then shifted to center in left portion.
+    Original: A(120,65) B(210,65) C(290,65) D(370,100) E(210,100) F(120,150) G(210,185) H(290,150) I(370,185)
+    Scale 2.5x: A(300,162) B(525,162) C(725,162) D(925,250) E(525,250) F(300,375) G(525,462) H(725,375) I(925,462)
+    Shift: x - 200, y + 10 to better center in left half
+    Final: A(100,172) B(325,172) C(525,172) D(620,260) E(325,260) F(100,385) G(325,472) H(525,385) I(620,472)
+  -->
+
+  <!-- Unmatched edges (gray, thin) -->
+  <g stroke="#475569" stroke-width="1.5" fill="none" opacity="0.6">
+    <!-- B-E -->
+    <line x1="325" y1="172" x2="325" y2="260"/>
+    <!-- B-C -->
+    <line x1="325" y1="172" x2="525" y2="172"/>
+    <!-- A-F -->
+    <line x1="100" y1="172" x2="100" y2="385"/>
+    <!-- A-E -->
+    <line x1="100" y1="172" x2="325" y2="260"/>
+    <!-- C-H -->
+    <line x1="525" y1="172" x2="525" y2="385"/>
+    <!-- D-I -->
+    <line x1="620" y1="260" x2="620" y2="472"/>
+    <!-- E-G -->
+    <line x1="325" y1="260" x2="325" y2="472"/>
+    <!-- G-H -->
+    <line x1="325" y1="472" x2="525" y2="385"/>
+    <!-- H-I -->
+    <line x1="525" y1="385" x2="620" y2="472"/>
+    <!-- F-E -->
+    <line x1="100" y1="385" x2="325" y2="260"/>
+    <!-- C-E -->
+    <line x1="525" y1="172" x2="325" y2="260"/>
+    <!-- D-H -->
+    <line x1="620" y1="260" x2="525" y2="385"/>
+  </g>
+
+  <!-- Matched edges (green, thick, with glow) -->
+  <g stroke="#34d399" stroke-width="3.5" fill="none" filter="url(#glow)">
+    <!-- A-B -->
+    <line x1="100" y1="172" x2="325" y2="172"/>
+    <!-- C-D -->
+    <line x1="525" y1="172" x2="620" y2="260"/>
+    <!-- F-G -->
+    <line x1="100" y1="385" x2="325" y2="472"/>
+    <!-- E-H -->
+    <line x1="325" y1="260" x2="525" y2="385"/>
+  </g>
+
+  <!-- Nodes -->
+  <g filter="url(#nodeGlow)">
+    <!-- Node A -->
+    <circle cx="100" cy="172" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="100" y="178" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">A</text>
+
+    <!-- Node B -->
+    <circle cx="325" cy="172" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="325" y="178" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">B</text>
+
+    <!-- Node C -->
+    <circle cx="525" cy="172" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="525" y="178" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">C</text>
+
+    <!-- Node D -->
+    <circle cx="620" cy="260" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="620" y="266" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">D</text>
+
+    <!-- Node E -->
+    <circle cx="325" cy="260" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="325" y="266" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">E</text>
+
+    <!-- Node F -->
+    <circle cx="100" cy="385" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="100" y="391" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">F</text>
+
+    <!-- Node G -->
+    <circle cx="325" cy="472" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="325" y="478" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">G</text>
+
+    <!-- Node H -->
+    <circle cx="525" cy="385" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="525" y="391" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">H</text>
+
+    <!-- Node I -->
+    <circle cx="620" cy="472" r="18" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="620" y="478" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="bold">I</text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="700" y1="100" x2="700" y2="540" stroke="#334155" stroke-width="1" opacity="0.4"/>
+
+  <!-- Text section (right side) -->
+  <g filter="url(#textShadow)">
+    <!-- Title: "Dyn" in blue, "Match" in light -->
+    <text x="990" y="250" text-anchor="middle" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-1">
+      <tspan fill="#60a5fa">Dyn</tspan><tspan fill="#e2e8f0">Match</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="990" y="300" text-anchor="middle" fill="#94a3b8" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic">
+      Dynamic Matching in Practice
+    </text>
+
+    <!-- Tagline -->
+    <text x="990" y="350" text-anchor="middle" fill="#64748b" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17">
+      Fully dynamic maximal matching algorithms
+    </text>
+  </g>
+
+  <!-- Badge: Part of DynGraphLab -->
+  <g transform="translate(990, 400)">
+    <rect x="-105" y="-18" width="210" height="36" rx="18" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+    <text x="0" y="6" text-anchor="middle" fill="#60a5fa" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" opacity="0.9">
+      Part of DynGraphLab
+    </text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(990, 475)">
+    <!-- Matched edge legend -->
+    <line x1="-90" y1="0" x2="-55" y2="0" stroke="#34d399" stroke-width="3.5"/>
+    <text x="-45" y="5" fill="#94a3b8" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13">Matched</text>
+
+    <!-- Unmatched edge legend -->
+    <line x1="30" y1="0" x2="65" y2="0" stroke="#475569" stroke-width="1.5"/>
+    <text x="75" y="5" fill="#94a3b8" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13">Unmatched</text>
+  </g>
+</svg>
